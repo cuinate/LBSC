@@ -42,9 +42,10 @@
           	<div id="home-top">
 				<!--- use url_for to create a new local link variable -->
 	            <% @link = url_for(:controller =>'users', :action => 'new') %>
+            	<% @link_login = url_for(:controller =>'login', :action => 'login') %>
 				
      		   <a id="log-in-link" class="tab" href="<%=@link%>">Sign_Up</a> 
-				<a id="log-in-link" class="tab" href="#">Login</a>   
+				<a id="log-in-link" class="tab" href="<%=@link_login%>">Login</a>   
             </div>
 
             <div style="left: 0px;" id="logo-big" class="left">    

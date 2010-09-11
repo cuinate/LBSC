@@ -5,8 +5,8 @@ class User < ActiveRecord::Base
   attr_accessor :password_confirmation 
   validates_confirmation_of :password
   validate :password_non_blank
-def self.authenticate(name, password) 
-  user = self.find_by_name(name) 
+def self.authenticate(e_mail, password) 
+  user = self.find_by_e_mail(e_mail) 
   if user
   expected_password = encrypted_password(password, user.salt)
   if user.hashed_password != expected_password
