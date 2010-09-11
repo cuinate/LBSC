@@ -30,8 +30,9 @@
 
 	<div id="description-box"></div>
     <div id="account-stuff">
-    	<a href="http://robo.to/">
-    	   <div id="brand"></div>
+	      <% @link_home = url_for(:controller =>'index') %>
+	      <a id="home" href = "<%=@link_home%>">
+       	   <div id="brand"></div>
     	   <div class="clear"></div>
       </a>
     </div>
@@ -39,9 +40,10 @@
 
 			<div class="flash-message"></div>
           	<div id="home-top">
-	            <%= link_to 'Sign_up',:controller =>'users', :action =>'new'%>
+				<!--- use url_for to create a new local link variable -->
+	            <% @link = url_for(:controller =>'users', :action => 'new') %>
 				
-     		
+     		   <a id="log-in-link" class="tab" href="<%=@link%>">Sign_Up</a> 
 				<a id="log-in-link" class="tab" href="#">Login</a>   
             </div>
 
