@@ -1,0 +1,252 @@
+/*  ------------------0. basic setting ----------------------------------*/
+/* layout */
+.paragraph { margin-bottom: 6px; }  
+.paragraph_set { margin-bottom: 9px; }  
+.paragraph_group { margin-bottom: 14px; } 
+.paragraph_endspace { margin-bottom: 20px; }  
+
+.left { float:left; }  
+.right { float: right; }  
+.clear { clear: both; }  
+
+.hidden { display: none; }  
+
+.error-msg { text-align: center; font-size: 11px; color: #aaa; padding: 10px 0px 10px 0px; line-height: 110%; }  
+.flash-message { font-size: 11px; color: green; width: 280px; padding: 0px 20px; margin: 0px auto 0px auto; text-align: center; line-height: 120%; }    
+
+/* help */
+  
+.help { margin: 7px 0px 10px 0px; }  
+.more-info { cursor: pointer; }  
+.more-info:hover { text-decoration: underline; }  
+.more-info-box { display: none; }  
+
+/* buttons */
+
+.button-active { color: #fff; background: #005481; border: 0px; font-size: 13px !important; text-align: center; margin: 0px; cursor: pointer; padding: 11px 16px 11px 16px !important; width: 62px; overflow:visible; -webkit-border-top-right-radius: 4px; -webkit-border-top-left-radius: 4px; -webkit-border-bottom-right-radius: 4px; -webkit-border-bottom-left-radius: 4px; -moz-border-radius: 4px 4px 4px 4px; }  
+
+.button-wide { padding: 9px 16px 10px 16px !important; }  
+
+.gray-active { background-color: #555; }  
+.blue-active { background-color: #005481; }  
+.inactive { background-color: #d5dadb; color: #fff; font-weight: normal; cursor: default; }  
+.button-active-sm { font-weight: normal; font-family:helvetica,arial,sans-serif; font-size: 12px; line-height: 100%; color: #fff; background-color: #005481; border: 0px; text-align: center; margin: 0px 1px 0px 0px !important; cursor: pointer; padding: 6px 10px !important; overflow:visible; -webkit-border-top-right-radius: 4px; -webkit-border-top-left-radius: 4px; -webkit-border-bottom-right-radius: 4px; -webkit-border-bottom-left-radius: 4px; -moz-border-radius: 4px; }  
+.button-active-ti { font-weight: normal; font-family:helvetica,arial,sans-serif; font-size: 11px; color: #fff; line-height: 100%; background: #ccc; border: 0px; text-align: center; margin: 0px 0px 0px 12px; cursor: pointer; padding: 5px 0px !important; width: 94px; float:right; overflow:visible; -webkit-border-top-right-radius: 10px; -webkit-border-top-left-radius: 10px; -webkit-border-bottom-right-radius: 10px; -webkit-border-bottom-left-radius: 10px; -moz-border-radius: 10px; }  
+.button-active-ti:hover { background: #888; }  
+.gray-active-sm { background-color: #707068; }  
+
+#button-edit-toggle, #address-book-button, #button-calendar { cursor: pointer; }  
+
+.tool-box { clear: both; margin: 7px 0px 7px 0px; } 
+.delete-entry { font-size: 11px; cursor: pointer; color: #aaa; }
+.delete-entry:hover { color: #666; }
+
+/* ======================== 1. lbsc header part ============================*/
+#description-box { position:absolute; display: none; border: 1px solid #d4d2c2; background: #fcf7da; padding: 10px; font-size: 10px; overflow:hidden; color: #555; }  
+
+/*--1.1 brand and account --*/
+#account-stuff { margin: 0 0 0 0; padding: 0px 0px 45px 0px; }  
+#brand { background: url(../img/logo.png) no-repeat; margin-top: 17px; width: 150px; height: 40px; float:left; -webkit-border-top-right-radius: 4px; -webkit-border-bottom-right-radius: 4px; -moz-border-radius: 0 4px 4px 0; z-index: 900; } 
+
+/* ======================== 2. homepage ====================================*/
+
+#background {background:url(../images/bg-pattern-plain.jpg);}
+#home-page { margin: 0 auto; overflow:auto; width: 800px; }  
+#home-page-log-in { margin: 0 auto; overflow:auto; width: 450px; } 
+#home-top { height: 40px; overflow:hidden; }  
+
+.tab { background: #E9F3F3; display: block; height: 40px; line-height: 40px; margin: 0px 0px 14px 4px; text-align: center; width: 80px; float: right; font-weight: bold; -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius: 4px 4px 0px 0px; }  
+
+.tab-selected { background: #FFF; -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius: 4px 4px 0px 0px; }  
+#logo-big { float:left;height: 201px; margin: 0px 20px 0 0; position: relative; width: 160px; top: 0px; left: 25px; z-index: 1; }  
+#module {background:white; height: 380px; margin: 0px 0px 0 0; width: 600px; z-index: 1; }
+#player-imge  {background:white; height: 166px; margin: 0px 0px 0 0; border-style: solid; border-width: 2px;position: relative; width: 261px; z-index: 1; }
+#player-caption  {background:white; height: 166px; margin: 0px 0px 0 0; border-style: solid; border-width: 2px;position: relative; width: 261px; z-index: 1;} 
+#biz-imge  {background:white; height: 166px; margin: 0px 0px 0 0; border-style: solid; border-width: 2px;position: relative; width: 261px; z-index: 1; }
+#biz-caption  {background:white; height: 170px; margin: 0px 0px 0 0; border-style: solid; border-width: 2px;position: relative; width: 270px; z-index: 1; }
+
+#lb_auth_container  {
+	display: block;
+	font-family: sans-serif;
+	margin: 6px 0 0 0;
+	left:100px;
+	min-height: 600px;
+}
+
+.lbs-form fieldset{
+	display: block;
+	font-family: sans-serif;
+	margin: 6px 0 0 0;
+	left:100px;
+	min-height: 200px;
+}
+.lbs-form text_field{
+  color: #666;
+	font-size: 16px;
+	height: 28px;
+	line-height: 22px;
+	margin: 4px 0px 10px 0px;
+	padding: 5px 0px 0px 5px;
+	position: relative;
+	width: 260px;
+}
+.lbs-form password_field{
+  color: #666;
+	font-size: 16px;
+	height: 28px;
+	line-height: 22px;
+	margin: 4px 0px 10px 0px;
+	padding: 5px 0px 0px 5px;
+	position: relative;
+	width: 260px;
+}
+
+.lbs-form submit{
+	clear:both;
+	background-color:#005481;
+	border:none;
+	color:#eee;
+	cursor: pointer;
+	font-weight: normal;
+	font-size: 16px;
+	overflow: visible;
+	padding: 6px 20px;
+	text-align: center;
+	margin:0,auto;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-radius: 4px 4px 4px 4px;	
+}
+
+
+#lb_update_container  {
+	display: block;
+	font-family: sans-serif;
+	margin: 6px 0 0 0;
+	min-height: 124px;
+}
+
+#lb_signup_container {
+	display: none;
+}
+#lb_username_container {
+}
+#lb_password_container {
+}
+#lb_confirm_container {
+}
+#lb_email_container {
+}
+#lb_tag_new_user {
+}
+#lb_signup_checkbox {
+}
+#lb_password_field, #lb_email_field {
+
+}
+#lb_forgot_password_checkbox_container {
+  float: right;
+  padding:0px;
+}
+#lb_tag_forgot_password_label {
+  font-weight: normal;
+  font-style: italic;
+  float:left;
+  padding:4px 2px 0px 0px;
+  line-height: 100%;
+  color:gray;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+#lb_tag_forgot_password_label:a { text-decoration: none; }
+#lb_tag_forgot_password_label:hover { text-decoration: none; }
+
+#lb_login_container {
+  clear:both;
+}
+
+#lb_form_submit {
+	clear:both;
+	background-color:#005481;
+	border:none;
+	color:#eee;
+	cursor: pointer;
+	font-weight: normal;
+	font-size: 16px;
+	overflow: visible;
+	padding: 6px 20px;
+	text-align: center;
+	margin:0,auto;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-radius: 4px 4px 4px 4px;	
+}
+.lb_field {
+  color: #666;
+	font-size: 16px;
+	height: 28px;
+	line-height: 22px;
+	margin: 4px 0px 10px 0px;
+	padding: 5px 0px 0px 5px;
+	position: relative;
+	width: 260px;
+}
+
+.lb_field_tag {
+	font-weight: emph;
+	font-size: 11px;
+	color: #333639;
+	display: block;
+	font-family: Helvetica !important;
+	text-decoration: none;
+}
+input:focus, textarea:focus{
+	background-color: #DEFEFF;
+	color: #333;
+}
+
+#lb_diag_message {
+	display: none;
+	font-size: 9px;
+	color: #ccc;
+}
+
+#lb_auth_error {
+  font-size: 12px;
+}
+#lb_update_error {
+  font-size: 12px;
+}
+
+.lb_age_block {
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+#lb_birthdate_container {
+	width: 260px;
+}
+
+#lb_birth_year_field {
+  width: 45px;
+}
+
+#lb_birth_month_field {
+  width: 25px;
+}
+
+#lb_birth_day_field {
+  width: 25px;
+}
+
+.medium {
+  color: #323739;
+  font-size: 16px;
+  
+}
+

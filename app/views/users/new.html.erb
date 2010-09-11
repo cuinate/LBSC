@@ -1,0 +1,41 @@
+ <div id="home-page-log-in" class="home-page-log-in" >   
+<div style="left: 0px;" id="logo-big" class="left">    
+      	<img id="robo1" src="../img/robo-self.png" alt="hi, i'm robo.to" width="160" height="201">
+    </div>
+  
+    
+   	<div class="lbs-form">
+
+		<% form_for(@user) do |f| %>
+		  <%= f.error_messages %>
+
+		 <fieldset>
+
+		  <div>
+		    <span class="lb_field_tag" id="lb_tag_username">User Name:</span>
+		    <%= f.text_field :name%>
+		  </div>
+		
+		  <div>
+		    <span class="lb_field_tag" id="lb_tag_email">Email:</span>
+		    <%= f.text_field :e_mail%>
+		  </div>
+		
+		  <div>
+		    <span class="lb_field_tag" id="lb_tag_password">Password:</span>
+		    <%= f.password_field :password%>
+		  </div>
+		
+		  <div>
+		    <span class="lb_field_tag" id="lb_tag_username">confim:</span>
+		    <%= f.password_field :password_confirmation%>
+		  </div>
+		
+		 <div>
+			<%= f.submit "create a account", :class => "submit" %>
+		 </div>
+		
+	   	</fieldset>
+    	<% end %>
+   </div>
+</div>
