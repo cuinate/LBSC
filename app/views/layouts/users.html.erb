@@ -5,7 +5,11 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Users: <%= controller.action_name %></title>
+<%= javascript_include_tag ['jquery_002', 'application'] %>
+<%= javascript_include_tag ['jquery-ui', 'application'] %>
+
   <%= stylesheet_link_tag 'lbsc' %>
+  <%= stylesheet_link_tag 'jquery-ui-1' %>
 </head>
 <body id="background">
 
@@ -13,10 +17,35 @@
 <div id="description-box"></div>
 <div id="account-stuff">
 
-	   <div id="brand"></div>
-	   <div class="clear"></div>
-  
-</div>
+	   	<% @link_home = url_for(:controller =>'index') %>
+	      <a id="home" href = "<%=@link_home%>">
+      	   <div id="brand"></div>
+   	  
+	   <div id="navi_item" class ="spy_light" style="display:hidden">
+		
+					<% @link_profile = url_for(:controller =>'users',:action=>'show') %>
+	  			  	<a href="<%=@link_profile%>" title="See your profile">
+	    			  	  <div class="navbar-item ">
+							<%=@user.name%>
+	        			  </div>
+	      		  </a>
+					<a href="http://robo.to/users/statusphere" title="Build the challenge">
+  					  <div class="navbar-item nav-item-right">
+  							Builder
+  					  </div>
+  				  </a>
+					<% @link_logout = url_for(:controller =>'login',:action=>'logout') %>
+					<a href="<%=@link_logout%>" title="log out">
+					  <div class="navbar-item nav-item-right">
+							Log Out
+					  </div>
+				  </a>
+	
+
+       </div>
+  <div class="clear"></div>
+	<div class="clear"></div>
+
 <%= yield %>
 
 </body>

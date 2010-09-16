@@ -41,13 +41,22 @@
 .delete-entry { font-size: 11px; cursor: pointer; color: #aaa; }
 .delete-entry:hover { color: #666; }
 
+
+/* ======================= 0.0 special ====================================*/
+.spy_light { color: #fff; }
+  .spy_light a:link { color: #fff; text-decoration:none; }
+  .spy_light a:active { color: #fff; text-decoration:none; }
+  .spy_light a:visited { color: #fff; text-decoration:none; }
+  .spy_light a:hover { color: #fff; text-decoration:none; }
+
 /* ======================== 1. lbsc header part ============================*/
 #description-box { position:absolute; display: none; border: 1px solid #d4d2c2; background: #fcf7da; padding: 10px; font-size: 10px; overflow:hidden; color: #555; }  
 
 /*--1.1 brand and account --*/
 #account-stuff { margin: 0 0 0 0; padding: 0px 0px 45px 0px; }  
 #brand { background: url(../img/logo.png) no-repeat; margin-top: 17px; width: 150px; height: 40px; float:left; -webkit-border-top-right-radius: 4px; -webkit-border-bottom-right-radius: 4px; -moz-border-radius: 0 4px 4px 0; z-index: 900; } 
-
+.navbar-item { background: url(../img/roboto-navbar-33.png) repeat; height: 26px; padding: 14px 30px 0px 30px; margin-top: 17px; float:left; margin-left: 1px; font-size: 20px;  font-weight: normal; text-align: center; letter-spacing: 1px; -webkit-border-top-right-radius: 4px; -webkit-border-bottom-right-radius: 4px; -moz-border-radius: 0 4px 4px 0; z-index: 901; }  
+ 
 /* ======================== 2. homepage ====================================*/
 
 #background {background:url(../images/bg-pattern-plain.jpg);}

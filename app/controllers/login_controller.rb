@@ -1,5 +1,4 @@
 class LoginController < ApplicationController
-  
 
   def login
     if request.post?
@@ -11,6 +10,12 @@ class LoginController < ApplicationController
         flash.now[:notice] = "Invalid e-mail and user account!"
       end   
   end
-end
+ end 
   
+  def logout
+    session[:user_id] = nil
+    redirect_to(:action => "login")
+  end 
+
 end
+
