@@ -13,13 +13,16 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.xml
   def show
-    @user = User.find(params[:id])
-
+    #get the user id from seesion
+    @user = User.find(session[:user_id])
+    rescue ActiveRecord:: RecordNotFound
+    flash[:notice] = 'User not found '
+    logger.error("user not found from seesion:user_id #{session[:user_id]}")
     respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @user }
-    end
+       format.html # show.html.erb
+       format.xml  { render :xml => @user }
   end
+end
 
   # GET /users/new
   # GET /users/new.xml

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+<title>LBS@C</title>
+
+<!-- meta tags -->
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta content="LBS@c" name="lbs@C">
+<meta content="particle, profile, video, status, avatar" name="keywords">
+<meta content="global" name="distribution">
+
+<!-- iphone tags -->
+<meta name="apple-mobile-web-app-capable" content="YES"> 
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width = device-width, user-scalable = no">
+
+
+<!-- link tags -->
+<link href="stylesheets/lbsc.css" media="screen" rel="stylesheet" type="text/css">
+
+<!-- iphone tags -->
+
+
+</head>
+
+
+<body background="img/bg-pattern-plain.jpg">
+
+	<div id="description-box"></div>
+    <div id="account-stuff">
+	      <% @link_home = url_for(:controller =>'index') %>
+	      <a id="home" href = "<%=@link_home%>">
+       	   <div id="brand"></div>
+    	   <div class="clear"></div>
+      </a>
+    </div>
+<div id="home-page" class="home-page" >
+
+			<div class="flash-message"></div>
+          	<div id="home-top">
+				<!--- use url_for to create a new local link variable -->
+	            <% @link = url_for(:controller =>'users', :action => 'new') %>
+				
+     		   <a id="log-in-link" class="tab" href="<%=@link%>">Sign_Up</a> 
+				<a id="log-in-link" class="tab" href="#">Login</a>   
+            </div>
+
+            <div style="left: 0px;" id="logo-big" class="left">    
+              	<img id="robo1" src="img/robo-self.png" alt="hi, i'm robo.to" width="160" height="201">
+            </div>
+            
+            <div id="module" class="right">
+			<table border="0" width="100%">
+          	    <tr>    
+                   <td width="50%" valign="top">
+          			<img id="all-your-face" src="img/player.png" alt="All your face are belong to us" >
+          			</td>
+          			<td width="50%" valign="top">
+              		<img id="all-your-face" src="img/biz_partner.png" alt="All your face are belong to us" >         
+                    </td>
+                </tr>
+				<tr>  
+         		 <td width="40%" valign="top">
+          			<img id="all-your-face" src="img/player_caption.png" alt="All your face are belong to us" >
+          		 </td>
+          		 <td>
+          			<img id="all-your-face" src="img/biz_caption.png" alt="All your face are belong to us" >
+          		</td>
+                </tr>
+             </table>
+          </div>
+          
+
+</div>
+        
+
+		          
+
+	
+</body></html>
