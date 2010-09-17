@@ -1,7 +1,7 @@
 var places = function(){
  	var centerLatitude = 39.989059;  
 	var centerLongitude = 116.351811;
-	var startZoom = 13;
+	var startZoom = 8;
 	var map;
 	var geocoder;
 	var description ='check in here';
@@ -17,7 +17,8 @@ function addmarker(latitude, longtitude,description){
 	map.addOverlay(marker);
 	
 }
-function init(){
+var gmap_init = function()
+{
   
     geocoder = new google.maps.Geocoder();
     infowindow = new google.maps.InfoWindow();
@@ -27,7 +28,7 @@ function init(){
       center: latlng,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     }
-    map = new google.maps.Map(document.getElementById("map"), myOptions);
+    map = new google.maps.Map(document.getElementById("gmap_wrap"), myOptions);
    
    
 
@@ -46,9 +47,30 @@ var initializeDialogs = function()
 	
 	$(".select_place").click(function() {
 		$('#select_place_dialog').dialog('open');
-           alert("you got me!");
+        
     });
 	
+	$('#search_places')
+    	.submit(function(){
+    		var address = document.getElementById("search_places_address").value;
+		    geocoder.geocode( { 'address': address}, function(results, status) {
+		      if (status == google.maps.GeocoderStatus.OK) {
+		        map.setCenter(results[0].geometry.location);
+		        var marker = new google.maps.Marker({
+		            map: map, 
+		            position: results[0].geometry.location
+		        });
+		        
+		        set_infowindow_content(results[0]);
+      			infowindow.open(map, marker);
+		      } 
+		      else {
+		        alert("Geocode was not successful for the following reason: " + status);
+		      }
+			}
+		);
+    		
+    	});
 	
 
 }
@@ -82,9 +104,7 @@ var set_infowindow_content = function(data){
       infowindow.setContent(content.get(0));	
 }
 
-var gmap_init = function(){
-	window.onload = init;
-}
+
 var codeAddress = function() {
     var address = document.getElementById("address").value;
     geocoder.geocode( { 'address': address}, function(results, status) {

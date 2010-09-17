@@ -22,6 +22,8 @@
 	$(function()
 	{
 		places.initializeDialogs();
+		places.gmap_init();
+		places.codeAddress();
 	}
 	);
 	</script>	
@@ -70,48 +72,55 @@
 <%= yield %>
 
 <!--- place dialog form -->
-
-<div class="ui-dialog-content ui-widget-content" id="select_place_dialog" style="">
+ <div aria-labelledby="ui-dialog-title-select_place_dialog" role="dialog" tabindex="-1" class="ui-dialog 
+  ui-widget ui-widget-content ui-corner-all  ui-draggable" style="display: none; z-index: 1000; outline: 0px none;">
+  <div style="-moz-user-select: none;" unselectable="on" class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+  	<span style="-moz-user-select: none;" unselectable="on" id="ui-dialog-title-select_place_dialog" class="ui-dialog-title">
+  		Select a Place</span>
+  	<a style="-moz-user-select: none;" unselectable="on" role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#">
+  	<span style="-moz-user-select: none;" unselectable="on" class="ui-icon ui-icon-closethick">
+  	close</span></a>
+  	</div>
+  	<div class="ui-dialog-content ui-widget-content" id="select_place_dialog" Title = "select a place for challenge" style="">
 <form action="javascript:void(0)" id="search_places" method="post">
 	<div style="margin: 0pt; padding: 0pt; display: inline;">
 		<input name="authenticity_token" value="te9hH9D7s/FYAvGqVCjU+hmyVlGa8+JckBL+lQiRDeM=" type="hidden">
 		
 	</div>    
 	<div class="form_item">
-     <label for="search_places_name">Name</label>
-     <input id="search_places_name" name="search_places_name" type="text">
-   </div>
-   <div class="form_item">
-     <label for="search_places_address">Address</label>
-     <input id="search_places_address" name="search_places_address" type="text">
-   </div>
-   <input class="search_btn" name="commit" value="" type="submit">
+      <label for="search_places_name">Name</label>
+      <input id="search_places_name" name="search_places_name" type="text">
+    </div>
+    <div class="form_item">
+      <label for="search_places_address">Address</label>
+      <input id="search_places_address" name="search_places_address" type="text">
+    </div>
+    <input class="search_btn" name="commit" value="" type="submit">
 </form>
- <div class="s_result">
-   <p>Enter a name and an address above. Hit search. Then select a result from the map below.</p>
- </div>
+  <div class="s_result">
+    <p>Enter a name and an address above. Hit search. Then select a result from the map below.</p>
+  </div>
 
- <div class="s_result searching">
-   <p>Searching...</p>
- </div>
+  <div class="s_result searching">
+    <p>Searching...</p>
+  </div>
 
- <div class="s_result error">
-   <p><strong>No places found.</strong> Perhaps add a new place?</p>
- </div>
+  <div class="s_result error">
+    <p><strong>No places found.</strong> Perhaps add a new place?</p>
+  </div>
 
- <div class="s_result success">
-   <p><strong><span>&nbsp;</span> places found.</strong> Select the correct one from below.</p>
- </div>
+  <div class="s_result success">
+    <p><strong><span>&nbsp;</span> places found.</strong> Select the correct one from below.</p>
+  </div>
 
- <div id="gmap_wrap" class="callout_wrap clear">
-   <div class="gray">
-     <div id="search-map"></div>
-   </div>
- </div>
+  <div id="gmap_wrap" class="callout_wrap clear">
+    <div class="gray">
+      <div id="search-map"></div>
+    </div>
+  </div>
 
- <div class="save_place clear">
-   <a class="add_place_open" href="javascript:void(0)"></a>
- </div>
+  
+</div>
 </div>
 
 <!--- end of dialog form -->
