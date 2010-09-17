@@ -62,10 +62,11 @@
 #background {background:url(../images/bg-pattern-plain.jpg);}
 #home-page { margin: 0 auto; overflow:auto; width: 800px; }  
 #home-page-log-in { margin: 0 auto; overflow:auto; width: 450px; } 
+#home-page-new-challenge { margin: 0 auto; overflow:auto; width: 500px; } 
 #home-top { height: 40px; overflow:hidden; }  
 
 .tab { background: #E9F3F3; display: block; height: 40px; line-height: 40px; margin: 0px 0px 14px 4px; text-align: center; width: 80px; float: right; font-weight: bold; -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius: 4px 4px 0px 0px; }  
-
+.tab_challenge{ background: #E9F3F3; display: block; height: 40px; line-height: 40px; margin: 0px 0px 14px 4px; text-align: center; width: 200px; float: right; font-weight: bold; -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius: 4px 4px 0px 0px; }  
 .tab-selected { background: #FFF; -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius: 4px 4px 0px 0px; }  
 #logo-big { float:left;height: 201px; margin: 0px 20px 0 0; position: relative; width: 160px; top: 0px; left: 25px; z-index: 1; }  
 #module {background:white; height: 380px; margin: 0px 0px 0 0; width: 600px; z-index: 1; }

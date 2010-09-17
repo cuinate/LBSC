@@ -1,4 +1,4 @@
-var test = function(){
+var places = function(){
  	var centerLatitude = 39.989059;  
 	var centerLongitude = 116.351811;
 	var startZoom = 13;
@@ -35,52 +35,21 @@ function init(){
 
 
 var initializeDialogs = function()
-{
-		
-		$("#dialog-form").dialog({
-			autoOpen: false,
-			height: 300,
-			width: 350,
-			modal: true,
-			buttons: {
-				Cancel: function() {
-					$(this).dialog('close');
-				}
-			},
-			close: function() {
-				allFields.val('').removeClass('ui-state-error');
-			}
-		});
-		
-		
-		
-		$('#create-user')
-			.button()
-			.click(function() {
-				$('#dialog-form').dialog('open');
-			});
-	    $('#search')
-	    	.button()
-	    	.click(function(){
-	    		var address = document.getElementById("address").value;
-			    geocoder.geocode( { 'address': address}, function(results, status) {
-			      if (status == google.maps.GeocoderStatus.OK) {
-			        map.setCenter(results[0].geometry.location);
-			        var marker = new google.maps.Marker({
-			            map: map, 
-			            position: results[0].geometry.location
-			        });
-			        
-			        set_infowindow_content(results[0]);
-          			infowindow.open(map, marker);
-			      } 
-			      else {
-			        alert("Geocode was not successful for the following reason: " + status);
-			      }
-				}
-			);
-	    		
-	    	});
+{	
+	
+	$('#select_place_dialog').dialog({
+      autoOpen: false,
+      modal: true,
+      width: 720,
+	  resizeable: false
+    });
+	
+	$(".select_place").click(function() {
+		$('#select_place_dialog').dialog('open');
+           alert("you got me!");
+    });
+	
+	
 
 }
 
@@ -136,4 +105,4 @@ return{
     gmap_init:gmap_init,
     codeAddress:codeAddress
 };
-}(); 	
+}();

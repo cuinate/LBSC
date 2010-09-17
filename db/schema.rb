@@ -9,7 +9,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100916070806) do
+ActiveRecord::Schema.define(:version => 20100917044230) do
+
+  create_table "challenges", :force => true do |t|
+    t.string   "name"
+    t.integer  "placeID"
+    t.integer  "points"
+    t.string   "description"
+    t.string   "question"
+    t.string   "answer"
+    t.string   "message"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+  end
 
   create_table "sessions", :force => true do |t|
     t.string   "session_id", :null => false
@@ -27,6 +40,8 @@ ActiveRecord::Schema.define(:version => 20100916070806) do
     t.string   "hashed_password"
     t.string   "profile_image_url"
     t.string   "isloading"
+    t.integer  "challengcount"
+    t.integer  "placevisitedcount"
     t.string   "sinaauthenticated"
     t.string   "e_mail"
     t.datetime "created_at"

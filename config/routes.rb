@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :challenges
+
   map.resources :users
   
   map.singup "users/new",

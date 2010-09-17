@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ 
+  <title>Users: <%= controller.action_name %></title>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+<%= javascript_include_tag 'jquery_002.js' %>
+  <%= javascript_include_tag 'jquery-ui.js' %>
+ <%= javascript_include_tag 'jquery.js' %>
+  <%= javascript_include_tag 'places.js' %>
+
+
+  <%= stylesheet_link_tag 'lbsc' %>
+  <%= stylesheet_link_tag 'jquery-ui-1.css' %>
+  <%= stylesheet_link_tag 'places_dialogs' %>
+</head>
+<body id="background">
+	
+	<script type = "text/javascript">
+	$(function()
+	{
+		places.initializeDialogs();
+	}
+	);
+	</script>	
+<p style="color: green"><%= flash[:notice] %></p>
+<div id="description-box"></div>
+<div id="account-stuff">
+
+	   	<% @link_home = url_for(:controller =>'index') %>
+	      <a id="home" href = "<%=@link_home%>">
+      	   <div id="brand"></div>
+   	     </a>
+	   <div id="navi_item" class ="spy_light"  	   
+	  <% if session[:user_id] %>
+	   style = "display: block;"
+	   <% end %>
+	   >
+		
+					<% @link_profile = url_for(:controller =>'users',:action=>'show') %>
+	  			  	<a href="<%=@link_profile%>" title="See your profile">
+	    			  	  <div class="navbar-item ">
+								<% if @user%>
+								 <%=@user.name%> 
+								<% end %>
+	        			  </div>
+	      		  </a>
+	                
+			        <% @link_challenge = url_for(:controller =>'challenges',:action=>'index') %>
+					<a href="<%=@link_challenge%>" title="Build the challenge">
+  					  <div class="navbar-item nav-item-right">
+  							Builder
+  					  </div>
+  				  </a>
+					<% @link_logout = url_for(:controller =>'login',:action=>'logout') %>
+					<a href="<%=@link_logout%>" title="log out">
+					  <div class="navbar-item nav-item-right">
+							Log Out
+					  </div>
+				  </a>
+	
+
+       </div>
+ 
+	<div class="clear"></div>	
+</div>
+
+<%= yield %>
+
+<!--- place dialog form -->
+
+<div class="ui-dialog-content ui-widget-content" id="select_place_dialog" style="">
+<form action="javascript:void(0)" id="search_places" method="post">
+	<div style="margin: 0pt; padding: 0pt; display: inline;">
+		<input name="authenticity_token" value="te9hH9D7s/FYAvGqVCjU+hmyVlGa8+JckBL+lQiRDeM=" type="hidden">
+		
+	</div>    
+	<div class="form_item">
+     <label for="search_places_name">Name</label>
+     <input id="search_places_name" name="search_places_name" type="text">
+   </div>
+   <div class="form_item">
+     <label for="search_places_address">Address</label>
+     <input id="search_places_address" name="search_places_address" type="text">
+   </div>
+   <input class="search_btn" name="commit" value="" type="submit">
+</form>
+ <div class="s_result">
+   <p>Enter a name and an address above. Hit search. Then select a result from the map below.</p>
+ </div>
+
+ <div class="s_result searching">
+   <p>Searching...</p>
+ </div>
+
+ <div class="s_result error">
+   <p><strong>No places found.</strong> Perhaps add a new place?</p>
+ </div>
+
+ <div class="s_result success">
+   <p><strong><span>&nbsp;</span> places found.</strong> Select the correct one from below.</p>
+ </div>
+
+ <div id="gmap_wrap" class="callout_wrap clear">
+   <div class="gray">
+     <div id="search-map"></div>
+   </div>
+ </div>
+
+ <div class="save_place clear">
+   <a class="add_place_open" href="javascript:void(0)"></a>
+ </div>
+</div>
+
+<!--- end of dialog form -->
+
+
+
+
+   
+</script>
+</body>
+</html>

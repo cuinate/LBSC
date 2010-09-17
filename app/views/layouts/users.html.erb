@@ -30,10 +30,13 @@
 					<% @link_profile = url_for(:controller =>'users',:action=>'show') %>
 	  			  	<a href="<%=@link_profile%>" title="See your profile">
 	    			  	  <div class="navbar-item ">
-							<%=@user.name%>
+								<% if @user%>
+								 <%=@user.name%> 
+								<% end %>
 	        			  </div>
 	      		  </a>
-					<a href="http://robo.to/users/statusphere" title="Build the challenge">
+					<% @link_challenge = url_for(:controller =>'challenges',:action=>'index') %>
+					<a href="<%=@link_challenge%>" title="Build the challenge">
   					  <div class="navbar-item nav-item-right">
   							Builder
   					  </div>

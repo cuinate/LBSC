@@ -52,7 +52,8 @@
 								<% end %>
 		        			  </div>
 		      		  </a>
-						<a href="http://robo.to/users/statusphere" title="Build the challenge">
+						<% @link_challenge = url_for(:controller =>'challenges',:action=>'index') %>
+						<a href="<%=@link_challenge%>" title="Build the challenge">
 	  					  <div class="navbar-item nav-item-right">
 	  							Builder
 	  					  </div>
@@ -86,7 +87,12 @@
 				   style = "display: none;"
 				<% end %>
 	           >Sign_Up</a> 
-				<a id="log-in-link" class="tab" href="<%=@link_login%>">Login</a>   
+				<a id="log-in-link" class="tab" href="<%=@link_login%>"
+					<% if session[:user_id] %>
+					   style = "display: none;"
+					<% end %>		
+				>
+				Login</a>   
             </div>
 
             <div style="left: 0px;" id="logo-big" class="left">    

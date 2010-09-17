@@ -1,0 +1,23 @@
+
+
+<div id="home-page" class="home-page" >
+		<h1>Challenges ::</h1>
+	
+      	<div id="home-top">
+			<!--- use url_for to create a new local link variable -->
+            <% @link_new_challenge = url_for(:controller =>'challenges', :action => 'new') %>
+  		   <a id="new_challenge" class="tab_challenge" href="<%=@link_new_challenge%>">
+           	Create a new challenge</a> 
+		  
+        </div>
+
+       <% if @challenges%>
+          <h1>there are some challenges! </h1>
+       <%else%>
+          <h1>no challenges created by you </h1>
+       <%end%>
+
+</div>
+
+<br />
+

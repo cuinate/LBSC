@@ -1,0 +1,56 @@
+
+
+ <div id="home-page-new-challenge"  >   
+	<h1> Create a new challenge! </h1>
+<div style="left: 0px;" id="logo-big" class="left">    
+      	<img id="robo1" src="../img/robo-self.png" alt="hi, i'm robo.to" width="160" height="201">
+    </div>
+  
+    
+   	<div class="lbs-form">
+
+		<% form_for(@challenge) do |f| %>
+		  <%= f.error_messages %>
+
+		 <fieldset>
+
+		  <div>
+		    <span class="lb_field_tag" id="lb_tag_username">Place:</span>
+		    <%= f.text_field :placeID%>
+		 	<a class="select_place" href="javascript:void(0)"> select place </a>
+		    
+		  </div>
+		
+		  <div>
+		    <span class="lb_field_tag" id="lb_tag_email">challenge Name:</span>
+		    <%= f.text_field :name%>
+		  </div>
+		
+		  <div>
+		    <span class="lb_field_tag" id="lb_tag_password">Points:</span>
+		    <%= f.text_field :points%>
+		  </div>
+		
+		  <div>
+		    <span class="lb_field_tag" id="lb_tag_password">Description:</span>
+		    <%= f.text_field :description%>
+		  </div>
+		  
+		  <div>
+		    <span class="lb_field_tag" id="lb_tag_password">Question:</span>
+		    <%= f.text_field :question%>
+		  </div>
+		
+		  <div>
+		    <span class="lb_field_tag" id="lb_tag_username">answers:</span>
+		    <%= f.text_field :answer%>
+		  </div>
+		
+		 <div>
+			<%= f.submit "create a challenge", :class => "submit" %>
+		 </div>
+		
+	   	</fieldset>
+    	<% end %>
+
+   </div>

@@ -6,8 +6,8 @@ class CreateUsers < ActiveRecord::Migration
       t.string :hashed_password
       t.string :profile_image_url
       t.string :isloading
-      t.integar :challengcount
-      t.integar :placevisitedcount
+      t.integer :challengcount
+      t.integer :placevisitedcount
       t.points  :integar
       t.string  :sinaauthenticated
       t.string  :e_mail
