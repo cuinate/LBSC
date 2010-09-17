@@ -20,7 +20,6 @@ class UsersController < ApplicationController
     logger.error("user not found from seesion:user_id #{session[:user_id]}")
     respond_to do |format|
        format.html # show.html.erb
-       format.xml  { render :xml => @user }
        format.js {render :layout => false}
   end
 end

@@ -17,10 +17,14 @@
 <div id="description-box"></div>
 <div id="account-stuff">
 
-	   <div id="brand"></div>
-	   <div class="clear"></div>
+	   		<% @link_home = url_for(:controller =>'index') %>
+		      <a id="home" href = "<%=@link_home%>"> 
+	      	   <div id="brand"></div>
+	          </a>
+	         <div class="clear"></div>
   
 </div>
+<div class="clear"></div>
 <%= yield %>
 
 </body>

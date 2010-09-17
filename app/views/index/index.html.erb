@@ -32,14 +32,48 @@
 <body background="img/bg-pattern-plain.jpg">
 
 	<div id="description-box"></div>
-    <div id="account-stuff">
-	      <% @link_home = url_for(:controller =>'index') %>
-	      <a id="home" href = "<%=@link_home%>">
-       	   <div id="brand"></div>
-    	   <div class="clear"></div>
-      </a>
-    </div>
-<div id="home-page" class="home-page" >
+	<div id="account-stuff">
+
+		   	<% @link_home = url_for(:controller =>'index') %>
+		      <a id="home" href = "<%=@link_home%>">
+	      	   <div id="brand"></div>
+			</a>
+		  	<div id="navi_item" class ="spy_light"  	   
+			  <% if session[:user_id] %>
+			   style = "display: block;"
+			   <% end %>
+			   >
+
+						<% @link_profile = url_for(:controller =>'users',:action=>'show') %>
+		  			  	<a href="<%=@link_profile%>" title="See your profile">
+		    			  	  <div class="navbar-item ">
+								<% if @user%>
+								 <%=@user.name%> 
+								<% end %>
+		        			  </div>
+		      		  </a>
+						<a href="http://robo.to/users/statusphere" title="Build the challenge">
+	  					  <div class="navbar-item nav-item-right">
+	  							Builder
+	  					  </div>
+	  				  </a>
+						<% @link_logout = url_for(:controller =>'login',:action=>'logout') %>
+						<a href="<%=@link_logout%>" title="log out">
+						  <div class="navbar-item nav-item-right">
+								Log Out
+						  </div>
+					  </a>
+
+
+	       </div>
+	  <div class="clear"></div>
+		<div class="clear"></div>
+	</div>	
+	
+	
+	
+	
+	<div id="home-page" class="home-page" >
 
 			<div class="flash-message"></div>
           	<div id="home-top">
@@ -47,7 +81,11 @@
 	            <% @link = url_for(:controller =>'users', :action => 'new') %>
             	<% @link_login = url_for(:controller =>'login', :action => 'login') %>
 				
-     		   <a id="log-in-link" class="tab" href="<%=@link%>">Sign_Up</a> 
+     		   <a id="log-in-link" class="tab" href="<%=@link%>"
+	           	<% if session[:user_id] %>
+				   style = "display: none;"
+				<% end %>
+	           >Sign_Up</a> 
 				<a id="log-in-link" class="tab" href="<%=@link_login%>">Login</a>   
             </div>
 

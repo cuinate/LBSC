@@ -20,8 +20,12 @@
 	   	<% @link_home = url_for(:controller =>'index') %>
 	      <a id="home" href = "<%=@link_home%>">
       	   <div id="brand"></div>
-   	  
-	   <div id="navi_item" class ="spy_light" style="display:hidden">
+   	     </a>
+	   <div id="navi_item" class ="spy_light"  	   
+	  <% if session[:user_id] %>
+	   style = "display: block;"
+	   <% end %>
+	   >
 		
 					<% @link_profile = url_for(:controller =>'users',:action=>'show') %>
 	  			  	<a href="<%=@link_profile%>" title="See your profile">
@@ -45,6 +49,7 @@
        </div>
   <div class="clear"></div>
 	<div class="clear"></div>
+</div>
 
 <%= yield %>
 
