@@ -1,15 +1,13 @@
-var Places = 
-{
+var places = function(){
  	var centerLatitude = 39.989059;  
 	var centerLongitude = 116.351811;
-	var startZoom = 13;
+	var startZoom = 8;
 	var map;
 	var geocoder;
 	var description ='check in here';
 	var infowindow;
 
- addmarker:function(latitude, longtitude,description)
-{
+function addmarker(latitude, longtitude,description){
 	var location = new google.maps.LatLng(latitude, longtitude);
 	
 	var marker = new google.maps.Marker({
@@ -19,7 +17,8 @@ var Places =
 	map.addOverlay(marker);
 	
 }
- init:function(){
+var gmap_init = function()
+{
   
     geocoder = new google.maps.Geocoder();
     infowindow = new google.maps.InfoWindow();
@@ -29,60 +28,54 @@ var Places =
       center: latlng,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     }
-    map = new google.maps.Map(document.getElementById("map"), myOptions);
+    map = new google.maps.Map(document.getElementById("search-map"), myOptions);
+   
+   
+
 }
 
 
-initializeDialogs:function()
-{
-		
-		$("#dialog-form").dialog({
-			autoOpen: false,
-			height: 300,
-			width: 350,
-			modal: true,
-			buttons: {
-				Cancel: function() {
-					$(this).dialog('close');
-				}
-			},
-			close: function() {
-				allFields.val('').removeClass('ui-state-error');
+var initializeDialogs = function()
+{	
+	
+	$('#select_place_dialog').dialog({
+      autoOpen: false,
+      modal: true,
+      width: 720,
+	  resizeable: false
+    });
+	
+	$(".select_place").click(function() {
+		$('#select_place_dialog').dialog('open');
+        
+    });
+	
+	$('#search_places')
+    	.submit(function(){
+    		var address = document.getElementById("search_places_address").value;
+		    geocoder.geocode( { 'address': address}, function(results, status) {
+		      if (status == google.maps.GeocoderStatus.OK) {
+		        map.setCenter(results[0].geometry.location);
+		        var marker = new google.maps.Marker({
+		            map: map, 
+		            position: results[0].geometry.location
+		        });
+		        
+		        set_infowindow_content(results[0]);
+      			infowindow.open(map, marker);
+		      } 
+		      else {
+		        alert("Geocode was not successful for the following reason: " + status);
+		      }
 			}
-		});
-		
-		$("select_palce").click(funtion(){window.alert("got you!");});
-		$('#create-user')
-			.button()
-			.click(function() {
-				$('#dialog-form').dialog('open');
-			});
-	    $('#search')
-	    	.button()
-	    	.click(function(){
-	    		var address = document.getElementById("address").value;
-			    geocoder.geocode( { 'address': address}, function(results, status) {
-			      if (status == google.maps.GeocoderStatus.OK) {
-			        map.setCenter(results[0].geometry.location);
-			        var marker = new google.maps.Marker({
-			            map: map, 
-			            position: results[0].geometry.location
-			        });
-			        
-			        set_infowindow_content(results[0]);
-          			infowindow.open(map, marker);
-			      } 
-			      else {
-			        alert("Geocode was not successful for the following reason: " + status);
-			      }
-				}
-			);
-	    		
-	    	});
+		);
+    		
+    	});
+	
 
 }
 
-set_infowindow_content:function(data){
+var set_infowindow_content = function(data){
 	var Geocoder_result = data;
 	var content = $('<div/>', {
             'class': 'loc_content'
@@ -111,10 +104,8 @@ set_infowindow_content:function(data){
       infowindow.setContent(content.get(0));	
 }
 
-gmap_init:function(){
-	window.onload = init;
-}
-codeAddress:function() {
+
+var codeAddress = function() {
     var address = document.getElementById("address").value;
     geocoder.geocode( { 'address': address}, function(results, status) {
       if (status == google.maps.GeocoderStatus.OK) {
@@ -129,11 +120,9 @@ codeAddress:function() {
       }
 	});
 }
-
-}	
-
-$(document).ready(function(){
-	Places.gmap_init();
-	Places.initializeDialogs();
-	}
-);
+return{
+    initializeDialogs: initializeDialogs,
+    gmap_init:gmap_init,
+    codeAddress:codeAddress
+};
+}();

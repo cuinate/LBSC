@@ -96,6 +96,7 @@
   .centermap_btn:active { background: url(/img/hb_challenges_center_sprite.png) 0 -75px; }
 
 html #gmap_wrap { height: 350px; margin-top: 10px; width: 650px; }
+#map_canvas { width: 288px; height: 200px; overflow:hidden; background: #eee; } 
 
 #save_map, #search-map { height: 350px !important; }
 
