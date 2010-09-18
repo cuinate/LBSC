@@ -251,7 +251,8 @@ var search = function(place_name_selector, place_id_selector) {
 			       .append($('<a/>', {
 			            href: 'javascript:void(0);',
 			            click: function() {
-			              alert('you choosed :' + Geocoder_result.formatted_address );
+			          //    alert('you choosed :' + Geocoder_result.formatted_address );
+						  $('#save_place_dialog').dialog('open');
 			              infoWindow.close();
 			            },
 			            text: 'save'

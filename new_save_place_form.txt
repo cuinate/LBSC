@@ -1,0 +1,38 @@
+<form action="/places" class="new_place" id="new_place" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="QTnrjkQVxnhfkgfNEkKq/5DM3lxpABh/s+Rf+VC3qFo=" /></div>
+  <div class="form_item block">
+    <label for="place_name">Name</label>
+    <input id="place_name" name="place[name]" size="30" type="text" />
+  </div>
+  <div class="form_item block">
+    <label for="place_street_address">Street address</label>
+    <input id="place_street_address" name="place[street_address]" size="30" type="text" />
+  </div>
+  <div class="form_item block" id="place_zip">
+    <label for="place_postal_code">Postal code</label>
+    <input id="place_postal_code" name="place[postal_code]" size="30" type="text" />
+  </div>
+  <div class="form_item block">
+    <label for="place_city">City</label>
+    <input id="place_city" name="place[city]" size="30" type="text" />
+  </div>
+  <div class="form_item block">
+    <label for="place_state">State</label>
+    <input id="place_state" name="place[state]" size="30" type="text" />
+  </div>
+
+  <input id="place_lat" name="place[lat]" type="hidden" />
+  <input id="place_lng" name="place[lng]" type="hidden" />
+
+  <input id="center_map" type="button" class="centermap_btn" />
+
+  <div id="gmap_wrap" class="callout_wrap">
+    <div class="gray">
+      <div id="save_map"></div>
+    </div>
+  </div>
+
+  <div class="form_item block" id="lv_desc">
+    <label for="place_description">Description</label>
+    <textarea cols="40" id="place_description" name="place[description]" rows="2"></textarea>
+  </div>
+</form>
