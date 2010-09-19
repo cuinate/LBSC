@@ -1,6 +1,7 @@
 class PlacesController < ApplicationController
   # GET /places
   # GET /places.xml
+  protect_from_forgery :except => [:create,:new]
   def index
     @places = Place.all
 
@@ -41,17 +42,12 @@ class PlacesController < ApplicationController
   # POST /places.xml
   def create
     @place = Place.new(params[:place])
-
-    respond_to do |format|
-      if @place.save
-        flash[:notice] = 'Place was successfully created.'
-        format.html { redirect_to(@place) }
-        format.xml  { render :xml => @place, :status => :created, :location => @place }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @place.errors, :status => :unprocessable_entity }
-      end
-    end
+    @place.save!
+    session[:place_id] = @place.id
+    session[:place_name] = @place.name
+    redirect_to :back
+    
+    
   end
 
   # PUT /places/1

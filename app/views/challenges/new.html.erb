@@ -2,55 +2,63 @@
 
  <div id="home-page-new-challenge"  >   
 	<h1> Create a new challenge! </h1>
-<div style="left: 0px;" id="logo-big" class="left">    
-      	<img id="robo1" src="../img/robo-self.png" alt="hi, i'm robo.to" width="160" height="201">
-    </div>
+
   
-    
-   	<div class="lbs-form">
+<!--- create a new challenge form -->
+		
+<div class="lb_auth_container">
+		<form action="/challenges" class="new_place" id="new_place" method="post"> 
+			
+		<div class="lb_username_container block">
+			    <label class ="lb_field_tag" for="place_name">Place Name:</label>
+			    <input style="float left;"id="place_name" class ="lb_field" name="challenge[place_name]" 
+			   
+			    <% if session[:place_id] %>
+			    value = "<%=session[:place_name]%>"
+			    <%end%>
+				size="30" type="text"/>
+		 
+				<a class="select_place" href="javascript:void(0)"> Select place </a>
+	
+		</div>
+		
+			<div class="lb_username_container">
+				<input id="place_id" style="display: none;" class ="lb_field" name="challenge[placeID]" 
+				
+			    <%if session[:place_id]%>
+			    value = "<%=session[:place_id]%>"
+			    <%end%>
+			    size="30" type="text" type ="hidden" />
+			</div>
+			
+			<div class="lb_username_container">
+			    <label class ="lb_field_tag" for="challeng_name">challenge Name:</label>
+			   	<input id="challenge_name" class ="lb_field" name="challenge[name]" size="30" type="text"/>
+			</div>
+		   <div class="lb_username_container">   
+			     <label class ="lb_field_tag" for="points">points:</label>
+	 		   	<input id="points" class ="lb_field" name="challenge[points]" size="30" type="text"/>
+	         </div>
+	        <div class="lb_username_container">
+					     <label class ="lb_field_tag" for="description">description:</label>
+	 		   	<input id="description" class ="lb_field" name="challenge[description]" size="30" type="text"/>
+	         </div>
+		    <div class="lb_username_container">
+			 <label class ="lb_field_tag" for="question">Question:</label>
+	 		   	<input id="Question" class ="lb_field" name="challenge[question]" size="30" type="text"/>
+	         </div>
+            	<div class="lb_username_container">
+			     <label class ="lb_field_tag" for="answers">answers:</label>
+	     		 <input id="answers" class ="lb_field" name="challenge[answer]" size="30" type="text"/>
+	         </div>
+	             	<div class="lb_username_container">
+				  <input id="lb_form_submit" name="commit" type="submit" value="create a challenge" /> 
+				 </div>
+		 
+		</div>
+		</form>
+			 
+</div>
+<!--- end of creating the new dialog form -->  
 
-		<% form_for(@challenge) do |f| %>
-		  <%= f.error_messages %>
-
-		 <fieldset>
-
-		  <div>
-		    <span class="lb_field_tag" id="lb_tag_username">Place:</span>
-		    <%= f.text_field :placeID%>
-		 	<a class="select_place" href="javascript:void(0)"> select place </a>
-		    
-		  </div>
-		
-		  <div>
-		    <span class="lb_field_tag" id="lb_tag_email">challenge Name:</span>
-		    <%= f.text_field :name%>
-		  </div>
-		
-		  <div>
-		    <span class="lb_field_tag" id="lb_tag_password">Points:</span>
-		    <%= f.text_field :points%>
-		  </div>
-		
-		  <div>
-		    <span class="lb_field_tag" id="lb_tag_password">Description:</span>
-		    <%= f.text_field :description%>
-		  </div>
-		  
-		  <div>
-		    <span class="lb_field_tag" id="lb_tag_password">Question:</span>
-		    <%= f.text_field :question%>
-		  </div>
-		
-		  <div>
-		    <span class="lb_field_tag" id="lb_tag_username">answers:</span>
-		    <%= f.text_field :answer%>
-		  </div>
-		
-		 <div>
-			<%= f.submit "create a challenge", :class => "submit" %>
-		 </div>
-		
-	   	</fieldset>
-    	<% end %>
-
-   </div>
+   	

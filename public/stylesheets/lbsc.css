@@ -80,7 +80,7 @@
 	font-family: sans-serif;
 	margin: 6px 0 0 0;
 	left:100px;
-	min-height: 600px;
+	min-height: 900px;
 }
 
 .lbs-form fieldset{
@@ -205,15 +205,17 @@
 	padding: 5px 0px 0px 5px;
 	position: relative;
 	width: 260px;
+
 }
 
 .lb_field_tag {
 	font-weight: emph;
-	font-size: 11px;
+	font-size: 20px;
 	color: #333639;
 	display: block;
 	font-family: Helvetica !important;
 	text-decoration: none;
+
 }
 input:focus, textarea:focus{
 	background-color: #DEFEFF;

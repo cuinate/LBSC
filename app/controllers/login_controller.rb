@@ -14,6 +14,8 @@ class LoginController < ApplicationController
   
   def logout
     session[:user_id] = nil
+    session[:place_name] = nil
+    session[:place_id] = nil
     redirect_to(:action => "login")
   end 
 

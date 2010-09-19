@@ -117,7 +117,7 @@ var places = function(){
 	      $('#select_place_dialog').dialog('open');
 	    });
 
-	    $("#search_places").submit(function() {
+	    $('#search_places').submit(function() {
 	      search(place_name_selector, place_id_selector);
 	    });
 
@@ -125,7 +125,24 @@ var places = function(){
 	      autoOpen: false,
 	      buttons: {
 	        Submit: function() {
-		      $(this).find('form').submit();
+		/*
+	          $(this).find('form').submit(function() {
+	            $.post(this.action + '.json',
+	              $(this).serialize(), 
+	              function(data) { 
+	                $(place_name_selector).val(data.place.name);
+	                $(place_id_selector).val(data.place.id);
+	                $('#save_place_dialog').dialog('close');
+	              }, 
+	              'json'
+	            );
+	   
+
+	            return false;
+	          });
+      */
+
+	          $(this).find('form').submit();
 	        },
 	        'Go Back': function() {
 	          $('#select_place_dialog').dialog('open');

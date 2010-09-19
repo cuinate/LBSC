@@ -1,4 +1,5 @@
 class ChallengesController < ApplicationController
+  protect_from_forgery :except => [:create,:new]
   # GET /challenges
   # GET /challenges.xml
   def index
