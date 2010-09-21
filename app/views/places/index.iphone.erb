@@ -20,6 +20,7 @@
 <!-- link tags -->
 <%= javascript_include_tag ['jquery_002', 'application'] %>
 <%= javascript_include_tag ['jquery-ui', 'application'] %>
+<%= javascript_include_tag 'places.js' %>
 <%= stylesheet_link_tag 'lbsc' %>
 <%= stylesheet_link_tag 'jquery-ui-1' %>
 
@@ -62,6 +63,33 @@
 
 	<div id="home-page-iphone" >   
 <!--- places index content  -->
+
+<script type = "text/javascript">
+$(function()
+{
+	$(window).ready(function()
+	{
+		var gps = navigator.geolocation;
+		  if (gps)
+		// 浏览器支持GeoLocation
+		   gps.getCurrentPosition(
+			function(pos){
+
+			 var lat = pos.coords.latitude;
+			 var lon = pos.coords.longitude;
+			alert("got the position" + "lat:" + lat);
+			// map.setCenter(new GLatLng(lat, lon), 13);
+			}, 
+		     function(error){
+				alert("Got an error, code: " + error.code + " message: " + error.message);
+
+			});
+	}
+	);
+
+}
+);
+</script>
     welcome to this !
 <!--- log in form end  -->
 </div>

@@ -326,9 +326,32 @@ var save_place_to_form = function(Geocoder_result){
 	
 }
 
+var getLocation = function()
+{
+	var gps = navigator.geolocation;
+	  if (gps)
+	// 浏览器支持GeoLocation
+	   gps.getCurrentPosition(
+		function(pos){
+					
+		 var lat = pos.coords.latitude;
+		 var lon = pos.coords.longitude;
+		alert("got the position" + "lat:" + lat);
+		// map.setCenter(new GLatLng(lat, lon), 13);
+		}, 
+	     function(error){
+			alert("Got an error, code: " + error.code + " message: " + error.message);
+			
+		});			
+			
+			
+	
+}
+
 	  return {
 	    initializeAdmin: initializeAdmin,
 	    initializeDialogs: initializeDialogs,
-	    initializeShow: initializeShow
+	    initializeShow: initializeShow,
+    	getLocation: getLocation
 	  };
 	}();
