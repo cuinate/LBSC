@@ -4,7 +4,24 @@
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
+  before_filter :set_iphone_format #set iphone format if browsing request from iphone or android phon
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+  
+  helper_method :is_iphone_request? 
+
+
+# function for before filter of rails
+  def set_iphone_format
+    if is_iphone_request?
+      request.format = :iphone
+    
+    end
+  end
+
+# for deteting the user agent of browser who sending the request
+    def is_iphone_request?
+      request.user_agent =~ /(Mobile)/
+    end 
 end

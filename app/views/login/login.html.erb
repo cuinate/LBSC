@@ -1,31 +1,29 @@
- <div id="home-page-log-in" class="home-page-log-in" >   
-<div style="left: 0px;" id="logo-big" class="left">    
+ <div id="home-page-log-in"  >   
+    <div style="left: 0px;" id="logo-big" class="left">    
       	<img id="robo1" src="../img/robo-self.png" alt="hi, i'm robo.to" width="160" height="201">
     </div>
   
     
-   	<div class="lbs-form">
+   	<!--- log in form start -->
+	<div id="lb_auth_container" class = "right">
+	   <form action="/login/checkin" class="login" id="new_place" method="post"> 
+		<!--- in order to handle 'ActionController::InvalidAuthenticityToken' -->
+		    <%= tag(:input, :type=> "hidden", :name=> request_forgery_protection_token.to_s, :value=>form_authenticity_token) %>
+		<div id="lb_email_container" >
+			<span class="lb_field_tag" id="lb_tag_email">Email:</span>
+			<input class="lb_field" id="lb_email_field" name="e_mail" type="text">
 
-		<% form_tag do %>
-       	 <fieldset>
-			 <h1> please log-in </h1>
-		
-		  <div>
-		    <span class="lb_field_tag" id="lb_tag_email">Email:</span>
-		    <%=text_field_tag :e_mail, params[:e_mail]%>
-		  </div>
-		
-		  <div>
-		    <span class="lb_field_tag" id="lb_tag_password">Password:</span>
-		   <%=password_field_tag :password, params[:password]%>
-		  </div>
+		</div>
+		<div id="lb_password_container">
+			<span class="lb_field_tag" id="lb_tag_password">Password:</span>
+			<input class="lb_field" id="lb_password_field" name="password" type="password">
+		</div>
+		<div id="lb_login_container">
+			<input value="Log in" id="lb_form_submit" name="Login" type="submit">
+		</div>
 
-		
-		 <div>
-			<%= submit_tag "Login" %>
-		 </div>
-		
-	   	</fieldset>
-    	<% end %>
-   </div>
+	   </form>
+	</div>
+	
+	<!--- log in form end  -->
 </div>

@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html style="height: 100%;" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+<title>LBS@C</title>
+<!-- meta tags -->
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta content="LBS@c" name="lbs@C">
+<meta content="particle, profile, video, status, avatar" name="keywords">
+<meta content="global" name="distribution">
+
+<!-- iphone tags -->
+<meta name="apple-mobile-web-app-capable" content="YES"> 
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width = device-width, user-scalable = no">
+
+
+<!-- link tags -->
+<%= javascript_include_tag ['jquery_002', 'application'] %>
+<%= javascript_include_tag ['jquery-ui', 'application'] %>
+<%= stylesheet_link_tag 'lbsc' %>
+<%= stylesheet_link_tag 'jquery-ui-1' %>
+
+<link href="iphone.css" media="only screen and (max-device-width: 480px)" rel="stylesheet" type="text/css">
+
+
+
+
+<body style="position: relative; min-height: 100%; top: 0px;" id ="background"s>
+
+<!-- header start -->
+		<div id="description-box"></div>
+    		<div id="account-stuff">
+    			<% @link_home = url_for(:controller =>'index') %>
+			      <a id="home" href = "<%=@link_home%>">
+		      	   <div id="brand"></div>
+				</a>
+			  	<div id="navi" class ="spy_light"  	   
+				 <% if session[:user_id] %>
+				   style = "display: block;"
+				   <% end %>
+				   >
+
+				<% @link_profile = url_for(:controller =>'places',:action=>'index') %>
+			  	  <a href="<%=@link_profile%>" title="See your profile">
+			    	<div class="navbar-iphone-item ">
+									
+			        </div>
+			      </a>
+						
+
+
+		       </div>
+			<div class="clear"></div>
+	  	
+    	   </div>
+	<div class="clear"></div>
+<!-- header end -->
+<!--- content start -->
+
+	<div id="home-page-iphone" >   
+<!--- places index content  -->
+    welcome to this !
+<!--- log in form end  -->
+</div>
+<!--- content end -->
+	  
+
+</body>
+</html>

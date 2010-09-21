@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html style="height: 100%;" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+<title>LBS@C</title>
+<!-- meta tags -->
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta content="LBS@c" name="lbs@C">
+<meta content="particle, profile, video, status, avatar" name="keywords">
+<meta content="global" name="distribution">
+
+<!-- iphone tags -->
+<meta name="apple-mobile-web-app-capable" content="YES"> 
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width = device-width, user-scalable = no">
+
+
+<!-- link tags -->
+<%= javascript_include_tag ['jquery_002', 'application'] %>
+<%= javascript_include_tag ['jquery-ui', 'application'] %>
+<%= stylesheet_link_tag 'lbsc' %>
+<%= stylesheet_link_tag 'jquery-ui-1' %>
+
+<link href="iphone.css" media="only screen and (max-device-width: 480px)" rel="stylesheet" type="text/css">
+
+
+
+
+<body style="position: relative; min-height: 100%; top: 0px;" id ="background"s>
+
+<!-- header start -->
+	<div id="description-box"></div>
+	<div id="account-stuff">
+
+		   		<% @link_home = url_for(:controller =>'index') %>
+			      <a id="home" href = "<%=@link_home%>"> 
+		      	   <div id="brand"></div>
+		          </a>
+		         <div class="clear"></div>
+
+	</div>
+	<div class="clear"></div>
+<!-- header end -->
+<!--- content start -->
+
+	<div id="home-page-iphone" >   
+<!--- log in form start -->
+<div id="lb_auth_container">
+   <form action="/login/checkin" class="login" id="new_place" method="post"> 
+	<!--- in order to handle 'ActionController::InvalidAuthenticityToken' -->
+	    <%= tag(:input, :type=> "hidden", :name=> request_forgery_protection_token.to_s, :value=>form_authenticity_token) %>
+	<div id="lb_email_container" >
+		<span class="lb_field_tag" id="lb_tag_email">Email:</span>
+		<input class="lb_field" id="lb_email_field" name="e_mail" type="text">
+		
+	</div>
+	<div id="lb_password_container">
+		<span class="lb_field_tag" id="lb_tag_password">Password:</span>
+		<input class="lb_field" id="lb_password_field" name="password" type="password">
+	</div>
+	<div id="lb_login_container">
+		<input value="Log in" id="lb_form_submit" name="Login" type="submit">
+	</div>
+	
+   </form>
+</div>
+<!--- log in form end  -->
+</div>
+<!--- content end -->
+	  
+
+</body>
+</html>

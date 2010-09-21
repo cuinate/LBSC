@@ -1,0 +1,377 @@
+html {-webkit-text-size-adjust:none}
+
+
+body {
+  background-color: #fff; 
+  margin:0;
+  padding:0;
+  min-width: 320px;
+}
+      
+/* HIDE STUFF FROM IPHONE */
+.hidden_mobile {
+  display:none;
+}
+#fdbk_tab {
+  display:none;
+}
+#flash-message {
+  display:none;
+} 
+#robo {
+  display:none;
+}
+#share-this {
+  display:none;
+}
+#empty-web {
+  display:none;
+}
+#empty-phone {
+  display:block;
+  margin:50px 10px;
+  line-height:140%;
+}
+#message-me {
+  display:none;
+}
+
+
+/* Hide the marketing */
+#update-yourself {
+	background: url(../images/update-yourself.png) no-repeat top left;
+	height: 94px;
+	margin:4px 0 20px 4px;
+	overflow: hidden;
+	width:288px; 
+}
+
+#all-in-one-place {
+	background: url(../images/all-in-one-place.png) no-repeat top left;
+	height: 54px;
+	margin:4px 0 20px 4px;
+	overflow: hidden;
+	width:288px; 
+}
+
+#its-wayy-mobile {
+	background: url(../images/its-wayy-mobile.png) no-repeat top left; 
+	height:54px;
+	margin:4px 0 20px 4px;
+	overflow: hidden;
+	width:288px; 
+}
+
+#robo-self {
+	position: relative;
+	top:80px;
+	left:-160px;
+}
+
+
+
+/* FIT HOME INTO VIEWPORT */
+
+#marketing_logo {
+margin-left:7px;
+}
+#home-page {
+	width: 320px;
+}
+
+
+
+/* FIT CARD INTO VIEWPORT */
+#page {
+  width:320px;
+  margin:0;
+  padding:0;
+  background-image:none !important;
+  background: #000 !important;
+}
+#verticali {
+  width: 320px;
+  margin: 0;
+  padding:0;
+}
+#snapshot {
+  border-bottom:1px solid #fff;
+	-webkit-border-bottom-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius: 6px 6px 0px 0px;
+	margin-top:6px;
+}
+#pan-left {
+	left:26px;
+	top:180px;
+	z-index: 1000;
+}
+#pan-right {
+	right:26px;
+	top:180px;
+	z-index: 1000;
+}
+#update-status {
+  height:50px;
+}
+#maker-jpg {
+  width:288px;
+  height:288px;
+  margin: 0px auto;
+}
+#footer-bar {
+  margin: 0;
+  padding: 0px 0px 20px 0px;
+}
+.action-frame, .action-frame-internal {
+  border-right:0px solid #dedede;
+}
+#status-message {
+	overflow:hidden;
+	line-height: 110%;
+}
+.contactuser-frame {
+	border-top:0px solid #fff;
+	border-bottom:1px solid #fff;
+}
+
+
+/* DISPLAY MOBILE BUTTONS */
+#button-sync {
+  display: none;
+}
+#button-import {
+  display:block;
+}
+.button-active-ti {
+	padding: 4px 5px 6px 5px;
+}
+#contact-buttons-area {
+  display: block;
+  padding: 7px 0px 10px 0px;
+  margin: 0px 7px;
+}
+.phone-button {
+	color:#666;
+	/* background:#fff url(/images/phone-button-bkgnd.png) no-repeat center center; */
+	background:#fff center center;
+	border:1px solid #aaa;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	margin: 0px;
+	cursor: pointer;
+	padding: 10px 17px !important;
+	width:62px;
+	overflow:visible;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+}
+.update-actions-button, .update-actions-button-inactive {
+  font-size: 14px;
+  padding:10px 0px;
+}
+
+
+
+/* MOBILE PRIMARY NAV */
+#account-stuff {
+  background: #222;
+	margin: 0px;
+	padding: 0px;
+}
+#brand, .navbar-link, #tv-brand {
+	display:none;
+}
+#brand-mobile {
+  display:block;
+  color:#aaa;
+  height:23px;
+  margin:0px;
+  background: #000 url(/images/masthead_logo.png);
+}
+/*
+#brand-mobile-hp {
+  display:block;
+  width:130px;
+  position:absolute;
+  top:10px;
+  left:10px;
+}
+*/
+.navbar-item {
+  background: #555;
+  float:left;
+  width:159px;
+  height:25px;
+  padding:14px 0px 0px 0px;
+  margin:0px;
+  border-top:1px solid #5e5e5e;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius: 0px;
+}
+.nav-item-left {
+  border-right:1px solid #333;
+}
+.nav-item-right {
+  border-left:1px solid #6a6a6a;
+}
+.navbar-link {
+	margin: 30px 40px 0px 0px;
+	float:right;
+	cursor: pointer;
+}
+/*
+#home-top {
+	padding-right:40px;
+}
+.tab {
+	width: 120px;
+}
+*/
+
+
+
+
+/* NAV ALERT POSITIONING */
+.alert-count-nav {
+  position:absolute;
+  top: 15px;
+  left: 10px;
+}
+
+
+
+
+/* MOBILE SECONDARY NAV */
+#verticali-tabs {
+  background: none;
+  margin-top:6px;
+}
+#verticali-nav {
+  margin-top:6px;
+}
+#verticali-utility {
+  padding:20px 0px 10px 0px;
+  border-bottom:0px;
+  margin-bottom:0px;
+}
+#verticali-label { border-bottom:1px solid white;}
+
+.verticali-secondary-tab2 {
+  border-bottom:1px solid #b9cfcf;
+  padding-top:10px;
+  height:22px;
+}
+.verticali-secondary-selected2 {
+  border-bottom:1px solid #fff;
+  padding-top:10px;
+  height:22px;
+}
+.centertab2 {
+  border-left:1px solid #b9cfcf;
+  border-right:1px solid #b9cfcf;
+}
+.tab-left {
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius: 6px 0px 0px 0px;
+}
+.tab-right {
+	-webkit-border-top-right-radius:4px;
+	-moz-border-radius: 0px 6px 0px 0px;
+}
+
+
+/* SEARCH FIELD RESET */
+#verticali-search {
+  height:27px;
+}
+#archive-search-field, #watched-search-field, #everyone-search-field {
+  font-size: 13px;
+  padding:4px 18px 4px 2px;
+  -webkit-border-radius: 3px;
+}
+#action-box {
+  right:7px;
+  top:-20px;
+}
+.action-mode-left {
+  margin:2px 0px 0px 15px;
+}
+.action-mode-right {
+  margin:2px 15px 0px 0px;
+}
+
+
+/* FIT VERTICALI INTO VIEWPORT */
+#sortable-hell {
+	margin-top: 0px;
+}
+#footer-menu, .footer-rows, .footer-rows-inactive {
+  width: 274px;
+}
+.footer-rows, .footer-rows-inactive {
+  padding-top: 15px;
+  height:30px;
+  margin: 2px auto;
+  font-size:16px;
+}
+.menu-item {
+  width:137px;
+}
+#verticali-page {
+	margin: 6px auto 7px auto;
+}
+
+/* TV MODE BUTTON */
+#calder-tv {
+	display:none !important;
+}
+#calder-tv-small {
+	cursor: pointer;
+	width:48px;
+	height:48px;
+	float:right;
+	position:absolute;
+	top:0;
+	right:0;
+	display:block;
+}
+
+
+
+
+/* LEGAL PAGES */
+.legal {
+padding:10px;
+}
+
+
+
+/* ROW ITEMS */
+.person-timestamp {
+	font-size: 11px;
+}
+.person-status-ab, .person-status-watched, .person-status {
+  font-size:15px;
+}
+.person-name-ab {
+  font-size:18px;
+  margin:8px 0px 0px 0px;
+}
+.person-name-ab a {
+  color:#333;
+}
+
+
+
+/* IMPORT PAGE FORM */
+#newcontact-firstname, #newcontact-lastname {
+  width:261px;
+}

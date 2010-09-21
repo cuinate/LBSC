@@ -22,6 +22,8 @@
 <%= javascript_include_tag ['jquery-ui', 'application'] %>
 <%= stylesheet_link_tag 'lbsc' %>
 <%= stylesheet_link_tag 'jquery-ui-1' %>
+<link href="iphone.css" media="only screen and (max-device-width: 480px)" rel="stylesheet" type="text/css">
+
 
 <!-- iphone tags -->
 
@@ -44,20 +46,20 @@
 			   <% end %>
 			   >
 
-						<% @link_profile = url_for(:controller =>'users',:action=>'show') %>
+					  <% @link_profile = url_for(:controller =>'places',:action=>'index') %>
 		  			  	<a href="<%=@link_profile%>" title="See your profile">
 		    			  	  <div class="navbar-item ">
-								<% if @user%>
-								 <%=@user.name%> 
+								places
+		        			  </div>
+		      		  </a>
+					  <% @link_profile = url_for(:controller =>'users',:action=>'show') %>
+		  			  	<a href="<%=@link_profile%>" title="See your profile">
+		    			  	  <div class="navbar-item ">
+								<% if session[:user_id] %>
+								<%=session[:user_name]%>
 								<% end %>
 		        			  </div>
 		      		  </a>
-						<% @link_challenge = url_for(:controller =>'challenges',:action=>'index') %>
-						<a href="<%=@link_challenge%>" title="Build the challenge">
-	  					  <div class="navbar-item nav-item-right">
-	  							Builder
-	  					  </div>
-	  				  </a>
 						<% @link_logout = url_for(:controller =>'login',:action=>'logout') %>
 						<a href="<%=@link_logout%>" title="log out">
 						  <div class="navbar-item nav-item-right">
@@ -67,61 +69,36 @@
 
 
 	       </div>
-	  <div class="clear"></div>
-	
+		<div class="clear"></div>
 	</div>	
 	
 	
 	
 	
-	<div id="home-page" class="home-page" >
+	<div id="home-page" >
 
-			<div class="flash-message"></div>
+	
           	<div id="home-top">
 				<!--- use url_for to create a new local link variable -->
 	            <% @link = url_for(:controller =>'users', :action => 'new') %>
             	<% @link_login = url_for(:controller =>'login', :action => 'login') %>
 				
-     		   <a id="log-in-link" class="tab" href="<%=@link%>"
-	           	<% if session[:user_id] %>
-				   style = "display: none;"
-				<% end %>
-	           >Sign_Up</a> 
-				<a id="log-in-link" class="tab" href="<%=@link_login%>"
-					<% if session[:user_id] %>
-					   style = "display: none;"
-					<% end %>		
-				>
+     		   <a id="log-in-link" class="tab" href="<%=@link%>" >Sign_Up</a> 
+				<a id="log-in-link" class="tab" href="<%=@link_login%>"	>
 				Login</a>   
             </div>
 
-            <div style="left: 0px;" id="logo-big" class="left">    
-              	<img id="robo1" src="img/robo-self.png" alt="hi, i'm robo.to" width="160" height="201">
-            </div>
-            
-            <div id="module" class="right">
-			<table border="0" width="100%">
-          	    <tr>    
-                   <td width="50%" valign="top">
-          			<img id="all-your-face" src="img/player.png" alt="All your face are belong to us" >
-          			</td>
-          			<td width="50%" valign="top">
-              		<img id="all-your-face" src="img/biz_partner.png" alt="All your face are belong to us" >         
-                    </td>
-                </tr>
-				<tr>  
-         		 <td width="40%" valign="top">
-          			<img id="all-your-face" src="img/player_caption.png" alt="All your face are belong to us" >
-          		 </td>
-          		 <td>
-          			<img id="all-your-face" src="img/biz_caption.png" alt="All your face are belong to us" >
-          		</td>
-                </tr>
-             </table>
-          </div>
+			<div class="module" style="overflow: hidden;">
+
+
+				<div>
+				  
+				 	<img id="all-your-face" src="img/player_caption.png" alt="All your face are belong to us" >
+				</div>  
+           </div>
           
 
-</div>
+   </div>
         
 
 		          

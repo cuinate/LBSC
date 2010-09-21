@@ -8,6 +8,7 @@ class PlacesController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @places }
+      format.iphone {render :layout => false} #index.iphone.erb
     end
   end
 

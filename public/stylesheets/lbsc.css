@@ -54,8 +54,10 @@
 
 /*--1.1 brand and account --*/
 #account-stuff { margin: 0 0 0 0; padding: 0px 0px 45px 0px; }  
-#brand { background: url(../img/logo.png) no-repeat; margin-top: 17px; width: 150px; height: 40px; float:left; -webkit-border-top-right-radius: 4px; -webkit-border-bottom-right-radius: 4px; -moz-border-radius: 0 4px 4px 0; z-index: 900; } 
+#brand { background: url(../img/logo.png) no-repeat; margin-top: 17px; width: 140px; height: 40px; float:left; -webkit-border-top-right-radius: 4px; -webkit-border-bottom-right-radius: 4px; -moz-border-radius: 0 4px 4px 0; z-index: 900; } 
 .navbar-item { background: url(../img/roboto-navbar-33.png) repeat; height: 26px; padding: 14px 30px 0px 30px; margin-top: 17px; float:left; margin-left: 1px; font-size: 20px;  font-weight: normal; text-align: center; letter-spacing: 1px; -webkit-border-top-right-radius: 4px; -webkit-border-bottom-right-radius: 4px; -moz-border-radius: 0 4px 4px 0; z-index: 901; }  
+
+.navbar-iphone-item { background: url(../img/places_logo.jpg) no-repeat; margin-top: 17px; width: 150px; height: 40px; float:left; -webkit-border-top-right-radius: 4px; -webkit-border-bottom-right-radius: 4px; -moz-border-radius: 0 4px 4px 0; z-index: 900; } 
 #navi_item { display: none;}
 /* ======================== 2. homepage ====================================*/
 
@@ -64,12 +66,14 @@
 #home-page-log-in { margin: 0 auto; overflow:auto; width: 450px; } 
 #home-page-new-challenge { margin: 0 auto; overflow:auto; width: 500px; } 
 #home-top { height: 40px; overflow:hidden; }  
+#home-top-iphone { width:320px;height: 40px; overflow:hidden; }  
+#home-page-iphone { margin: 0 auto; overflow:auto; width: 320px; }  
 
 .tab { background: #E9F3F3; display: block; height: 40px; line-height: 40px; margin: 0px 0px 14px 4px; text-align: center; width: 80px; float: right; font-weight: bold; -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius: 4px 4px 0px 0px; }  
 .tab_challenge{ background: #E9F3F3; display: block; height: 40px; line-height: 40px; margin: 0px 0px 14px 4px; text-align: center; width: 200px; float: right; font-weight: bold; -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius: 4px 4px 0px 0px; }  
 .tab-selected { background: #FFF; -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius: 4px 4px 0px 0px; }  
 #logo-big { float:left;height: 201px; margin: 0px 20px 0 0; position: relative; width: 160px; top: 0px; left: 25px; z-index: 1; }  
-#module {background:white; height: 380px; margin: 0px 0px 0 0; width: 600px; z-index: 1; }
+.module {background:white; height: 380px; margin: 0px 0px 0 0; width: 320px; z-index: 1; }
 #player-imge  {background:white; height: 166px; margin: 0px 0px 0 0; border-style: solid; border-width: 2px;position: relative; width: 261px; z-index: 1; }
 #player-caption  {background:white; height: 166px; margin: 0px 0px 0 0; border-style: solid; border-width: 2px;position: relative; width: 261px; z-index: 1;} 
 #biz-imge  {background:white; height: 166px; margin: 0px 0px 0 0; border-style: solid; border-width: 2px;position: relative; width: 261px; z-index: 1; }
