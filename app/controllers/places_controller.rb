@@ -1,7 +1,7 @@
 class PlacesController < ApplicationController
   # GET /places
   # GET /places.xml
-  protect_from_forgery :except => [:create,:new]
+  protect_from_forgery :except => [:create,:new,:find_place]
   def index
     @places = Place.all
 
@@ -15,12 +15,35 @@ class PlacesController < ApplicationController
   # GET /places/1
   # GET /places/1.xml
   def show
-    @place = Place.find(params[:id])
-
+    #@place = Place.find(params[:id])
+    # get the current location from incming parameters
+    current_lat = params[:current_lat].to_f
+    current_lng = params[:current_lng].to_f
+   # caculate the boundary of rectangle 
+    lat_NE = current_lat + 5/111.0
+    lng_NE = current_lng + 5/111.0
+    lat_SW = current_lat - 5/111.0
+    lng_SW = current_lng - 5/111.0
+    
+    # run query from place database 
+    @place = Place.find(:all, 
+                        :conditions => ["longtitude BETWEEN ? and ?",lng_SW, lng_NE])
+    
+    #"and (places.longtitude between lng_NE and lng_SW)"
+ 
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @place }
+      format.js
     end
+  end
+  
+  # get/post? /places with current_lat and current_lng
+  def findplace
+      respond_to do |format|
+        format.js if request.xhr?
+      end
+    
   end
 
   # GET /places/new

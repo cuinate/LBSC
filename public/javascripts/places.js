@@ -11,6 +11,9 @@ var places = function(){
 	  
 	//var centerLatitude = 39.989059;  
 	//var centerLongitude = 116.351811;
+
+	/* ajax helper function to send out the ajax post */
+
 	
 	  var centerMapOnAddress = function() {
 	    geocodeAddress($.trim($('#address').val()));
@@ -96,7 +99,15 @@ var places = function(){
 
 	  var initializeDialogs = function(place_name_selector, place_id_selector) {
 	    initializeDefaults();
-
+	
+	   // initialize the form ajax submit function
+	  
+     	$("#find_place_form").submit(function()
+			{
+				$.post(this.action , $(this).serialize(), null, "script");
+			    return false;
+			});
+		
 	    $('#select_place_dialog').dialog({
 	      autoOpen: false,
 	      beforeclose: function(event, ui) {
@@ -116,7 +127,13 @@ var places = function(){
 	    $('.select_place').click(function() {
 	      $('#select_place_dialog').dialog('open');
 	    });
-
+      /* ---- google map location testing ----*/
+        $('.distance').click(function() {
+	
+	      getLocation();
+	
+	    });
+	
 	    $("#search_places").submit(function() {
 	      search(place_name_selector, place_id_selector);
 	    });
@@ -326,28 +343,51 @@ var save_place_to_form = function(Geocoder_result){
 	
 }
 
+
+
+/* --- get current location ------*/
 var getLocation = function()
 {
+	var lat;
+	var lon;
+	var lngSpan;
+	var latSpan;
+	var initialLocation;
+	
 	var gps = navigator.geolocation;
+   // if device support html5 navigator 
 	  if (gps)
-	// 浏览器支持GeoLocation
-	   gps.getCurrentPosition(
-		function(pos){
-					
-		 var lat = pos.coords.latitude;
-		 var lon = pos.coords.longitude;
-		alert("got the position" + "lat:" + lat);
-		// map.setCenter(new GLatLng(lat, lon), 13);
+	{
+		// get location
+		   gps.getCurrentPosition(
+			function(pos){
+
+			 lat = pos.coords.latitude;
+			 lon = pos.coords.longitude
+			 alert ("Position, Lat:" + lat + "Lon:" + lon);
+			//save the latitude and longtitude into the hiddden form 
+		
+			$("#current_lat").attr("value",lat);
+			$("#current_lng").attr("value",lon);
+			
+			// trigger the sumbit of hidden form
+		//	$("#find_place_form").submit();
+			$.get("/places/show", { current_lat: lat, current_lng: lon } );
+		
+		
 		}, 
 	     function(error){
 			alert("Got an error, code: " + error.code + " message: " + error.message);
 			
-		});			
+		});
+	}
+
+
+				
 			
 			
 	
 }
-
 	  return {
 	    initializeAdmin: initializeAdmin,
 	    initializeDialogs: initializeDialogs,

@@ -1,8 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :places
-
-  map.resources :places
-
+  
+ map.resources :places
+  
   map.resources :challenges
 
   map.resources :users
@@ -44,12 +43,27 @@ ActionController::Routing::Routes.draw do |map|
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
   # map.root :controller => "welcome"
   map.root :controller =>"index"
-
+  
   # See how all your routes lay out with "rake routes"
-
+  
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing or commenting them out if you're using named routes and resources.
-  map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'
+   # ajax route setting for places
+  
+  map.connect 'login/login',
+             :conditions => { :method => :post},
+             :controller => "login",
+             :action     => "login"
+  
+  
+map.connect ':controller/:action/:id'
+map.connect ':controller/:action/:id.:format'
+
+#map.findplace "places/findplace",
+#              :conditions => { :method => :post},
+#              :controller => "places",
+#              :action     => "findplace"
+              
+ 
 end

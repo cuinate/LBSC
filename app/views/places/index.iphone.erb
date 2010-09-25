@@ -18,13 +18,19 @@
 
 
 <!-- link tags -->
-<%= javascript_include_tag ['jquery_002', 'application'] %>
-<%= javascript_include_tag ['jquery-ui', 'application'] %>
-<%= javascript_include_tag 'places.js' %>
+<!--- set the sensor to true here to determine the location from mobile phone GPS sensor -->
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script> 
+<%= javascript_include_tag 'jquery_002.js' %>
+  <%= javascript_include_tag 'jquery-ui.js' %>
+ <%= javascript_include_tag 'jquery.js' %>
+ <%= javascript_include_tag 'application.js' %>
+  <%= javascript_include_tag 'places.js' %>
+
+
 <%= stylesheet_link_tag 'lbsc' %>
 <%= stylesheet_link_tag 'jquery-ui-1' %>
 
-<link href="iphone.css" media="only screen and (max-device-width: 480px)" rel="stylesheet" type="text/css">
+
 
 
 
@@ -60,39 +66,42 @@
 	<div class="clear"></div>
 <!-- header end -->
 <!--- content start -->
-
-	<div id="home-page-iphone" >   
+<div id="home-page-iphone" >   
 <!--- places index content  -->
+
 
 <script type = "text/javascript">
 $(function()
 {
-	$(window).ready(function()
-	{
-		var gps = navigator.geolocation;
-		  if (gps)
-		// 浏览器支持GeoLocation
-		   gps.getCurrentPosition(
-			function(pos){
-
-			 var lat = pos.coords.latitude;
-			 var lon = pos.coords.longitude;
-			alert("got the position" + "lat:" + lat);
-			// map.setCenter(new GLatLng(lat, lon), 13);
-			}, 
-		     function(error){
-				alert("Got an error, code: " + error.code + " message: " + error.message);
-
-			});
-	}
-	);
+	places.initializeDialogs();
 
 }
 );
 </script>
-    welcome to this !
+
+<!--- location submit hidden form start-->
+<div id="location_submit" style="display: none;">
+<form action="/places/findplace" class="findplace" id="find_place_form" method="post">
+	<!--- in order to handle 'ActionController::InvalidAuthenticityToken' -->
+	    <%= tag(:input, :type=> "hidden", :name=> request_forgery_protection_token.to_s, :value=>form_authenticity_token) %>
+	<input id="current_lat" name="current_lat" type="text">
+	<input id="current_lng" name="current_lng" type="text">
+	<input id="find_place" name= "find_place" type ="submit">
+</form>	
+</div>
+<!--- location submit hidden form end -->
+<!--- place find result ajax div start-->
+<div id="placelist">
+	<%= render :partial => @place %>
+  
+</div>
+    
+<!--- place find result ajax div end-->
+	<a class="distance" href="javascript:void(0)"> Select place </a>
 <!--- log in form end  -->
 </div>
+
+
 <!--- content end -->
 	  
 

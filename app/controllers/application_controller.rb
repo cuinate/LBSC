@@ -15,8 +15,11 @@ class ApplicationController < ActionController::Base
 # function for before filter of rails
   def set_iphone_format
     if is_iphone_request?
+      if request.xhr? 
+        request.format = :js
+      else
       request.format = :iphone
-    
+    end
     end
   end
 

@@ -31,6 +31,15 @@
 			    size="30" type="text" type ="hidden" />
 			</div>
 			
+			<div class="lb_userid_container">
+				<input id="user_id" style="display: none;" class ="lb_field" name="challenge[user_id]" 
+				
+			    <%if session[:user_id]%>
+			    value = "<%=session[:user_id]%>"
+			    <%end%>
+			    size="30" type="text" type ="hidden" />
+			</div>
+			
 			<div class="lb_username_container">
 			    <label class ="lb_field_tag" for="challeng_name">challenge Name:</label>
 			   	<input id="challenge_name" class ="lb_field" name="challenge[name]" size="30" type="text"/>
