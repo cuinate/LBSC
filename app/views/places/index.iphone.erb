@@ -42,7 +42,9 @@
     <ul id="unsortable">
 	<li>
   	<div class="refresh_header">
+	<a class="distance" href="javascript:void(0)"> 
   	<img  src="/img/icon/ic_menu_refresh.png" style="width: 32px; height: 32px;">
+    </a>
   	</div>
   	<div class="person-status-watched">
     	<b><span style ="font-size:15px">当前位置</span></b>
@@ -60,31 +62,16 @@
 
 <div id="verticali-watched">
 <div id="gradient"></div>
-
-  <ul id="unsortable">
-	<li>
-  	<div class="person-smirk">
-  	<img  src="/img/icon/geocode-71.png" style="width: 32px; height: 32px;">
+<div id="placelist">
+	
   
-  	</div>
-  	<div class="person-status-watched">
-    	<b><span style ="font-size:15px">中关村中学</span></b>
-  		 <div class="person-name">
-  			
-  			<span class="person-timestamp">
-  			111人到访, Challenges: &nbsp    &nbsp<span class ="button-ch"> <b>3/11</b></span></span>
-  		</div>
-  		
-  		<div class="rehash-list action-count"></div>
-  	</div>
-  <br class="clear">
-  <hr>  
-  </li>			
-  			
-  </ul>
+</div>
 
+  
+</div>
+</div>
 
-<div id="home-page-iphone" >   
+  
 <!--- places index content  -->
 
 
@@ -92,22 +79,17 @@
 $(function()
 {
 	places.initializeDialogs();
-
-}
-);
+});
+$(document).ready(function() {
+   places.getLocation();
+});
 </script>
 
 
 <!--- place find result ajax div start-->
-<div id="placelist">
-	<%= render :partial => @place %>
-  
-</div>
     
-<!--- place find result ajax div end-->
-	<a class="distance" href="javascript:void(0)"> Select place </a>
-<!--- log in form end  -->
-</div>
+
+
 
 
 <!--- content end -->

@@ -1,8 +1,31 @@
+<% for place in @place %>
+	
 
-  	<% for place in @place %>
 	  <div class="place">
-	    <h1>
-	      <%= place.name %>
-	    </H1>
+	 	<ul id="unsortable">
+			<li>
+		  	<div class="person-smirk">
+		  	<img  src="/img/icon/geocode-71.png" style="width: 32px; height: 32px;">
+
+		  	</div>
+		  	<div class="person-status-watched">
+		    	<b><span style ="font-size:15px">
+			      <%= place.name %></span></b>
+		  		 <div class="person-name">
+
+		  			<span class="person-timestamp">
+		  			111人到访, Challenges: &nbsp    &nbsp<span class ="button-ch"> <b>3/11</b></span></span>
+		  		</div>
+
+		  		<div class="rehash-list action-count"></div>
+		  	</div>
+		  <br class="clear">
+		  <hr>  
+		  </li>			
+
+		  </ul>   
 	  </div>
+
+	    
+	
 	<% end %>
