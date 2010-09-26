@@ -41050,3 +41050,205 @@ Rendered places/_place (0.1ms)
 Rendered places/_place (0.1ms)
 Rendered places/_place (0.1ms)
 Completed in 14ms (View: 8, DB: 2) | 200 OK [http://localhost/places/show?current_lat=39.9790202&current_lng=116.3183823]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 192.168.0.150 at 2010-09-26 22:58:49) [GET]
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering index/index
+Completed in 38ms (View: 11, DB: 4) | 200 OK [http://192.168.0.130/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.0.150 at 2010-09-26 22:58:51) [GET]
+
+ActionController::RoutingError (No route matches "/iphone.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginController#login (for 192.168.0.150 at 2010-09-26 22:58:54) [GET]
+Rendering login/login
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://192.168.0.130/login/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.0.150 at 2010-09-26 22:58:57) [GET]
+
+ActionController::RoutingError (No route matches "/login/iphone.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginController#checkin (for 192.168.0.150 at 2010-09-26 22:58:59) [POST]
+  Parameters: {"Login"=>"Log in", "authenticity_token"=>"l1rZeDO0O5t1BTDbyqBSBWRlUAIHKhkVu/SKyypo1XQ=", "password"=>"123", "e_mail"=>"cuiyingsan@gmail.com"}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`e_mail` = 'cuiyingsan@gmail.com') LIMIT 1[0m
+Redirected to http://192.168.0.130:3000/places
+Completed in 12ms (DB: 3) | 302 Found [http://192.168.0.130/login/checkin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#index (for 192.168.0.150 at 2010-09-26 22:58:59) [GET]
+  [4;36;1mPlace Load (0.2ms)[0m   [0;1mSELECT * FROM `places` [0m
+Rendering places/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://192.168.0.130/places]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 192.168.0.150 at 2010-09-26 22:59:08) [GET]
+  Parameters: {"current_lng"=>"116.31849355", "id"=>"show", "current_lat"=>"39.979286349999995"}
+  [4;35;1mPlace Load (0.4ms)[0m   [0mSELECT * FROM `places` WHERE (longtitude BETWEEN 116.273448504955 and 116.363538595045 and latitue BETWEEN 39.934241304955 and 40.024331395045) [0m
+Rendering places/show
+  [4;36;1mPlace Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+Rendered places/_place (4.8ms)
+Rendered places/_place (0.1ms)
+Rendered places/_place (0.1ms)
+Rendered places/_place (0.1ms)
+Rendered places/_place (0.1ms)
+Completed in 24ms (View: 17, DB: 3) | 200 OK [http://192.168.0.130/places/show?current_lat=39.979286349999995&current_lng=116.31849355]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 192.168.0.150 at 2010-09-26 23:00:37) [GET]
+  Parameters: {"current_lng"=>"116.31849355", "id"=>"show", "current_lat"=>"39.979286349999995"}
+  [4;35;1mPlace Load (0.2ms)[0m   [0mSELECT * FROM `places` WHERE (longtitude BETWEEN 116.273448504955 and 116.363538595045 and latitue BETWEEN 39.934241304955 and 40.024331395045) [0m
+Rendering places/show
+  [4;36;1mPlace Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+Rendered places/_place (3.9ms)
+Rendered places/_place (0.1ms)
+Rendered places/_place (0.1ms)
+Rendered places/_place (0.1ms)
+Rendered places/_place (0.1ms)
+Completed in 14ms (View: 8, DB: 2) | 200 OK [http://192.168.0.130/places/show?current_lat=39.979286349999995&current_lng=116.31849355]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2010-09-26 23:01:55) [GET]
+  [4;35;1mPlace Load (0.2ms)[0m   [0mSELECT * FROM `places` [0m
+Rendering places/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/places]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2010-09-26 23:02:04) [GET]
+  Parameters: {"current_lng"=>"116.3183824", "id"=>"show", "current_lat"=>"39.9790206"}
+  [4;36;1mPlace Load (0.4ms)[0m   [0;1mSELECT * FROM `places` WHERE (longtitude BETWEEN 116.273337354955 and 116.363427445045 and latitue BETWEEN 39.933975554955 and 40.024065645045) [0m
+Rendering places/show
+  [4;35;1mPlace Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+Rendered places/_place (4.4ms)
+Rendered places/_place (0.1ms)
+Rendered places/_place (0.1ms)
+Rendered places/_place (0.1ms)
+Rendered places/_place (0.1ms)
+Completed in 23ms (View: 17, DB: 3) | 200 OK [http://localhost/places/show?current_lat=39.9790206&current_lng=116.3183824]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2010-09-26 23:03:12) [GET]
+  [4;36;1mPlace Load (0.2ms)[0m   [0;1mSELECT * FROM `places` [0m
+Rendering places/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/places]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-09-26 23:03:49) [GET]
+Rendering index/index
+Completed in 12ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 23:03:49) [GET]
+
+ActionController::RoutingError (No route matches "/iphone.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 23:03:49) [GET]
+
+ActionController::RoutingError (No route matches "/iphone.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginController#login (for 127.0.0.1 at 2010-09-26 23:03:51) [GET]
+Rendering login/login
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://localhost/login/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 23:03:52) [GET]
+
+ActionController::RoutingError (No route matches "/login/iphone.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 23:03:52) [GET]
+
+ActionController::RoutingError (No route matches "/login/iphone.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginController#checkin (for 127.0.0.1 at 2010-09-26 23:03:54) [POST]
+  Parameters: {"Login"=>"Log in", "authenticity_token"=>"eb5JB021sVkueDInqZUMB29VcAkL4W09C1jEJ+Hlf7s=", "password"=>"123", "e_mail"=>"cuiyingsan@gmail.com"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`e_mail` = 'cuiyingsan@gmail.com') LIMIT 1[0m
+Redirected to http://localhost:3000/places
+Completed in 12ms (DB: 2) | 302 Found [http://localhost/login/checkin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2010-09-26 23:03:54) [GET]
+  [4;35;1mPlace Load (0.2ms)[0m   [0mSELECT * FROM `places` [0m
+Rendering places/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/places]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2010-09-26 23:04:02) [GET]
+  Parameters: {"current_lng"=>"116.3183823", "id"=>"show", "current_lat"=>"39.9790202"}
+  [4;36;1mPlace Load (0.9ms)[0m   [0;1mSELECT * FROM `places` WHERE (longtitude BETWEEN 116.273337254955 and 116.363427345045 and latitue BETWEEN 39.933975154955 and 40.024065245045) [0m
+Rendering places/show
+  [4;35;1mPlace Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+Rendered places/_place (4.9ms)
+Rendered places/_place (0.1ms)
+Rendered places/_place (0.1ms)
+Rendered places/_place (0.1ms)
+Rendered places/_place (0.1ms)
+Completed in 70ms (View: 60, DB: 3) | 200 OK [http://localhost/places/show?current_lat=39.9790202&current_lng=116.3183823]
