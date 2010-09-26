@@ -27,7 +27,7 @@ class PlacesController < ApplicationController
     
     # run query from place database 
     @place = Place.find(:all, 
-                        :conditions => ["longtitude BETWEEN ? and ?",lng_SW, lng_NE])
+                        :conditions => ["longtitude BETWEEN ? and ? and latitue BETWEEN ? and ?",lng_SW, lng_NE,lat_SW, lat_NE])
     
     #"and (places.longtitude between lng_NE and lng_SW)"
  
@@ -67,10 +67,14 @@ class PlacesController < ApplicationController
   def create
     @place = Place.new(params[:place])
     @place.save!
-    session[:place_id] = @place.id
-    session[:place_name] = @place.name
-    redirect_to :back
+  #  session[:place_id] = @place.id
+ #   session[:place_name] = @place.name
     
+    respond_to do |format|
+      format.json { render :layout => false,
+                    :json =>@place.to_json}
+    end
+#redirect_to :back
     
   end
 

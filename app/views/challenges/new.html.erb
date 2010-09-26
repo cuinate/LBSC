@@ -11,23 +11,15 @@
 			
 		<div class="lb_username_container block">
 			    <label class ="lb_field_tag" for="place_name">Place Name:</label>
-			    <input style="float left;"id="place_name" class ="lb_field" name="challenge[place_name]" 
-			   
-			    <% if session[:place_id] %>
-			    value = "<%=session[:place_name]%>"
-			    <%end%>
-				size="30" type="text"/>
+			    <input style="float left;"id="ch_place_name" class ="lb_field" name="challenge[place_name]" 
+			 	 size="30" type="text"/>
 		 
 				<a class="select_place" href="javascript:void(0)"> Select place </a>
 	
 		</div>
 		
 			<div class="lb_username_container">
-				<input id="place_id" style="display: none;" class ="lb_field" name="challenge[placeID]" 
-				
-			    <%if session[:place_id]%>
-			    value = "<%=session[:place_id]%>"
-			    <%end%>
+				<input id="ch_place_id" style="display: none;" class ="lb_field" name="challenge[placeID]" 
 			    size="30" type="text" type ="hidden" />
 			</div>
 			
