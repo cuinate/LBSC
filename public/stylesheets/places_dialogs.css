@@ -14,7 +14,7 @@
 }
 
 .s_result.searching p {
-  background: url(/img/ajax-loader.gif) center left no-repeat;
+  background: url(../img/ajax-loader.gif) center left no-repeat;
   padding-left: 26px;
 }
 
@@ -84,19 +84,18 @@
 
 .search_btn {
   height: 37px;
-  background: url(/img/hb_challenges_sprites.png) no-repeat -128px -112px;
+  background: url(../img/hb_challenges_sprites.png) no-repeat -128px -112px;
 }
-  .search_btn:hover, .search_btn:focus { background: url(/img/hb_challenges_sprites.png) -128px -149px; }
-  .search_btn:active { background: url(/img/hb_challenges_sprites.png) -128px -186px; }
+  .search_btn:hover, .search_btn:focus { background: url(../images/hb_challenges_sprites.png) -128px -149px; }
+  .search_btn:active { background: url(../images/hb_challenges_sprites.png) -128px -186px; }
 
 .centermap_btn {
-  background: url(/img/hb_challenges_center_sprite.png) no-repeat;
+  background: url(../img/hb_challenges_center_sprite.png) no-repeat;
 }
-  .centermap_btn:hover, .centermap_btn:focus { background: url(/img/hb_challenges_center_sprite.png) 0 -38px; }
-  .centermap_btn:active { background: url(/img/hb_challenges_center_sprite.png) 0 -75px; }
+  .centermap_btn:hover, .centermap_btn:focus { background: url(../imag/hb_challenges_center_sprite.png) 0 -38px; }
+  .centermap_btn:active { background: url(../img/hb_challenges_center_sprite.png) 0 -75px; }
 
 html #gmap_wrap { height: 350px; margin-top: 10px; width: 650px; }
-#map_canvas { width: 288px; height: 200px; overflow:hidden; background: #eee; } 
 
 #save_map, #search-map { height: 350px !important; }
 
@@ -104,7 +103,7 @@ html #gmap_wrap { height: 350px; margin-top: 10px; width: 650px; }
   padding: 15px 0px 0px 86px;
 }
 .add_place_open {
-  background: url(/img/hb_challenges_lv_bk.png) no-repeat;
+  background: url(../img/hb_challenges_lv_bk.png) no-repeat;
   display: block;
   height: 28px;
   width: 100%;
@@ -117,7 +116,7 @@ html #gmap_wrap { height: 350px; margin-top: 10px; width: 650px; }
 .lv_contentBottom { top: -10px; width: 683px !important; padding: 10px; overflow: hidden !important; }
 
 #add_challenge {
-  background: url(/img/hb_challenges_sprites.png) 0 0;
+  background: url(../imag/hb_challenges_sprites.png) 0 0;
   display: block;
   width: 239px;
   height: 38px;
@@ -159,7 +158,7 @@ html #gmap_wrap { height: 350px; margin-top: 10px; width: 650px; }
   color: #5f7bb5;
   cursor: pointer !important;
   display: inline-block;
-  font-size: 150%;
+  font-size: 250%;
   letter-spacing: -1px;
   margin: 0 0 3px 0;
 }

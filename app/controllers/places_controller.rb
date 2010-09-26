@@ -17,24 +17,39 @@ class PlacesController < ApplicationController
   def show
     #@place = Place.find(params[:id])
     # get the current location from incming parameters
-    current_lat = params[:current_lat].to_f
-    current_lng = params[:current_lng].to_f
-   # caculate the boundary of rectangle 
-    lat_NE = current_lat + 5/111.0
-    lng_NE = current_lng + 5/111.0
-    lat_SW = current_lat - 5/111.0
-    lng_SW = current_lng - 5/111.0
+    if is_iphone_request? 
+           
+            current_lat = params[:current_lat].to_f
+            current_lng = params[:current_lng].to_f
+           # caculate the boundary of rectangle 
+            lat_NE = current_lat + 5/111.0
+            lng_NE = current_lng + 5/111.0
+            lat_SW = current_lat - 5/111.0
+            lng_SW = current_lng - 5/111.0
     
-    # run query from place database 
-    @place = Place.find(:all, 
-                        :conditions => ["longtitude BETWEEN ? and ? and latitue BETWEEN ? and ?",lng_SW, lng_NE,lat_SW, lat_NE])
+            # run query from place database 
+            @place = Place.find(:all, 
+                                :conditions => ["longtitude BETWEEN ? and ? and latitue BETWEEN ? and ?",lng_SW, lng_NE,lat_SW, lat_NE])
     
-    #"and (places.longtitude between lng_NE and lng_SW)"
- 
+            #"and (places.longtitude between lng_NE and lng_SW)"
+         
+    else
+      
+        current_lat = params[:current_lat].to_f
+        current_lng = params[:current_lng].to_f
+        
+        #run query to see if can find the matched places 
+        @place = Place.find(:all, 
+                            :conditions => ["longtitude = ? and latitue = ?", current_lng, current_lat])
+  
+    end 
+      
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @place }
       format.js
+      format.json { render :layout => false,
+                    :json =>@place.to_json}
     end
   end
   

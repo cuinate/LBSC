@@ -3,7 +3,7 @@ var places = function(){
 	  var defaultLatLng;
 	  var defaultZoom = 13;
 	  var geocoder;
-	  var infoWindow;
+	  var infoWindow; 
 	  var map;
 	  var marker;
 	  var markers;
@@ -172,10 +172,10 @@ var places = function(){
 	      width: 720
 	    });
 
-	    $('.add_place_open').click(function() {
-	      $('#save_place_dialog').load('/places/new.js', function() {
-	        $('#save_place_dialog').dialog('open');
-	      });
+	    $('.add_place_open').click(function()
+	    {
+        $('#save_place_dialog').dialog('open');
+	      
 	    });
 
 	    $('#flag_place_dialog').dialog({
@@ -228,93 +228,101 @@ var places = function(){
 	    markers = [];
 	  }
 
-var search = function(place_name_selector, place_id_selector) {
+	var search = function(place_name_selector, place_id_selector) {
 	    $('.s_result').hide().filter('.searching').show();
 	    var address = $('#search_places_address').val();
 
 	    geocoder.geocode({ 'address': address }, function(results, status) {
 	      if (status == google.maps.GeocoderStatus.OK) {
-		/*--------- merge the show place with search ----*/
-		//1.show the success info
-	      $('.s_result strong span').html(results.length);
-	      $('.s_result').hide().filter('.success').show();
-	   // 2. map center and reset the map
-	      resetMap();
-	      map.setCenter(results[0].geometry.location);
-	     //  var latLngBounds = new google.maps.LatLngBounds();
-	      // var latLng = new google.maps.LatLng(result[0].geometry.location.lat, result[0].geometry.location.lng);
-	   // 3. go through each result to insert into marker and infowindow
-	      $.each(results, function(i, data) {
-		     
-		   	//3.1 set marker	
-			    var Geocoder_result = data;
-			   
-		        var marker = new google.maps.Marker({
-		            map: map, 
-		            position: Geocoder_result.geometry.location
-		        });
-		        markers.push(marker);
-		    //3.2 set content of info_window   
-		        var content = $('<div/>', {
-			            'class': 'loc_content'
-			          })
-			       .append($('<h2/>', {
-			        text: Geocoder_result.formatted_address
-			      }))
-			      .append($('<span/>', {
-			            text: Geocoder_result.street_address
-			          }))
-			       .append($('<a/>', {
-			            href: 'javascript:void(0);',
-			            click: function() {
-			          //    alert('you choosed :' + Geocoder_result.formatted_address );
-			              save_place_to_form(Geocoder_result);
-						  $('#save_place_dialog').dialog('open');
-			              infoWindow.close();
-			            },
-			            text: 'save'
-			          }))
-			     .append($('<a/>', {
-			        href: 'javascript:void(0);',
-			        click: function() 
-			         {infoWindow.close();
-				     },
-			        text: 'cancel'
-			      }));
-			// 3.3 connect marker and infowindow via marker callback function
-		     	 google.maps.event.addListener(marker, 'click', function() {
-					  infoWindow.setContent(content.get(0));
-			          infoWindow.open(map, marker);
-			        });
-		   //latLngBounds.extend(latLng);
-	      });
+	        var latLng = results[0].geometry.location;
+	        var q = $('#search_places_name').val();
 
-	      google.maps.event.addListenerOnce(map, 'zoom_changed', function() {
-	        if (map.getZoom() > maxZoom) {
-	          map.setZoom(maxZoom);
-	        }
-	      });
-
-	    // map.fitBounds(latLngBounds);
-		
-		 /*--------- merge the show place with search ----*/	
-	      } 
-	  else {
-	    /* --- merge showplace function here ----*/
-		    $('.s_result').hide().filter('.error').show();
-	        //showPlaces([]);
+	        $.getJSON(
+	          '/places/show', 
+	          {
+	            current_lat: latLng.lat(),
+	            current_lng: latLng.lng(),
+	            q: q 
+	          },
+	          function(json) {
+	            showPlaces(json, place_name_selector, place_id_selector);
+	          }
+	        );
+	      } else {
+	        showPlaces([]);
 	      }
 	    });
 	  }
 
-	  var setLatLng = function(lat, lng) {
-	    $('#place_lat').val(lat);
-	    $('#place_lng').val(lng);
-	  }
+	var showPlaces = function(places, place_name_selector, place_id_selector) {
+   resetMap();
 
-	  var setPosition = function(position) {
-	    setLatLng(position.lat(), position.lng());
-	  }
+   if (places.length == 0) {
+     $('.s_result').hide().filter('.error').show();
+   } else {
+     $('.s_result strong span').html(places.length);
+     $('.s_result').hide().filter('.success').show();
+     //var latLngBounds = new google.maps.LatLngBounds();
+
+     $.each(places, function(i, data) {
+       var place = data.place;
+       var latLng = new google.maps.LatLng(place.latitue, place.longtitude);
+
+       var marker = new google.maps.Marker({
+         map: map,
+         position: latLng, 
+         title: place.name
+       });
+
+       markers.push(marker);
+
+       google.maps.event.addListener(marker, 'click', function() {
+         var content = $('<div/>', {
+           'class': 'loc_content'
+         })
+         .append($('<h2/>', {
+           click: function() {
+             $(place_name_selector).val(place.name);
+             $(place_id_selector).val(place.id);
+             $('#select_place_dialog').dialog('close');
+           },
+           text: place.name
+         }))
+         .append($('<span/>', {
+           text: place.street_address
+         }))
+         .append($('<span/>', {
+           text: place.city_state_zip
+         }));
+
+         infoWindow.setContent(content.get(0));
+         infoWindow.open(map, marker);
+       });
+
+      // latLngBounds.extend(latLng);
+     });
+
+     google.maps.event.addListenerOnce(map, 'zoom_changed', function() {
+       if (map.getZoom() > maxZoom) {
+         map.setZoom(maxZoom);
+       }
+     });
+
+    // map.fitBounds(latLngBounds);
+   }
+ }
+
+
+
+
+var setLatLng = function(lat, lng) {
+	$('#place_lat').val(lat);
+	$('#place_lng').val(lng);
+}
+
+{ var setPosition = function(position) {
+   setLatLng(position.lat(), position.lng());
+ }}
 
 var save_place_to_form = function(Geocoder_result){
 	var formvalue = Geocoder_result;
