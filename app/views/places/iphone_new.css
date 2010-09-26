@@ -1,0 +1,38 @@
+.tab { background: #E9F3F3; display: block; height: 40px; line-height: 40px; margin: 0px 0px 14px 4px; text-align: center; width: 80px; float: right; font-weight: bold; -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius: 4px 4px 0px 0px; }
+
+body { color: #323739; font: normal 12px helvetica,arial,sans-serif; line-height: 120%; min-width: 420px; } 
+
+.button-active { color: #fff; background: #005481; border: 0px; font-size: 13px !important; text-align: center; margin: 0px; cursor: pointer; padding: 11px 16px 11px 16px !important; width: 62px; overflow:visible; -webkit-border-top-right-radius: 4px; -webkit-border-top-left-radius: 4px; -webkit-border-bottom-right-radius: 4px; -webkit-border-bottom-left-radius: 4px; -moz-border-radius: 4px 4px 4px 4px; }
+
+.module { background: white; border-bottom: #ddeded 1px solid; overflow:auto; padding: 16px; width: 288px; }
+
+#home-content { margin: 10px 0 30px 0; width: 320px; overflow:auto; z-index: 100; position: relative; }
+
+#home-top { height: 40px; overflow:hidden; }
+
+#gradient { background: url(../images/gradient_2.png) no-repeat top; width: 320px; height: 15px; border-top: 1px solid #C7D8D8; position:absolute; z-index: 2000; top: 0px; left: 0px; }
+
+#verticali-tabs { width: 320px; position: relative; margin: 0px auto 0px auto; background: #fff; }  
+.verticali-secondary-tab2 { width: 106px; text-align: center; font-size: 12px; height: 25px; padding-top: 13px; background: #E9F3F3; border-bottom: 1px solid #c7d8d8; cursor: pointer; }  
+	.verticali-secondary-tab2:hover { background: #eff8f8; }  
+.verticali-secondary-selected2 { width: 106px; background: #005481; color: withe; border-bottom: 1px solid #fff; text-align: center; font-size: 12px; height: 25px; padding-top: 13px; }  
+.centertab2 { border-left: 1px solid #c7d8d8; border-right: 1px solid #c7d8d8; }  
+
+#unsortable { list-style: none; list-style-type: none; margin-bottom: 0px; margin-top: 0px; padding-top: 20px; }
+
+.person-name { width: 210px; float:left; font-size: 10px; font-weight: normal; overflow:hidden; line-height: 140%; padding: 0px; margin-top: 3px; color: #aaa; }  
+.person-name a { color: #555; text-decoration: none; }  
+
+.person-name a:hover { color: #555; text-decoration: underline; } 
+
+.person-smirk { position: relative; overflow:hidden; width: 80px; height: 80px; margin: 0px 10px 7px 0px; float: left; background: #eee; }
+
+.person-status-watched { width: 210px; font-size: 13px; float:left; color: #111; line-height: 112%; overflow:hidden; margin-bottom: 10px; }
+
+#unsortable { list-style: none; list-style-type: none; margin-bottom: 0px; margin-top: 0px; padding-top: 20px; }
+#unsortable li { padding: 7px 7px 0px 7px; overflow:hidden; }  
+
+#unsortable hr { background: #ddeded; color: #ddeded; border: 0; height: 1px; margin: 5px auto 6px auto; width: 100%; }
+
+.footer-rows { padding: 14px 16px 0px 16px; width: 288px; height: 25px; font-size: 14px; margin: 0px auto 2px auto; background: #686767; overflow:hidden; display: block; cursor: pointer; -webkit-border-top-right-radius: 4px; -webkit-border-top-left-radius: 4px; -webkit-border-bottom-right-radius: 4px; -webkit-border-bottom-left-radius: 4px; -moz-border-radius: 4px 4px 4px 4px; }  
+.footer-rows:hover { background: #767879; } 

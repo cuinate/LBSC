@@ -1,4 +1,20 @@
 /*  ------------------0. basic setting ----------------------------------*/
+body { color: #323739; font: normal 12px helvetica,arial,sans-serif; line-height: 120%; min-width: 420px; }  
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, p, blockquote, th { margin: 0; padding: 0; }  
+a { color: #005481; margin: 0; padding: 0; text-decoration: none; }  
+	a:hover { text-decoration: underline; }  
+h1, h2, h3, h4, h5 { font-weight: normal; margin: 0 0 0 0; padding: 0; }  
+h1 { font-size: 32px; }  
+h2 { font-size: 24px; }  
+h3 { font-size: 16px; }  
+h4 { font-size: 12px; }  
+h5 { font-size: 11px; }  
+h6 { font-size: 10px; }  
+img { border: 0px; margin: 0; padding: 0; }  
+p { margin: 0 0 20px 0; padding: 0; }  
+pre { float: inherit; white-space: pre; white-space: -moz-pre-wrap; white-space: -hp-pre-wrap; white-space: -o-pre-wrap; white-space: -pre-wrap; white-space: pre-wrap; white-space: pre-line; word-wrap: break-word; }  
+
+
 /* layout */
 .paragraph { margin-bottom: 6px; }  
 .paragraph_set { margin-bottom: 9px; }  
@@ -20,6 +36,39 @@
 .more-info { cursor: pointer; }  
 .more-info:hover { text-decoration: underline; }  
 .more-info-box { display: none; }  
+/* colors */
+.spy-plain a:link { text-decoration:none; }
+  .spy-plain a:active { text-decoration:none; }
+  .spy-plain a:visited { text-decoration:none; }
+  .spy-plain a:hover { text-decoration:none; }
+
+.spy-dark { color: #aaa; }
+  .spy-dark a:link { color: #aaa; text-decoration:none; }
+  .spy-dark a:active { color: #aaa; text-decoration:none; }
+  .spy-dark a:visited { color: #aaa; text-decoration:none; }
+  .spy-dark a:hover { color: #aaa; text-decoration:underline; }
+  
+  .spy a:link { color: #333; text-decoration:none; }
+  .spy a:active { color: #333; text-decoration:none; }
+  .spy a:visited { color: #333; text-decoration:none; }
+  .spy a:hover { color: #333; text-decoration:none; }
+
+.spy_light { color: #fff; }
+  .spy_light a:link { color: #fff; text-decoration:none; }
+  .spy_light a:active { color: #fff; text-decoration:none; }
+  .spy_light a:visited { color: #fff; text-decoration:none; }
+  .spy_light a:hover { color: #fff; text-decoration:none; }
+  
+.spy_under { color: #aaa; }
+  .spy_under a:link { color: #aaa; text-decoration:none; }
+  .spy_under a:active { color: #aaa; text-decoration:none; }
+  .spy_under a:visited { color: #aaa; text-decoration:none; }
+  .spy_under a:hover { color: #ddd; text-decoration:underline; } 
+  
+  .alert-count a:link {color:#fff; text-decoration: none;}
+  .alert-count a:active { color: #fff; text-decoration:none; }
+  .alert-count a:visited { color: #fff; text-decoration:none; }
+  .alert-count a:hover { color: #fff; text-decoration:none; }
 
 /* buttons */
 
@@ -41,6 +90,8 @@
 .delete-entry { font-size: 11px; cursor: pointer; color: #aaa; }
 .delete-entry:hover { color: #666; }
 
+.button-ch { color: #fff; background: #c32e2e; border: 0px; font-size: 13px !important; text-align: center; margin: 0px; cursor: pointer; padding: 11px 16px 11px 16px !important; width: 62px; overflow:visible; -webkit-border-top-right-radius: 4px; -webkit-border-top-left-radius: 4px; -webkit-border-bottom-right-radius: 4px; -webkit-border-bottom-left-radius: 4px; -moz-border-radius: 4px 4px 4px 4px; }  
+
 
 /* ======================= 0.0 special ====================================*/
 .spy_light { color: #fff; }
@@ -59,8 +110,40 @@
 
 .navbar-iphone-item { background: url(../img/places_logo.jpg) no-repeat; margin-top: 17px; width: 150px; height: 40px; float:left; -webkit-border-top-right-radius: 4px; -webkit-border-bottom-right-radius: 4px; -moz-border-radius: 0 4px 4px 0; z-index: 900; } 
 #navi_item { display: none;}
-/* ======================== 2. homepage ====================================*/
+/* ======================== 1.1 lbsc iphone header part ============================*/
+#verticali-tabs { width: 360px; position: relative; margin: 0px auto 0px auto; background: #fff; }  
+.verticali-secondary-tab2 { width: 120px; text-align: center; font-size: 12px; height: 25px; padding-top: 13px; background: #E9F3F3; border-bottom: 1px solid #c7d8d8; cursor: pointer; }  
+	.verticali-secondary-tab2:hover { background: #eff8f8; }  
+.verticali-secondary-selected2 { width: 118px; background: #005481; color: #fff;  text-align: center; font-size: 18px; height: 25px; padding-top: 13px; }  
+.centertab2 { border-left: 1px solid #c7d8d8; border-right: 1px solid #c7d8d8; }
 
+#verticali-utility { padding: 0px 0px 0px 0px; background: #E9F3F3; margin: 0px auto 0px auto; width: 360px; }  
+#unsortable { list-style: none; list-style-type: none; margin-bottom: 0px; margin-top: 0px; padding-top:10px; }
+#unsortable li { padding: 7px 7px 0px 7px; overflow:hidden; }  
+#unsortable hr { background: #ddeded; color: #ddeded; border: 0; height: 1px; margin: 5px auto 6px auto; width: 100%; }  
+.refresh_header { position: relative; overflow:hidden; width: 40px; height: 40px; margin: 0px 10px 7px 0px; float: left;}  
+
+/* ======================== 2. homepage ====================================*/
+/* place list page ---*/
+.person-status { width: 210px; font-size: 13px; float:left; color: #111; line-height: 112%; overflow:hidden; margin-bottom: 10px; }  
+.person-status-watched { width: 210px; font-size: 13px; float:left; color: #111; line-height: 112%; overflow:hidden; margin-bottom: 10px; }  
+.person-check-watched { width: 16px; float: right; margin-top: 9px; height: 12px; }  
+.person-status-ab { clear: both; width: 306px; font-size: 13px; color: #111; line-height: 115%; overflow:hidden; }  
+.person-timestamp { margin: 0px 3px 0px 0px; }  
+/* place list page ---*/
+.person-name { width: 210px; float:left; font-size: 12px; font-weight: normal; overflow:hidden; line-height: 140%; padding: 0px; margin-top: 3px; color: #000; }  
+.person-name a { color: #555; text-decoration: none; }  
+.person-name a:hover { color: #555; text-decoration: underline; }  
+
+/*place iphone homepage */
+#verticali-watched, #verticali-public, #verticali-contacts { width: 360px; position: relative; margin: 0px auto 60px auto; background: #fff; -webkit-border-top-right-radius: 0px; -webkit-border-top-left-radius: 0px; -webkit-border-bottom-right-radius: 3px; -webkit-border-bottom-left-radius: 3px; -moz-border-radius: 0px 0px 3px 3px; }  
+
+#gradient { background: url(../img/icon/gradient_2.png) repeat top; width: 360px; height: 10px; border-top: 1px solid #C7D8D8; position:absolute; z-index: 2000; top: 0px; left: 0px; }  
+
+
+.person-smirk { position: relative; overflow:hidden; width: 40px; height: 40px; margin: 0px 10px 7px 0px; float: left; background: #fff; }  
+.smirk-window { position:absolute; }  
+.refresh_header { position: relative; overflow:hidden; width: 40px; height: 40px; margin: 0px 10px 7px 0px; float: left;}
 #background {background:url(../images/bg-pattern-plain.jpg);}
 #home-page { margin: 0 auto; overflow:auto; width: 800px; }  
 #home-page-log-in { margin: 0 auto; overflow:auto; width: 450px; } 
@@ -266,3 +349,11 @@ input:focus, textarea:focus{
   
 }
 
+/* unsorted css ---*/
+.rehash-list { font-size: 10px; }  
+
+.action-count {color:#41B787; text-decoration: none;}
+.action-count a:link {color:#41B787; text-decoration: none;}
+.action-count a:active { color: #41B787; text-decoration:none; }
+.action-count a:visited { color: #41B787; text-decoration:none; }
+.action-count a:hover { color: #41B787; text-decoration:underline; } 

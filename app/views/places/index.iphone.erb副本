@@ -31,59 +31,34 @@
 <body style="position: relative; min-height: 100%; top: 0px;" id ="background"s>
 
 <!-- header start -->
-<div id="verticali-nav">
-  <div id="verticali-tabs" class="spy-plain">
-		<a href="#"><div class="verticali-secondary-selected2 tab-left left"><b>Places</b></div></a>
-     	<a href="#"><div class="verticali-secondary-tab2 centertab2 left">Profile</div></a>
-        <a href="#"><div class="verticali-secondary-tab2 tab-right right">Friends</div></a>
-    <br class="clear">
-</div>	
-<div id="verticali-utility"> 
-    <ul id="unsortable">
-	<li>
-  	<div class="refresh_header">
-  	<img  src="/img/icon/ic_menu_refresh.png" style="width: 32px; height: 32px;">
-  	</div>
-  	<div class="person-status-watched">
-    	<b><span style ="font-size:15px">当前位置</span></b>
-  		 <div class="person-name">
-  			<span class="person-timestamp">
-  			中国 北京市海淀区中关村南路</span>
-  		</div>
-  
-  	</div>
-  </li>						
-  </ul>   
-  </div>
+		<div id="description-box"></div>
+    		<div id="account-stuff">
+    			<% @link_home = url_for(:controller =>'index') %>
+			      <a id="home" href = "<%=@link_home%>">
+		      	   <div id="brand"></div>
+				</a>
+			  	<div id="navi" class ="spy_light"  	   
+				 <% if session[:user_id] %>
+				   style = "display: block;"
+				   <% end %>
+				   >
+
+				<% @link_profile = url_for(:controller =>'places',:action=>'index') %>
+			  	  <a href="<%=@link_profile%>" title="See your profile">
+			    	<div class="navbar-iphone-item ">
+									
+			        </div>
+			      </a>
+						
+
+
+		       </div>
+			<div class="clear"></div>
+	  	
+    	   </div>
+	<div class="clear"></div>
 <!-- header end -->
 <!--- content start -->
-
-<div id="verticali-watched">
-<div id="gradient"></div>
-
-  <ul id="unsortable">
-	<li>
-  	<div class="person-smirk">
-  	<img  src="/img/icon/geocode-71.png" style="width: 32px; height: 32px;">
-  
-  	</div>
-  	<div class="person-status-watched">
-    	<b><span style ="font-size:15px">中关村中学</span></b>
-  		 <div class="person-name">
-  			
-  			<span class="person-timestamp">
-  			111人到访, Challenges: &nbsp    &nbsp<span class ="button-ch"> <b>3/11</b></span></span>
-  		</div>
-  		
-  		<div class="rehash-list action-count"></div>
-  	</div>
-  <br class="clear">
-  <hr>  
-  </li>			
-  			
-  </ul>
-
-
 <div id="home-page-iphone" >   
 <!--- places index content  -->
 
@@ -97,7 +72,17 @@ $(function()
 );
 </script>
 
-
+<!--- location submit hidden form start-->
+<div id="location_submit" style="display: none;">
+<form action="/places/findplace" class="findplace" id="find_place_form" method="post">
+	<!--- in order to handle 'ActionController::InvalidAuthenticityToken' -->
+	    <%= tag(:input, :type=> "hidden", :name=> request_forgery_protection_token.to_s, :value=>form_authenticity_token) %>
+	<input id="current_lat" name="current_lat" type="text">
+	<input id="current_lng" name="current_lng" type="text">
+	<input id="find_place" name= "find_place" type ="submit">
+</form>	
+</div>
+<!--- location submit hidden form end -->
 <!--- place find result ajax div start-->
 <div id="placelist">
 	<%= render :partial => @place %>
