@@ -14,11 +14,17 @@ class ChallengesController < ApplicationController
   # GET /challenges/1
   # GET /challenges/1.xml
   def show
-    @challenge = Challenge.find(params[:id])
-
+    id = params[:ch_id]
+    @challenge = Challenge.find(id)
+    if request.xhr? 
+        request.format = :json
+    end
+        
     respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @challenge }
+        format.html {render :layout => false}# show.html.erb
+        format.xml  { render :xml => @challenge }
+        format.json { render :layout => false,
+                      :json =>@challenge.to_json}
     end
   end
 

@@ -45,54 +45,54 @@
 <!--- content start -->
 
 <div id="verticali-watched">
-<div id="gradient"></div>
-<div id="challenge_list">
-	
-	
-  
-	  <div class="place">
-	 	<ul id="unsortable">
-		<% for challenge in @place.challenges%>
-			<li>
-		  	<div class="person-smirk">
-		  	<img  src="/img/icon/main_badges.png" style="width: 32px; height: 32px;">
+	<div id="gradient"></div>
+	<div id="challenge_list">
+		  <div class="place">
+		 	<ul id="unsortable">
+			<% for challenge in @place.challenges%>
 
-		  	</div>
-		  	<div class="person-status-watched">
+			  <a id="home" class ="open_challenge" chan_id = "<%=challenge.id %>" href = "javascript:void(0)">
+				<li>
+			  	<div class="person-smirk">
+			  	<img  src="/img/icon/main_badges.png" style="width: 40px; height: 40px;">
 
-		    	 	<b><span style ="font-size:15px">
-				      <%=challenge.name %></span>
-				     </b>
-		    
-		  		 <div class="person-name">
+			  	</div>
+			  	<div class="person-status-watched">
 
-		  			<span class="person-timestamp">
-		  			111人到访, Challenges: &nbsp    &nbsp<span class ="button-ch"> 
-			       <b>
-			       	7-11
-			       </b></span></span>
-		  		</div>
+			    	 	<b><span style ="font-size:15px">
+					      <%=challenge.name %></span>
+					     </b>
+				
+			  		 <div class="person-name">
 
-		  		<div class="rehash-list action-count"></div>
-		  	</div>
-		  <br class="clear">
-		  <hr>  
-		  </li>			
-		<% end %>
-		  </ul>   
-	  </div>
-  
+			  			<span class="person-timestamp">
+			  			111人到访, Challenges: &nbsp    &nbsp<span class ="button-ch"> 
+				       <b>
+				       	7-11
+				       </b></span></span>
+			  		</div>
 
-  
-</div>
-
-  
+			  		<div class="rehash-list action-count"></div>
+			  	</div>
+			  <br class="clear">
+			  <hr>  
+			  </li>	
+			</a>		
+			<% end %>
+			  </ul>   
+		  </div>
+	</div>
 </div>
 </div>
 
   
 <!--- places index content  -->
-
+<div id = "challenge_dialog" title="play the challenge">
+	<p><div id="challenge_name" style="font-size: 15px !important;" ></div></p>
+    <br class="clear">
+	<div id="challenge_content" style="color: #005481; border: 0px; font-size: 20px !important;"></div>
+	
+</div>
 
 <script type = "text/javascript">
 $(function()

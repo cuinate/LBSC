@@ -44870,3 +44870,1324 @@ Rendering places/show_challenges
   [4;36;1mChallenge Load (0.4ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 4) [0m
   [4;35;1mChallenge Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
 Completed in 18ms (View: 8, DB: 5) | 200 OK [http://192.168.0.130/places/show_challenges/4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 17:38:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPlace Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Load (0.1ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;36;1mChallenge Load (0.2ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;35;1mChallenge Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+Completed in 43ms (View: 28, DB: 4) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 17:38:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPlace Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Load (0.1ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;36;1mChallenge Load (0.2ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;35;1mChallenge Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+Completed in 60ms (View: 52, DB: 4) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 17:38:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPlace Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Load (0.1ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;36;1mChallenge Load (0.2ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;35;1mChallenge Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+Completed in 19ms (View: 9, DB: 5) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 18:36:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPlace Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Load (0.1ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;36;1mChallenge Load (0.2ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;35;1mChallenge Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+Completed in 23ms (View: 14, DB: 7) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 18:38:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPlace Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Load (0.4ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;35;1mChallenge Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+Completed in 22ms (View: 10, DB: 6) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 18:39:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPlace Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Load (0.1ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;36;1mChallenge Load (0.2ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;35;1mChallenge Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+Completed in 18ms (View: 8, DB: 5) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 18:41:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPlace Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Load (0.1ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;35;1mChallenge Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+Completed in 18ms (View: 9, DB: 4) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 18:46:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPlace Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Load (0.1ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;36;1mChallenge Load (0.2ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;35;1mChallenge Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+Completed in 19ms (View: 9, DB: 5) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 18:47:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPlace Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Load (0.1ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;36;1mChallenge Load (0.2ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;35;1mChallenge Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+Completed in 19ms (View: 11, DB: 4) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 18:48:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPlace Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Load (0.1ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;36;1mChallenge Load (0.2ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;35;1mChallenge Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+Completed in 24ms (View: 14, DB: 4) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 192.168.0.150 at 2010-09-27 18:49:34) [GET]
+  Parameters: {"current_lng"=>"116.31841177000001", "id"=>"show", "current_lat"=>"39.97932004"}
+  [4;36;1mPlace Load (0.4ms)[0m   [0;1mSELECT * FROM `places` WHERE (longtitude BETWEEN 116.273366724955 and 116.363456815045 and latitue BETWEEN 39.934274994955 and 40.024365085045) [0m
+Rendering places/show
+  [4;35;1mPlace Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mChallenge Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+Rendered places/_place (57.8ms)
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `challenges` WHERE (`challenges`.place_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `challenges` WHERE (`challenges`.place_id = 3) [0m
+Rendered places/_place (1.3ms)
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `challenges` WHERE (`challenges`.place_id = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `challenges` WHERE (`challenges`.place_id = 4) [0m
+Rendered places/_place (1.2ms)
+Completed in 77ms (View: 68, DB: 4) | 200 OK [http://192.168.0.130/places/show?current_lat=39.97932004&current_lng=116.31841177000001]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 192.168.0.150 at 2010-09-27 18:49:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.1ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 18ms (View: 8, DB: 5) | 200 OK [http://192.168.0.130/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 18:51:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 19ms (View: 9, DB: 8) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 192.168.0.150 at 2010-09-27 18:51:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 19ms (View: 9, DB: 5) | 200 OK [http://192.168.0.130/places/show_challenges/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 18:58:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 22ms (View: 14, DB: 4) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 19:07:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 22ms (View: 13, DB: 4) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 19:07:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 22ms (View: 14, DB: 4) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 19:11:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 23ms (View: 14, DB: 3) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 19:15:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.8ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 24ms (View: 14, DB: 5) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 19:16:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 66ms (View: 58, DB: 4) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 19:20:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 24ms (View: 15, DB: 4) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 19:24:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.9ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+ERROR: compiling _run_erb_app47views47places47show_challenges46iphone46erb RAISED compile error
+/nate/lbsc/app/views/places/show_challenges.iphone.erb:53: syntax error, unexpected tASSOC, expecting kEND
+... :id=>challenge.id),:format =>:js; @output_buffer.concat "\n...
+                              ^
+Function body:           def _run_erb_app47views47places47show_challenges46iphone46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html style=\"height: 100%;\" xmlns:fb=\"http://www.facebook.com/2008/fbml\" xmlns=\"http://www.w3.org/1999/xhtml\"><head>\n\n\n\n\n<title>LBS@C</title>\n<!-- meta tags -->\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n<meta content=\"LBS@c\" name=\"lbs@C\">\n<meta content=\"particle, profile, video, status, avatar\" name=\"keywords\">\n<meta content=\"global\" name=\"distribution\">\n\n<!-- iphone tags -->\n<meta name=\"apple-mobile-web-app-capable\" content=\"YES\"> \n<meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\">\n<meta name=\"viewport\" content=\"width = device-width, user-scalable = no\">\n\n\n<!-- link tags -->\n<!--- set the sensor to true here to determine the location from mobile phone GPS sensor -->\n<script type=\"text/javascript\" src=\"http://maps.google.com/maps/api/js?sensor=true\"></script> \n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( javascript_include_tag 'jquery_002.js' ).to_s); @output_buffer.concat "\n"
+; @output_buffer.concat(( javascript_include_tag 'jquery-ui.js' ).to_s); @output_buffer.concat "\n"
+; @output_buffer.concat(( javascript_include_tag 'jquery.js' ).to_s); @output_buffer.concat "\n"
+; @output_buffer.concat(( javascript_include_tag 'application.js' ).to_s); @output_buffer.concat "\n"
+; @output_buffer.concat(( javascript_include_tag 'places.js' ).to_s); @output_buffer.concat "\n"
+; @output_buffer.concat(( stylesheet_link_tag 'lbsc' ).to_s); @output_buffer.concat "\n"
+; @output_buffer.concat(( stylesheet_link_tag 'jquery-ui-1' ).to_s); @output_buffer.concat "\n\n<body style=\"position: relative; min-height: 100%; top: 0px;\" id =\"background\"s>\n\n<!-- header start -->\n<span id=\"place_header_span\" class=\"header-rows\"> <b> Place: "
+
+
+
+
+; @output_buffer.concat((@place.name ).to_s); @output_buffer.concat "</b></span>\n\n<div id=\"verticali-nav\">\n  <div id=\"verticali-tabs\" class=\"spy-plain\">\n\t\t<a href=\"#\"><div class=\"verticali-secondary-selected2 tab-left left\"><b>Challenges</b></div></a>\n     \t<a href=\"#\"><div class=\"verticali-secondary-tab2 centertab2 left\">Activities</div></a>\n        <a href=\"#\"><div class=\"verticali-secondary-tab2 tab-right right\">Info</div></a>\n    <br class=\"clear\">\n</div>\t\n\n<!-- header end -->\n<!--- content start -->\n\n<div id=\"verticali-watched\">\n\t<div id=\"gradient\"></div>\n\t<div id=\"challenge_list\">\n\t\t  <div class=\"place\">\n\t\t \t<ul id=\"unsortable\">\n\t\t\t"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;  for challenge in @place.challenges; @output_buffer.concat "\n\t\t\t"
+;  @link_to_challenge_id = url_for(:controller =>'challenges' ,:action =>'show', :id=>challenge.id),:format =>:js; @output_buffer.concat "\n\t\t\t  <a id=\"home\" href = \""
+; @output_buffer.concat((@link_to_challenge_id).to_s); @output_buffer.concat "\">\n\t\t\t\t<li>\n\t\t\t  \t<div class=\"person-smirk\">\n\t\t\t  \t<img  src=\"/img/icon/main_badges.png\" style=\"width: 40px; height: 40px;\">\n\n\t\t\t  \t</div>\n\t\t\t  \t<div class=\"person-status-watched\">\n\n\t\t\t    \t \t<b><span style =\"font-size:15px\">\n\t\t\t\t\t      "
+
+
+
+
+
+
+
+
+; @output_buffer.concat((challenge.name ).to_s); @output_buffer.concat "</span>\n\t\t\t\t\t     </b>\n\t\t\t\t\n\t\t\t  \t\t <div class=\"person-name\">\n\n\t\t\t  \t\t\t<span class=\"person-timestamp\">\n\t\t\t  \t\t\t111\344\272\272\345\210\260\350\256\277, Challenges: &nbsp    &nbsp<span class =\"button-ch\"> \n\t\t\t\t       <b>\n\t\t\t\t       \t7-11\n\t\t\t\t       </b></span></span>\n\t\t\t  \t\t</div>\n\n\t\t\t  \t\t<div class=\"rehash-list action-count\"></div>\n\t\t\t  \t</div>\n\t\t\t  <br class=\"clear\">\n\t\t\t  <hr>  \n\t\t\t  </li>\t\n\t\t\t</a>\t\t\n\t\t\t"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;  end ; @output_buffer.concat "\n\t\t\t  </ul>   \n\t\t  </div>\n\t</div>\n</div>\n</div>\n\n  \n<!--- places index content  -->\n<div id = \"challenge_dialog\" title=\"play the challenge\">\n\t<b><textaera id=\"challenge_content\"  readonly=\"readonly\" row = \"3\"></textarea></b>\n\t\n</div>\n\n<script type = \"text/javascript\">\n$(function()\n{\n\tplaces.initializeDialogs();\n});\n\n</script>\n\n\n<!--- place find result ajax div start-->\n    \n\n\n\n\n<!--- content end -->\n\t  \n\n</body>\n</html>\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /nate/lbsc/app/views/places/show_challenges.iphone.erb:118:in `compile!'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:987:in `render_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/nate/lbsc/app/controllers/places_controller.rb:63:in `show_challenges'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/nate/lbsc/app/controllers/places_controller.rb:60:in `show_challenges'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/abstract_store.rb:122:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/nate/lbsc/app/views/places/show_challenges.iphone.erb:53: syntax error, unexpected tASSOC, expecting kEND
+... :id=>challenge.id),:format =>:js; @output_buffer.concat "\n...
+                              ^) on line #53 of app/views/places/show_challenges.iphone.erb:
+50: 		  <div class="place">
+51: 		 	<ul id="unsortable">
+52: 			<% for challenge in @place.challenges%>
+53: 			<% @link_to_challenge_id = url_for(:controller =>'challenges' ,:action =>'show', :id=>challenge.id),:format =>:js%>
+54: 			  <a id="home" href = "<%=@link_to_challenge_id%>">
+55: 				<li>
+56: 			  	<div class="person-smirk">
+
+    app/views/places/show_challenges.iphone.erb:118:in `compile!'
+    app/controllers/places_controller.rb:63:in `show_challenges'
+    app/controllers/places_controller.rb:60:in `show_challenges'
+
+Rendered rescues/_trace (105.5ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 19:25:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 23ms (View: 14, DB: 4) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show to js (for 127.0.0.1 at 2010-09-27 19:26:23) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mChallenge Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.3ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 2) [0m
+Completed in 10ms (View: 3, DB: 2) | 406 Not Acceptable [http://localhost/challenges/2.js]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 19:27:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.1ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 75ms (View: 14, DB: 3) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 19:41:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.3ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 19ms (View: 10, DB: 4) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show to js (for 127.0.0.1 at 2010-09-27 19:41:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChallenge Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.3ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 1) [0m
+Completed in 10ms (View: 3, DB: 2) | 406 Not Acceptable [http://localhost/challenges/1.js]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 19:47:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 23ms (View: 14, DB: 4) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-09-27 19:48:05) [GET]
+  Parameters: {"id"=>"1"}
+
+SyntaxError (/nate/lbsc/app/controllers/challenges_controller.rb:86: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (39.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 19:48:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 18ms (View: 9, DB: 3) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 19:48:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChallenge Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 1) [0m
+Completed in 8ms (View: 1, DB: 2) | 406 Not Acceptable [http://localhost/challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 19:50:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 19ms (View: 9, DB: 5) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 19:50:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChallenge Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 1) [0m
+Completed in 7ms (View: 1, DB: 2) | 406 Not Acceptable [http://localhost/challenges/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 19:52:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.1ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 19ms (View: 9, DB: 5) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 19:52:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChallenge Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 1) [0m
+Completed in 8ms (View: 1, DB: 2) | 406 Not Acceptable [http://localhost/challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 19:53:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.1ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 64ms (View: 9, DB: 4) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 19:53:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChallenge Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 1) [0m
+Completed in 8ms (View: 1, DB: 2) | 406 Not Acceptable [http://localhost/challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 20:26:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 20ms (View: 9, DB: 5) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 20:26:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChallenge Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 1) [0m
+Completed in 8ms (View: 1, DB: 2) | 406 Not Acceptable [http://localhost/challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 20:53:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 70ms (View: 61, DB: 4) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 20:53:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 18ms (View: 9, DB: 4) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 20:54:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.2ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 157ms (View: 15, DB: 5) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 20:54:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 69ms (View: 61, DB: 4) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-09-27 20:57:46) [GET]
+Rendering index/index
+Completed in 21ms (View: 10, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-27 20:57:46) [GET]
+
+ActionController::RoutingError (No route matches "/iphone.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-27 20:57:47) [GET]
+
+ActionController::RoutingError (No route matches "/iphone.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginController#login (for 127.0.0.1 at 2010-09-27 20:57:50) [GET]
+Rendering login/login
+Completed in 12ms (View: 10, DB: 1) | 200 OK [http://localhost/login/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-27 20:57:50) [GET]
+
+ActionController::RoutingError (No route matches "/login/iphone.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-27 20:57:51) [GET]
+
+ActionController::RoutingError (No route matches "/login/iphone.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginController#checkin (for 127.0.0.1 at 2010-09-27 20:57:53) [POST]
+  Parameters: {"Login"=>"Log in", "authenticity_token"=>"DAwWvF8CSTRRmg8x8+5nFBkDoHbwuHcYGgJbomQHeUI=", "password"=>"123", "e_mail"=>"cuiyingsan@gmail.com"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`e_mail` = 'cuiyingsan@gmail.com') LIMIT 1[0m
+Redirected to http://localhost:3000/places
+Completed in 12ms (DB: 2) | 302 Found [http://localhost/login/checkin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2010-09-27 20:57:53) [GET]
+  [4;35;1mPlace Load (0.2ms)[0m   [0mSELECT * FROM `places` [0m
+Rendering places/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/places]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2010-09-27 20:58:01) [GET]
+  Parameters: {"current_lng"=>"116.3182713", "id"=>"show", "current_lat"=>"39.9790326"}
+  [4;36;1mPlace Load (0.4ms)[0m   [0;1mSELECT * FROM `places` WHERE (longtitude BETWEEN 116.273226254955 and 116.363316345045 and latitue BETWEEN 39.933987554955 and 40.024077645045) [0m
+Rendering places/show
+  [4;35;1mPlace Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mChallenge Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+Rendered places/_place (10.7ms)
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `challenges` WHERE (`challenges`.place_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `challenges` WHERE (`challenges`.place_id = 3) [0m
+Rendered places/_place (1.5ms)
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `challenges` WHERE (`challenges`.place_id = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `challenges` WHERE (`challenges`.place_id = 4) [0m
+Rendered places/_place (1.2ms)
+Completed in 21ms (View: 11, DB: 5) | 200 OK [http://localhost/places/show?current_lat=39.9790326&current_lng=116.3182713]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 20:58:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 70ms (View: 62, DB: 3) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 21:02:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 19ms (View: 9, DB: 5) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 21:04:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.1ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 18ms (View: 9, DB: 5) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 21:07:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (54.6ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 124ms (View: 61, DB: 58) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 21:13:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.1ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 23ms (View: 12, DB: 4) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-27 21:14:01) [GET]
+  Parameters: {"chan_id"=>"1"}
+
+ActionController::RoutingError (No route matches "/challenge/show" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 21:14:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (1.5ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 21ms (View: 9, DB: 6) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 21:14:58) [GET]
+  Parameters: {"id"=>"show", "chan_id"=>"1"}
+
+ActiveRecord::RecordNotFound (Couldn't find Challenge without an ID):
+  app/controllers/challenges_controller.rb:17:in `show'
+
+Rendered rescues/_trace (43.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 21:16:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.2ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 18ms (View: 9, DB: 4) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 21:16:27) [GET]
+  Parameters: {"id"=>"show"}
+  [4;35;1mChallenge Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.2ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Challenge with ID=show):
+  app/controllers/challenges_controller.rb:17:in `show'
+
+Rendered rescues/_trace (96.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 21:19:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (3.8ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 20ms (View: 9, DB: 6) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 21:19:43) [GET]
+  Parameters: {"id"=>"show"}
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mChallenge Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+
+NoMethodError (undefined method `findbyid' for #<Class:0x101655cc8>):
+  app/controllers/challenges_controller.rb:18:in `show'
+
+Rendered rescues/_trace (97.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 21:21:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (1.0ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.1ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 19ms (View: 9, DB: 5) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 21:21:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 21ms (View: 12, DB: 5) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 21:22:02) [GET]
+  Parameters: {"ch_id"=>"1", "id"=>"show"}
+  [4;35;1mChallenge Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 1) [0m
+Completed in 10ms (View: 1, DB: 2) | 406 Not Acceptable [http://localhost/challenges/show?ch_id=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 21:26:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 18ms (View: 9, DB: 5) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 21:26:13) [GET]
+  Parameters: {"ch_id"=>"1", "id"=>"show"}
+  [4;35;1mChallenge Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (1.0ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 1) [0m
+Completed in 9ms (View: 1, DB: 3) | 406 Not Acceptable [http://localhost/challenges/show?ch_id=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 21:27:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.2ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 19ms (View: 9, DB: 4) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 21:27:55) [GET]
+  Parameters: {"ch_id"=>"1", "id"=>"show"}
+  [4;35;1mChallenge Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 1) [0m
+Completed in 110ms (View: 0, DB: 2) | 200 OK [http://localhost/challenges/show?ch_id=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 21:29:18) [GET]
+  Parameters: {"ch_id"=>"2", "id"=>"show"}
+  [4;35;1mChallenge Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 2) [0m
+Completed in 10ms (View: 0, DB: 2) | 200 OK [http://localhost/challenges/show?ch_id=2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 21:32:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (38.6ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 59ms (View: 14, DB: 40) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 21:32:23) [GET]
+  Parameters: {"ch_id"=>"1", "id"=>"show"}
+  [4;35;1mChallenge Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 1) [0m
+Completed in 9ms (View: 0, DB: 2) | 200 OK [http://localhost/challenges/show?ch_id=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 21:32:31) [GET]
+  Parameters: {"ch_id"=>"1", "id"=>"show"}
+  [4;35;1mChallenge Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 1) [0m
+Completed in 10ms (View: 0, DB: 3) | 200 OK [http://localhost/challenges/show?ch_id=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 21:32:34) [GET]
+  Parameters: {"ch_id"=>"2", "id"=>"show"}
+  [4;35;1mChallenge Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 2) [0m
+Completed in 9ms (View: 0, DB: 2) | 200 OK [http://localhost/challenges/show?ch_id=2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 21:32:38) [GET]
+  Parameters: {"ch_id"=>"1", "id"=>"show"}
+  [4;35;1mChallenge Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 1) [0m
+Completed in 9ms (View: 0, DB: 2) | 200 OK [http://localhost/challenges/show?ch_id=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 21:32:42) [GET]
+  Parameters: {"ch_id"=>"2", "id"=>"show"}
+  [4;35;1mChallenge Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 2) [0m
+Completed in 10ms (View: 0, DB: 2) | 200 OK [http://localhost/challenges/show?ch_id=2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 21:32:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.7ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 22ms (View: 14, DB: 4) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 21:33:01) [GET]
+  Parameters: {"ch_id"=>"1", "id"=>"show"}
+  [4;35;1mChallenge Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.2ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 1) [0m
+Completed in 9ms (View: 0, DB: 2) | 200 OK [http://localhost/challenges/show?ch_id=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 21:33:09) [GET]
+  Parameters: {"ch_id"=>"2", "id"=>"show"}
+  [4;35;1mChallenge Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 2) [0m
+Completed in 10ms (View: 0, DB: 2) | 200 OK [http://localhost/challenges/show?ch_id=2]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 21:34:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 23ms (View: 14, DB: 6) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 21:34:33) [GET]
+  Parameters: {"ch_id"=>"1", "id"=>"show"}
+  [4;35;1mChallenge Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 1) [0m
+Completed in 10ms (View: 0, DB: 2) | 200 OK [http://localhost/challenges/show?ch_id=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 21:36:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPlace Columns (45.4ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 1) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mChallenge Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 68ms (View: 15, DB: 47) | 200 OK [http://localhost/places/show_challenges/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 21:36:08) [GET]
+  Parameters: {"ch_id"=>"1", "id"=>"show"}
+  [4;35;1mChallenge Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 1) [0m
+Completed in 9ms (View: 0, DB: 2) | 200 OK [http://localhost/challenges/show?ch_id=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 21:36:22) [GET]
+  Parameters: {"ch_id"=>"2", "id"=>"show"}
+  [4;35;1mChallenge Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 2) [0m
+Completed in 9ms (View: 0, DB: 2) | 200 OK [http://localhost/challenges/show?ch_id=2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 21:36:30) [GET]
+  Parameters: {"ch_id"=>"1", "id"=>"show"}
+  [4;35;1mChallenge Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 1) [0m
+Completed in 10ms (View: 0, DB: 3) | 200 OK [http://localhost/challenges/show?ch_id=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 21:36:34) [GET]
+  Parameters: {"ch_id"=>"2", "id"=>"show"}
+  [4;35;1mChallenge Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 2) [0m
+Completed in 9ms (View: 0, DB: 2) | 200 OK [http://localhost/challenges/show?ch_id=2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-09-27 21:37:10) [GET]
+Rendering index/index
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-27 21:37:10) [GET]
+
+ActionController::RoutingError (No route matches "/iphone.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-27 21:37:11) [GET]
+
+ActionController::RoutingError (No route matches "/iphone.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginController#login (for 127.0.0.1 at 2010-09-27 21:37:13) [GET]
+Rendering login/login
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://localhost/login/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-27 21:37:13) [GET]
+
+ActionController::RoutingError (No route matches "/login/iphone.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-27 21:37:13) [GET]
+
+ActionController::RoutingError (No route matches "/login/iphone.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginController#checkin (for 127.0.0.1 at 2010-09-27 21:37:15) [POST]
+  Parameters: {"Login"=>"Log in", "authenticity_token"=>"BOx36c+k+7XkYIcvq1ACPWXRgo45uu6b9k/e3R74LqY=", "password"=>"123", "e_mail"=>"cuiyingsan@gmail.com"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`e_mail` = 'cuiyingsan@gmail.com') LIMIT 1[0m
+Redirected to http://localhost:3000/places
+Completed in 11ms (DB: 2) | 302 Found [http://localhost/login/checkin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2010-09-27 21:37:15) [GET]
+  [4;35;1mPlace Load (0.2ms)[0m   [0mSELECT * FROM `places` [0m
+Rendering places/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/places]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2010-09-27 21:37:23) [GET]
+  Parameters: {"current_lng"=>"116.3182912", "id"=>"show", "current_lat"=>"39.9790689"}
+  [4;36;1mPlace Load (0.5ms)[0m   [0;1mSELECT * FROM `places` WHERE (longtitude BETWEEN 116.273246154955 and 116.363336245045 and latitue BETWEEN 39.934023854955 and 40.024113945045) [0m
+Rendering places/show
+  [4;35;1mPlace Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mChallenge Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `challenges` WHERE (`challenges`.place_id = 1) [0m
+Rendered places/_place (66.6ms)
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `challenges` WHERE (`challenges`.place_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `challenges` WHERE (`challenges`.place_id = 3) [0m
+Rendered places/_place (1.3ms)
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `challenges` WHERE (`challenges`.place_id = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `challenges` WHERE (`challenges`.place_id = 4) [0m
+Rendered places/_place (1.1ms)
+Completed in 78ms (View: 69, DB: 4) | 200 OK [http://localhost/places/show?current_lat=39.9790689&current_lng=116.3182912]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-27 21:37:28) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mPlace Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 3) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.1ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 3) [0m
+  [4;36;1mChallenge Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 19ms (View: 9, DB: 5) | 200 OK [http://localhost/places/show_challenges/3]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChallengesController#show (for 127.0.0.1 at 2010-09-27 21:37:30) [GET]
+  Parameters: {"ch_id"=>"4", "id"=>"show"}
+  [4;35;1mChallenge Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.3ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 4) [0m
+Completed in 10ms (View: 0, DB: 2) | 200 OK [http://localhost/challenges/show?ch_id=4]

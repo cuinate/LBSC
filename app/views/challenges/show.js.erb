@@ -1,0 +1,17 @@
+$("#challenge_content").attr("value","<%= escape_javascript(@challenge.question) %>");
+
+	$('#challenge_dialog').dialog({
+      autoOpen: true,
+      modal: true,
+	  buttons:{
+      Cancel: function() {
+				$(this).dialog("close");
+        	      },
+ 	  "Answer": function() {
+			$(this).dialog("close");
+   	      }
+	  },
+      width: 300,
+	  height: 200,
+      resizable: false
+    });

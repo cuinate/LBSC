@@ -101,6 +101,22 @@ var places = function(){
 	    initializeDefaults();
 	
 	   // initialize the form ajax submit function
+	   	$('#challenge_dialog').dialog({
+	      autoOpen: false,
+	      modal: true,
+		  buttons:{
+	      Cancel: function() {
+ 					$(this).dialog("close");
+	        	      },
+     	  "Answer": function() {
+				$(this).dialog("close");
+       	      }
+		  },
+	      width: 300,
+		  height: 200,
+	      resizable: false
+	    });
+	 
 	  
      	$("#find_place_form").submit(function()
 			{
@@ -124,7 +140,7 @@ var places = function(){
 	      resizable: false
 	    });
 
-	    $('.select_place').click(function() {
+	    $('.select_place').click(function() {s
 	      $('#select_place_dialog').dialog('open');
 	    });
       /* ---- google map location testing ----*/
@@ -133,6 +149,24 @@ var places = function(){
 	      getLocation();
 	
 	    });
+	  /* --- chalenge dialog open ----*/
+	    $(".open_challenge").click(function(){
+		        var chan_id = $(this).attr("chan_id");
+				// get the json data from chalenge based on challeng_id
+				$.getJSON(
+		          '/challenges/show', 
+		          {
+		            ch_id: chan_id
+		          },
+		          function(json) {
+					$("#challenge_name").text(json.challenge.name);	
+					$("#challenge_content").text(json.challenge.question);	
+					$("#challenge_dialog").dialog("open");
+		          }
+		        );
+			}
+	    
+	     );
 	
 	    $("#search_places").submit(function() {
 	      search(place_name_selector, place_id_selector);
