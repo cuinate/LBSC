@@ -14,7 +14,12 @@
 		  		 <div class="person-name">
 
 		  			<span class="person-timestamp">
-		  			111人到访, Challenges: &nbsp    &nbsp<span class ="button-ch"> <b>3/11</b></span></span>
+		  			111人到访, Challenges: &nbsp    &nbsp<span class ="button-ch"> 
+			       <b>
+			       	<%if !place.challenges.empty?%>
+			        <%= place.challenges.count%>
+			        <%end%>
+			       </b></span></span>
 		  		</div>
 
 		  		<div class="rehash-list action-count"></div>

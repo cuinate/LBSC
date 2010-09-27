@@ -9,11 +9,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100919120637) do
+ActiveRecord::Schema.define(:version => 20100927061835) do
 
   create_table "challenges", :force => true do |t|
     t.string   "name"
-    t.integer  "placeID"
     t.integer  "points"
     t.string   "description"
     t.string   "question"
@@ -23,7 +22,10 @@ ActiveRecord::Schema.define(:version => 20100919120637) do
     t.datetime "updated_at"
     t.integer  "user_id"
     t.string   "place_name"
+    t.integer  "place_id"
   end
+
+  add_index "challenges", ["place_id"], :name => "challenges_place_id_fk"
 
   create_table "places", :force => true do |t|
     t.string   "name"
@@ -61,5 +63,7 @@ ActiveRecord::Schema.define(:version => 20100919120637) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_foreign_key "challenges", "places", :name => "challenges_place_id_fk"
 
 end

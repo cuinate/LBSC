@@ -41,5 +41,6 @@ Rails::Initializer.run do |config|
   
   # use the database for session storage
   #config.action_controller.session_store = :active_record_store
+  config.gem'foreigner'
 
 end
