@@ -129,7 +129,7 @@ var places = function(){
 	    });
       /* ---- google map location testing ----*/
         $('.distance').click(function() {
-	
+	      
 	      getLocation();
 	
 	    });
@@ -383,20 +383,34 @@ var getLocation = function()
 		   gps.getCurrentPosition(
 			function(pos){
 
-			 lat = pos.coords.latitude;
-			 lon = pos.coords.longitude
-			 alert ("Position, Lat:" + lat + "Lon:" + lon);
-			//save the latitude and longtitude into the hiddden form 
+					 lat = pos.coords.latitude;
+					 lon = pos.coords.longitude
+					 alert ("Position, Lat:" + lat + "Lon:" + lon);
+					//save the latitude and longtitude into the hiddden form 
 		
-			$("#current_lat").attr("value",lat);
-			$("#current_lng").attr("value",lon);
+					$("#current_lat").attr("value",lat);
+					$("#current_lng").attr("value",lon);
 			
-			// trigger the sumbit of hidden form
-		//	$("#find_place_form").submit();
-			$.get("/places/show", { current_lat: lat, current_lng: lon } );
+					// trigger the sumbit of hidden form
+					//	$("#find_place_form").submit();
+					// get the current postion from google map services
+					var latlng = new google.maps.LatLng(lat,lon);
+					var geocoder = new google.maps.Geocoder();
+				    geocoder.geocode({'latLng': latlng}, function(results, status) {
+				      if (status == google.maps.GeocoderStatus.OK) {
+				        if (results[1]) {
+  						  $('#current_location_span').empty();	
+				          $('#current_location_span').append(results[1].formatted_address);
+				        }
+				      } else {
+				        alert("Geocoder failed due to: " + status);
+				      }
+				    });
+				   // to get the current places in place database 
+				   	$.get("/places/show", { current_lat: lat, current_lng: lon } );
 		
 		
-		}, 
+				}, 
 	     function(error){
 			alert("Got an error, code: " + error.code + " message: " + error.message);
 			
