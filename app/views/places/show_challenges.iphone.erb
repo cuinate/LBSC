@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html style="height: 100%;" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+<title>LBS@C</title>
+<!-- meta tags -->
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta content="LBS@c" name="lbs@C">
+<meta content="particle, profile, video, status, avatar" name="keywords">
+<meta content="global" name="distribution">
+
+<!-- iphone tags -->
+<meta name="apple-mobile-web-app-capable" content="YES"> 
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width = device-width, user-scalable = no">
+
+
+<!-- link tags -->
+<!--- set the sensor to true here to determine the location from mobile phone GPS sensor -->
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script> 
+<%= javascript_include_tag 'jquery_002.js' %>
+<%= javascript_include_tag 'jquery-ui.js' %>
+<%= javascript_include_tag 'jquery.js' %>
+<%= javascript_include_tag 'application.js' %>
+<%= javascript_include_tag 'places.js' %>
+<%= stylesheet_link_tag 'lbsc' %>
+<%= stylesheet_link_tag 'jquery-ui-1' %>
+
+<body style="position: relative; min-height: 100%; top: 0px;" id ="background"s>
+
+<!-- header start -->
+<span id="place_header_span" class="header-rows"> <b> Place: <%=@place.name %></b></span>
+
+<div id="verticali-nav">
+  <div id="verticali-tabs" class="spy-plain">
+		<a href="#"><div class="verticali-secondary-selected2 tab-left left"><b>Challenges</b></div></a>
+     	<a href="#"><div class="verticali-secondary-tab2 centertab2 left">Activities</div></a>
+        <a href="#"><div class="verticali-secondary-tab2 tab-right right">Info</div></a>
+    <br class="clear">
+</div>	
+
+<!-- header end -->
+<!--- content start -->
+
+<div id="verticali-watched">
+<div id="gradient"></div>
+<div id="challenge_list">
+	
+	
+  
+	  <div class="place">
+	 	<ul id="unsortable">
+		<% for challenge in @place.challenges%>
+			<li>
+		  	<div class="person-smirk">
+		  	<img  src="/img/icon/main_badges.png" style="width: 32px; height: 32px;">
+
+		  	</div>
+		  	<div class="person-status-watched">
+
+		    	 	<b><span style ="font-size:15px">
+				      <%=challenge.name %></span>
+				     </b>
+		    
+		  		 <div class="person-name">
+
+		  			<span class="person-timestamp">
+		  			111人到访, Challenges: &nbsp    &nbsp<span class ="button-ch"> 
+			       <b>
+			       	7-11
+			       </b></span></span>
+		  		</div>
+
+		  		<div class="rehash-list action-count"></div>
+		  	</div>
+		  <br class="clear">
+		  <hr>  
+		  </li>			
+		<% end %>
+		  </ul>   
+	  </div>
+  
+
+  
+</div>
+
+  
+</div>
+</div>
+
+  
+<!--- places index content  -->
+
+
+<script type = "text/javascript">
+$(function()
+{
+	places.initializeDialogs();
+});
+
+</script>
+
+
+<!--- place find result ajax div start-->
+    
+
+
+
+
+<!--- content end -->
+	  
+
+</body>
+</html>

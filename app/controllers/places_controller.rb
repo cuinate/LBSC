@@ -53,6 +53,20 @@ class PlacesController < ApplicationController
     end
   end
   
+  #get the challenges based on inputed place_id
+  def show_challenges
+     @place = Place.find(params[:id])
+     # render the show_challenges page for iphone 
+      respond_to do |format|
+        if @place
+         format.html # show.html.erb
+         format.iphone {render :layout => false} #show_challenges.iphone.erb
+       else
+         flash[:notice] = 'place not found!'
+       end
+     end
+     
+  end
   # get/post? /places with current_lat and current_lng
   def findplace
       respond_to do |format|

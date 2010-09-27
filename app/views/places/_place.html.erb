@@ -2,15 +2,22 @@
 	
 
 	  <div class="place">
+		
 	 	<ul id="unsortable">
+				<% @link_to_place_id = url_for(:controller =>'places' ,:action =>'show_challenges', :id=>place.id) %>
+			     <a id="home" href = "<%=@link_to_place_id%>">
 			<li>
 		  	<div class="person-smirk">
 		  	<img  src="/img/icon/geocode-71.png" style="width: 32px; height: 32px;">
 
 		  	</div>
 		  	<div class="person-status-watched">
-		    	<b><span style ="font-size:15px">
-			      <%= place.name %></span></b>
+
+			     
+		    	 	<b><span style ="font-size:15px">
+				      <%= place.name %></span>
+				     </b>
+			    
 		  		 <div class="person-name">
 
 		  			<span class="person-timestamp">
@@ -27,7 +34,7 @@
 		  <br class="clear">
 		  <hr>  
 		  </li>			
-
+		</a>
 		  </ul>   
 	  </div>
 

@@ -111,6 +111,8 @@ pre { float: inherit; white-space: pre; white-space: -moz-pre-wrap; white-space:
 .navbar-iphone-item { background: url(../img/places_logo.jpg) no-repeat; margin-top: 17px; width: 150px; height: 40px; float:left; -webkit-border-top-right-radius: 4px; -webkit-border-bottom-right-radius: 4px; -moz-border-radius: 0 4px 4px 0; z-index: 900; } 
 #navi_item { display: none;}
 /* ======================== 1.1 lbsc iphone header part ============================*/
+.header-rows { padding: 14px 16px 0px 16px; width: 325px; height: 25px; color: #fff; font-size: 14px; margin: 0px auto 2px auto; background: #686767; overflow:hidden; display: block; -webkit-border-top-right-radius: 4px; -webkit-border-top-left-radius: 4px; -webkit-border-bottom-right-radius: 4px; -webkit-border-bottom-left-radius: 4px; -moz-border-radius: 4px 4px 4px 4px; }  
+
 #verticali-tabs { width: 360px; position: relative; margin: 0px auto 0px auto; background: #fff; }  
 .verticali-secondary-tab2 { width: 120px; text-align: center; font-size: 12px; height: 25px; padding-top: 13px; background: #E9F3F3; border-bottom: 1px solid #c7d8d8; cursor: pointer; }  
 	.verticali-secondary-tab2:hover { background: #eff8f8; }  
