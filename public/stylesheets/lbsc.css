@@ -91,6 +91,7 @@ pre { float: inherit; white-space: pre; white-space: -moz-pre-wrap; white-space:
 .delete-entry:hover { color: #666; }
 
 .button-ch { color: #fff; background: #c32e2e; border: 0px; font-size: 13px !important; text-align: center; margin: 0px; cursor: pointer; padding: 11px 16px 11px 16px !important; width: 62px; overflow:visible; -webkit-border-top-right-radius: 4px; -webkit-border-top-left-radius: 4px; -webkit-border-bottom-right-radius: 4px; -webkit-border-bottom-left-radius: 4px; -moz-border-radius: 4px 4px 4px 4px; }  
+.button-ch-checkin { color: #fff; background: #005481; border: 0px; font-size: 20px; text-align: center; margin: 0px; padding: 11px 16px 11px 16px !important; width: 30px; overflow:visible; -webkit-border-top-right-radius: 4px; -webkit-border-top-left-radius: 4px; -webkit-border-bottom-right-radius: 4px; -webkit-border-bottom-left-radius: 4px; -moz-border-radius: 4px 4px 4px 4px; }  
 
 
 /* ======================= 0.0 special ====================================*/
@@ -116,7 +117,7 @@ pre { float: inherit; white-space: pre; white-space: -moz-pre-wrap; white-space:
 #verticali-tabs { width: 360px; position: relative; margin: 0px auto 0px auto; background: #fff; }  
 .verticali-secondary-tab2 { width: 120px; text-align: center; font-size: 12px; height: 25px; padding-top: 13px; background: #E9F3F3; border-bottom: 1px solid #c7d8d8; cursor: pointer; }  
 	.verticali-secondary-tab2:hover { background: #eff8f8; }  
-.verticali-secondary-selected2 { width: 118px; background: #005481; color: #fff;  text-align: center; font-size: 18px; height: 25px; padding-top: 13px; }  
+.verticali-secondary-selected2 { width: 118px; background: #005481; color: #fff;  text-align: center; font-size: 15px; height: 25px; padding-top: 13px; }  
 .centertab2 { border-left: 1px solid #c7d8d8; border-right: 1px solid #c7d8d8; }
 
 #verticali-utility { padding: 0px 0px 0px 0px; background: #E9F3F3; margin: 0px auto 0px auto; width: 360px; }  
@@ -142,7 +143,9 @@ pre { float: inherit; white-space: pre; white-space: -moz-pre-wrap; white-space:
 
 #gradient { background: url(../img/icon/gradient_2.png) repeat top; width: 360px; height: 10px; border-top: 1px solid #C7D8D8; position:absolute; z-index: 2000; top: 0px; left: 0px; }  
 
+/* place - challenge list page --*/
 
+.checkin-span { padding: 14px 16px 0px 16px; width: 328px; height: 25px;  background: #E9F3F3; color: #005481;  font-size: 14px; margin: 0px 0px 2px 0px;  overflow:hidden; display: block;  }  
 .person-smirk { position: relative; overflow:hidden; width: 40px; height: 40px; margin: 0px 10px 7px 0px; float: left; background: #fff; }  
 .smirk-window { position:absolute; }  
 .refresh_header { position: relative; overflow:hidden; width: 40px; height: 40px; margin: 0px 10px 7px 0px; float: left;}

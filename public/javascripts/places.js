@@ -140,7 +140,7 @@ var places = function(){
 	      resizable: false
 	    });
 
-	    $('.select_place').click(function() {s
+	    $('.select_place').click(function() {
 	      $('#select_place_dialog').dialog('open');
 	    });
       /* ---- google map location testing ----*/
@@ -159,6 +159,9 @@ var places = function(){
 		            ch_id: chan_id
 		          },
 		          function(json) {
+			
+			
+					$("#challenge_points").text("+" + json.challenge.points);	
 					$("#challenge_name").text(json.challenge.name);	
 					$("#challenge_content").text(json.challenge.question);	
 					$("#challenge_dialog").dialog("open");

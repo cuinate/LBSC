@@ -47,11 +47,12 @@
 <div id="verticali-watched">
 	<div id="gradient"></div>
 	<div id="challenge_list">
+			<span id="place_header_span" class="checkin-span"> <b>User created</b></span>
 		  <div class="place">
 		 	<ul id="unsortable">
 			<% for challenge in @place.challenges%>
-
-			  <a id="home" class ="open_challenge" chan_id = "<%=challenge.id %>" href = "javascript:void(0)">
+			
+			  <a id="home" class ="open_challenge" class="spy_light" chan_id = "<%=challenge.id %>" href = "javascript:void(0)">
 				<li>
 			  	<div class="person-smirk">
 			  	<img  src="/img/icon/main_badges.png" style="width: 40px; height: 40px;">
@@ -79,18 +80,57 @@
 			  </li>	
 			</a>		
 			<% end %>
-			  </ul>   
+			  </ul>   	
 		  </div>
+	
+	<span id="place_header_span" class="checkin-span"> <b>Check_ins</b></span>
+	<% checkins = [{'id' => '1','checkin_type' => '签到！','points' => '2'},
+	   			{'id' => '2','checkin_type' => 'Photo check_in','points' => '3'},
+				{'id' => '3','checkin_type' => 'Tweet check_in!','points' => '3'},
+		]%>
+	    <ul id="unsortable">
+		
+		<% checkins.each do |checkin|%>
+		  <a id="home" class ="checkin_challenge" class="spy_light" checkin_id = "<%=checkin['id']%>" href = "javascript:void(0)">
+			<li>
+		  	<div class="person-smirk">
+		  	<img  src="/img/icon/main_badges.png" style="width: 40px; height: 40px;">
+		  	</div>
+		  	<div class="person-status-watched">
+		    	 	<b><span style ="font-size:15px">
+				      <%=checkin['checkin_type']%></span>
+				     </b>
+			
+		  		 <div class="person-name">
+
+		  			<span class="person-timestamp">
+					You can get points : &nbsp    &nbsp &nbsp &nbsp
+		  		    <span class ="button-ch"> 
+			       <b>
+			       	+<%=checkin['points'] %>
+			       </b></span></span>
+		  		</div>
+
+		  		<div class="rehash-list action-count"></div>
+		  	</div>
+		  <br class="clear">
+		  <hr>  
+		  </li>	
+		</a>		
+		<% end %>
+		  </ul>
+
 	</div>
 </div>
 </div>
-
   
 <!--- places index content  -->
 <div id = "challenge_dialog" title="play the challenge">
-	<p><div id="challenge_name" style="font-size: 15px !important;" ></div></p>
+	<p><div id="challenge_points" class="button-ch-checkin tab-right right "> </div>
+	   <div id="challenge_name" style="font-size: 20px !important;float:left;" class ="tab-left left" ></div></p>
     <br class="clear">
-	<div id="challenge_content" style="color: #005481; border: 0px; font-size: 20px !important;"></div>
+    <br class="clear">
+	<div id="challenge_content" style="color: #005481; border: 0px; font-size: 15px !important;"></div>
 	
 </div>
 
