@@ -117,7 +117,69 @@ var places = function(){
 	      resizable: false
 	    });
 	 
-	  
+	 // check_in dialog init start-------------------------------- //
+	    $('#checkin_dialog').dialog({
+	      autoOpen: false,
+	      modal: true,
+		  open: function(event, ui) { $(".ui-dialog-titlebar-close").hide(); },
+		  buttons:{
+	      "checkin": function() {
+					var place_id = $("#hidden_place_id").val();
+					var user_id = $("#hidden_user_id").val();
+					$.post(
+					'/UserActivity/create', 
+			          {
+						checkin_type_id : "1",
+						user_id : user_id,
+						place_id :place_id,
+						points : "3"
+					  },
+					  function(data){
+					  
+					   $(this).dialog("close");
+					 }
+
+			        );
+			    $(this).dialog("close");
+				return false;
+	       	      }
+		  },
+	      width: 300,
+		  height: 200,
+	      resizable: false
+	    });
+	
+	    $('#checkin_dialog_twee').dialog({
+	      autoOpen: false,
+	      modal: true,
+		  buttons:{
+	      "Say it": function() {
+ 					$(this).dialog("close");
+	        	      },
+     	  "Cancel": function() {
+				$(this).dialog("close");
+       	      }
+		  },
+	      width: 300,
+		  height: 200,
+	      resizable: false
+	    });
+	    $('#checkin_dialog_tag').dialog({
+	      autoOpen: false,
+	      modal: true,
+		  buttons:{
+	      "Tag it": function() {
+ 					$(this).dialog("close");
+	        	      },
+     	  "Cancel": function() {
+				$(this).dialog("close");
+       	      }
+		  },
+	      width: 300,
+		  height: 200,
+	      resizable: false
+	    });
+    // check_in dialog init end -------------------------------- // 
      	$("#find_place_form").submit(function()
 			{
 				$.post(this.action , $(this).serialize(), null, "script");
@@ -170,7 +232,28 @@ var places = function(){
 			}
 	    
 	     );
-	
+	// --- open check_in dialog ------//
+	 	$(".checkin_challenge").click(function(){
+		        var checkin_id = $(this).attr("checkin_id");
+				// get the json data from chalenge based on challeng_id
+				switch(checkin_id)
+				{
+					case "1":
+					  $("#checkin_dialog").dialog("open");	
+					  break;
+					case "2":
+					  $("#checkin_dialog_twee").dialog("open");						
+					  break;
+					case "3":
+					  $("#checkin_dialog_tag").dialog("open");						
+					  break;
+					default:
+					  alert("something wrong!");
+				}
+			}    
+	     );
+		// --- open check_in dialog ------//
+
 	    $("#search_places").submit(function() {
 	      search(place_name_selector, place_id_selector);
 	    });

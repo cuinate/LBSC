@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100928063820) do
+ActiveRecord::Schema.define(:version => 20100928145209) do
 
   create_table "challenges", :force => true do |t|
     t.string   "name"
@@ -87,6 +87,7 @@ ActiveRecord::Schema.define(:version => 20100928063820) do
     t.integer  "checkin_type_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "points"
   end
 
   create_table "user_scores", :force => true do |t|

@@ -6,6 +6,8 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :users
   
+  map.resources :user_activity
+  
   map.singup "users/new",
              :controller => "users",
              :action => "new"
@@ -61,10 +63,10 @@ ActionController::Routing::Routes.draw do |map|
 map.connect ':controller/:action/:id'
 map.connect ':controller/:action/:id.:format'
 
-#map.findplace "places/findplace",
-#              :conditions => { :method => :post},
-#              :controller => "places",
-#              :action     => "findplace"
+map.connect  "UserActivity/create",
+             :conditions => { :method => :post},
+             :controller => "UserActivity",
+             :action     => "create"
               
  
 end

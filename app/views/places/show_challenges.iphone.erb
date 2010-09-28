@@ -43,7 +43,8 @@
 
 <!-- header end -->
 <!--- content start -->
-
+<input type="hidden" id ="hidden_place_id" value = "<%=@place.id %>">
+<input tyep="hidden" id = "hidden_user_id" value = "<%=session[:user_id] %>">
 <div id="verticali-watched">
 	<div id="gradient"></div>
 	<div id="challenge_list">
@@ -85,8 +86,8 @@
 	
 	<span id="place_header_span" class="checkin-span"> <b>Check_ins</b></span>
 	<% checkins = [{'id' => '1','checkin_type' => '签到！','points' => '2'},
-	   			{'id' => '2','checkin_type' => 'Photo check_in','points' => '3'},
-				{'id' => '3','checkin_type' => 'Tweet check_in!','points' => '3'},
+	   			{'id' => '2','checkin_type' => 'Tweet check_in!','points' => '3'},
+				{'id' => '3','checkin_type' => 'Tag this place!','points' => '3'},
 		]%>
 	    <ul id="unsortable">
 		
@@ -133,7 +134,45 @@
 	<div id="challenge_content" style="color: #005481; border: 0px; font-size: 15px !important;"></div>
 	
 </div>
+<!-- check in dialog 1-->
+<div id = "checkin_dialog" title="check in this place">
 
+  	<img  src="/img/icon/check_in2.png" style="width: 60px; height: 60px; float:left;">
+  
+	<p>
+	   <div id="checkin_name" style="font-size: 13px !important;float:left;" class ="tab-right right" >
+	    Let your friend know where are you now!
+	   </div></p>
+    <br class="clear">
+	
+	
+</div>
+
+<div id = "checkin_dialog_twee" title="check in this place">
+
+  	<img  src="/img/icon/comments.png" style="width: 60px; height: 60px; float:left;">
+
+	<p>
+	   <div id="checkin_name" style="font-size: 13px !important;float:left;" class ="tab-right right" >
+	   	Tell your friends what you find @here
+	   </div></p>
+    <br class="clear">
+
+	
+</div>
+
+<div id = "checkin_dialog_tag" title="check in this place">
+	
+  	<img  src="/img/icon/tag_blue.png" style="width: 60px; height: 60px; float:left;">
+  	
+	<p>
+	   <div id="checkin_name" style="font-size: 13px !important;float:left;" class ="tab-right right" >
+	   	Tag this place with your own words!
+	   </div></p>
+    <br class="clear">
+
+	
+</div>
 <script type = "text/javascript">
 $(function()
 {
