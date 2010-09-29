@@ -51730,3 +51730,1198 @@ Migrating to RemoveAttrScore (20100929025051)
 Migrating to CreatePlaceScores (20100929030115)
 Migrating to AddForeignKeyToActivity (20100929032330)
   [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Cannot add or update a child row: a foreign key constraint fails (`lbsc_development`.<result 2 when explaining filename '#sql-b3_16'>, CONSTRAINT `user_activities_user_id_fk` FOREIGN KEY (`user_id`) REFERENCES `user_scores` (`id`)): ALTER TABLE `user_activities` ADD CONSTRAINT `user_activities_user_id_fk` FOREIGN KEY (`user_id`) REFERENCES `user_scores`(id)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Can't create table 'lbsc_development.#sql-b3_18' (errno: 150): ALTER TABLE `user_activities` ADD CONSTRAINT `user_activities_user_fk` FOREIGN KEY (`user_id`) REFERENCES `user_scores`(user_id)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user_id')' at line 1: ALTER TABLE user_activities ADD CONSTRAINT `user_activities_user_fk` FOREIGN KEY (`user_id`) REFERENCES user_scores('user_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Can't create table 'lbsc_development.#sql-b3_1a' (errno: 150): ALTER TABLE user_activities ADD CONSTRAINT `user_activities_user_fk` FOREIGN KEY (`user_id`) REFERENCES user_scores(user_id)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Can't create table 'lbsc_development.#sql-b3_1b' (errno: 150): ALTER TABLE user_activities ADD CONSTRAINT `scores_key` FOREIGN KEY (`user_id`) REFERENCES user_scores(user_id)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Multiple primary key defined: ALTER TABLE user_scores ADD PRIMARY KEY (user_id)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Incorrect table definition; there can be only one auto column and it must be defined as a key: ALTER TABLE user_scores DROP PRIMARY KEY[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (492.7ms)[0m   [0;1mALTER TABLE user_scores DROP COLUMN id[0m
+  [4;35;1mSQL (352.7ms)[0m   [0mALTER TABLE user_scores ADD PRIMARY KEY (user_id)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Cannot add or update a child row: a foreign key constraint fails (`lbsc_development`.<result 2 when explaining filename '#sql-b3_1e'>, CONSTRAINT `scores_key` FOREIGN KEY (`user_id`) REFERENCES `user_scores` (`user_id`)): ALTER TABLE user_activities ADD CONSTRAINT `scores_key` FOREIGN KEY (`user_id`) REFERENCES user_scores(user_id)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Cannot add or update a child row: a foreign key constraint fails (`lbsc_development`.<result 2 when explaining filename '#sql-b3_1f'>, CONSTRAINT `scores_key` FOREIGN KEY (`user_id`) REFERENCES `user_scores` (`user_id`)): ALTER TABLE user_activities ADD CONSTRAINT scores_key FOREIGN KEY (`user_id`) REFERENCES user_scores(user_id)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Cannot add or update a child row: a foreign key constraint fails (`lbsc_development`.<result 2 when explaining filename '#sql-b3_20'>, CONSTRAINT `user_scores_key` FOREIGN KEY (`user_id`) REFERENCES `user_scores` (`user_id`)): ALTER TABLE user_activities ADD CONSTRAINT user_scores_key FOREIGN KEY (user_id) REFERENCES user_scores(user_id)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user_scores_key' FOREIGN KEY ('user_id') REFERENCES user_scores('user_id')' at line 1: ALTER TABLE user_activities ADD CONSTRAINT 'user_scores_key' FOREIGN KEY ('user_id') REFERENCES user_scores('user_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Cannot add or update a child row: a foreign key constraint fails (`lbsc_development`.<result 2 when explaining filename '#sql-b3_22'>, CONSTRAINT `#sql-b3_22_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user_scores` (`user_id`)): ALTER TABLE user_activities ADD FOREIGN KEY (user_id) REFERENCES user_scores(user_id)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user_activities' ADD CONSTRAINT 'scores_key' FOREIGN KEY ('user_id') REFERENCES' at line 1: ALTER TABLE 'user_activities' ADD CONSTRAINT 'scores_key' FOREIGN KEY ('user_id') REFERENCES 'user_scores' ('user_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user_activities' ADD CONSTRAINT 'SCORES_KEY' FOREIGN KEY ('user_id') REFERENCES' at line 1: ALTER TABLE 'user_activities' ADD CONSTRAINT 'SCORES_KEY' FOREIGN KEY ('user_id') REFERENCES 'user_scores' ('user_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CONSTRAINT 'SCORES_KEY' FOREIGN KEY ('user_id') REFERENCES 'user_scores' ('user_' at line 1: ALTER TABLE user_activitiesADD CONSTRAINT 'SCORES_KEY' FOREIGN KEY ('user_id') REFERENCES 'user_scores' ('user_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Cannot add or update a child row: a foreign key constraint fails (`lbsc_development`.<result 2 when explaining filename '#sql-b3_26'>, CONSTRAINT `SCORE_KEY` FOREIGN KEY (`user_id`) REFERENCES `user_scores` (`user_id`)): ALTER TABLE `user_activities` ADD CONSTRAINT `SCORE_KEY` FOREIGN KEY (`user_id`) REFERENCES `user_scores` (`user_id`)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Cannot add or update a child row: a foreign key constraint fails (`lbsc_development`.<result 2 when explaining filename '#sql-b3_27'>, CONSTRAINT `SCORE_KEY` FOREIGN KEY (`user_id`) REFERENCES `user_scores` (`user_id`)): ALTER TABLE `user_activities`
+ ADD CONSTRAINT `SCORE_KEY` FOREIGN KEY (`user_id`) REFERENCES `user_scores` (`user_id`)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Cannot add or update a child row: a foreign key constraint fails (`lbsc_development`.<result 2 when explaining filename '#sql-b3_28'>, CONSTRAINT `#sql-b3_28_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user_scores` (`user_id`)): ALTER TABLE user_activities ADD FOREIGN KEY (user_id) REFERENCES user_scores (user_id)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Cannot add or update a child row: a foreign key constraint fails (`lbsc_development`.<result 2 when explaining filename '#sql-b3_29'>, CONSTRAINT `#sql-b3_29_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user_scores` (`user_id`)): ALTER TABLE user_activities ADD FOREIGN KEY (user_id) REFERENCES user_scores (user_id)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Cannot add or update a child row: a foreign key constraint fails (`lbsc_development`.<result 2 when explaining filename '#sql-b3_2a'>, CONSTRAINT `user_activity_score_fk` FOREIGN KEY (`user_id`) REFERENCES `user_scores` (`user_id`)): ALTER TABLE `user_activities` ADD CONSTRAINT `user_activity_score_fk` FOREIGN KEY (`user_id`) REFERENCES `user_scores` (`user_id`)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Cannot add or update a child row: a foreign key constraint fails (`lbsc_development`.<result 2 when explaining filename '#sql-b3_2c'>, CONSTRAINT `user_activity_score_fk` FOREIGN KEY (`user_id`) REFERENCES `user_scores` (`user_id`)): ALTER TABLE user_activities ADD CONSTRAINT user_activity_score_fk FOREIGN KEY (user_id) REFERENCES user_scores (user_id)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Cannot add or update a child row: a foreign key constraint fails (`lbsc_development`.<result 2 when explaining filename '#sql-b3_2d'>, CONSTRAINT `#sql-b3_2d_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user_scores` (`user_id`)): ALTER TABLE user_activities ADD CONSTRAINT FOREIGN KEY (user_id) REFERENCES user_scores (user_id)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+  [4;36;1mSQL (80.1ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `salt` varchar(255), `hashed_password` varchar(255), `profile_image_url` varchar(255), `isloading` varchar(255), `challengcount` int(11), `placevisitedcount` int(11), `sinaauthenticated` varchar(255), `e_mail` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100910102508')[0m
+Migrating to CreateSessions (20100916070806)
+  [4;36;1mSQL (225.8ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (135.9ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (122.8ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100916070806')[0m
+Migrating to CreateChallenges (20100917042556)
+  [4;36;1mSQL (118.9ms)[0m   [0;1mCREATE TABLE `challenges` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `placeID` int(11), `points` int(11), `description` varchar(255), `question` varchar(255), `answer` varchar(255), `message` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100917042556')[0m
+Migrating to AddChallengUserId (20100917044230)
+  [4;36;1mSQL (111.6ms)[0m   [0;1mALTER TABLE `challenges` ADD `user_id` int(11)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100917044230')[0m
+Migrating to CreatePlaces (20100918043758)
+  [4;36;1mSQL (103.6ms)[0m   [0;1mCREATE TABLE `places` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `latitue` decimal(9,6), `longtitude` decimal(9,6), `postalcode` varchar(255), `state` varchar(255), `city` varchar(255), `address` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100918043758')[0m
+Migrating to AddChallengePlaceName (20100919120637)
+  [4;36;1mSQL (121.8ms)[0m   [0;1mALTER TABLE `challenges` ADD `place_name` varchar(255)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100919120637')[0m
+Migrating to AddForeignkeyToChallenge (20100927061835)
+  [4;36;1mSQL (119.5ms)[0m   [0;1mALTER TABLE `challenges` ADD `place_id` int(11)[0m
+  [4;35;1mSQL (133.5ms)[0m   [0mALTER TABLE `challenges` DROP `placeID`[0m
+  [4;36;1mSQL (141.9ms)[0m   [0;1mALTER TABLE `challenges` ADD CONSTRAINT `challenges_place_id_fk` FOREIGN KEY (`place_id`) REFERENCES `places`(id)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100927061835')[0m
+Migrating to AddUserAttributeToPlaces (20100928055230)
+  [4;36;1mSQL (111.3ms)[0m   [0;1mALTER TABLE `places` ADD `user_id` int(11)[0m
+  [4;35;1mSQL (122.8ms)[0m   [0mALTER TABLE `places` ADD `attr_id` int(11)[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100928055230')[0m
+Migrating to CreatePlaceAttrs (20100928060613)
+  [4;35;1mSQL (116.4ms)[0m   [0mCREATE TABLE `place_attrs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `attr_name` varchar(255), `points` int(11), `key_words` varchar(255), `time_span` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100928060613')[0m
+Migrating to CreateCheckinTypes (20100928063022)
+  [4;35;1mSQL (119.7ms)[0m   [0mCREATE TABLE `checkin_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `checkin_type` varchar(255), `points` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100928063022')[0m
+Migrating to CreateUserScores (20100928063450)
+  [4;35;1mSQL (119.2ms)[0m   [0mCREATE TABLE `user_scores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `scores` int(11), `places_visited_count` int(11), `challenges_done_count` int(11), `challenges_create_count` int(11), `knowledge_score` int(11), `tech_score` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100928063450')[0m
+Migrating to CreateUserActivities (20100928063820)
+  [4;35;1mSQL (120.7ms)[0m   [0mCREATE TABLE `user_activities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `place_id` int(11), `challenge_id` int(11), `challenge_tweet` varchar(255), `challenge_answer` varchar(255), `challenge_points` int(11), `checkin_type_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100928063820')[0m
+Migrating to AddPointsToactivity (20100928133119)
+  [4;35;1mSQL (123.1ms)[0m   [0mALTER TABLE `user_activities` ADD `points` int(11)[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100928133119')[0m
+Migrating to CreatePlaceTags (20100928145209)
+  [4;35;1mSQL (117.6ms)[0m   [0mCREATE TABLE `place_tags` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `place_id` int(11), `user_id` int(11), `tag_name` varchar(255), `place_attr_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100928145209')[0m
+Migrating to RemoveAttrScore (20100929025051)
+  [4;35;1mSQL (175.7ms)[0m   [0mALTER TABLE `user_scores` DROP `knowledge_score`[0m
+  [4;36;1mSQL (122.7ms)[0m   [0;1mALTER TABLE `user_scores` DROP `tech_score`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100929025051')[0m
+Migrating to CreatePlaceScores (20100929030115)
+  [4;36;1mSQL (116.2ms)[0m   [0;1mCREATE TABLE `place_scores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `place_scores` int(11), `place_attr_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100929030115')[0m
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Can't create table 'lbsc_development.#sql-b3_31' (errno: 150): ALTER TABLE user_activities ADD CONSTRAINT FOREIGN KEY (user_id) REFERENCES user_scores (user_id)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+
+ KEY `user_scores_fk` (`user_id`),
+ CONSTRAINT `user_scores_fk`' at line 1: ALTER TABLE `user_activities` (
+
+ KEY `user_scores_fk` (`user_id`),
+ CONSTRAINT `user_scores_fk` FOREIGN KEY (`user_id`) REFERENCES `user_scores` (`user_id`)
+ );[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ CONSTRAINT `user_scores_fk` FOREIGN KEY (`user_id`) REFERENCES `user_s' at line 1: ALTER TABLE `user_activities` (
+ CONSTRAINT `user_scores_fk` FOREIGN KEY (`user_id`) REFERENCES `user_scores` (`user_id`)
+ );[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ CONSTRAINT `user_scores_fk` FOREIGN KEY (`user_id`) REFERENCES `user_s' at line 1: ALTER TABLE `user_activities` (
+ CONSTRAINT `user_scores_fk` FOREIGN KEY (`user_id`) REFERENCES `user_scores` (`user_id`)
+ ON DELETE CASCADE ON UPDATE CASCADE );[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ CONSTRAINT `user_scores_fk` FOREIGN KEY (`user_id`) REFERENCES `user_s' at line 1: ALTER TABLE `user_activities` (
+ CONSTRAINT `user_scores_fk` FOREIGN KEY (`user_id`) REFERENCES `user_scores` (`user_id`)
+ ON DELETE CASCADE ON UPDATE CASCADE );[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user_activities' ADD KEY ('user_id')' at line 1: ALTER TABLE 'user_activities' ADD KEY ('user_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user_activities' ADD INDEX 'user_id_index' ('user_id')' at line 1: ALTER TABLE 'user_activities' ADD INDEX 'user_id_index' ('user_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (92.2ms)[0m   [0;1mALTER TABLE user_activities ADD INDEX user_id_index (user_id)[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100929032330')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `challenges`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `challenges`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `checkin_types`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `checkin_types`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `checkin_types`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `place_attrs`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `place_attrs`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `place_attrs`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `place_scores`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `place_scores`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `place_scores`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `place_tags`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `place_tags`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `place_tags`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `places`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `places`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `sessions`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `sessions`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `user_activities`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `user_activities`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `user_activities`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `user_scores`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `user_scores`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `user_scores`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m
+ SELECT fk.referenced_table_name as 'to_table'
+ ,fk.referenced_column_name as 'primary_key'
+ ,fk.column_name as 'column'
+ ,fk.constraint_name as 'name'
+ FROM information_schema.key_column_usage fk
+ WHERE fk.referenced_column_name is not null
+ AND fk.table_schema = 'lbsc_development'
+ AND fk.table_name = 'challenges'
+ [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW CREATE TABLE `challenges`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m
+ SELECT fk.referenced_table_name as 'to_table'
+ ,fk.referenced_column_name as 'primary_key'
+ ,fk.column_name as 'column'
+ ,fk.constraint_name as 'name'
+ FROM information_schema.key_column_usage fk
+ WHERE fk.referenced_column_name is not null
+ AND fk.table_schema = 'lbsc_development'
+ AND fk.table_name = 'checkin_types'
+ [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW CREATE TABLE `checkin_types`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m
+ SELECT fk.referenced_table_name as 'to_table'
+ ,fk.referenced_column_name as 'primary_key'
+ ,fk.column_name as 'column'
+ ,fk.constraint_name as 'name'
+ FROM information_schema.key_column_usage fk
+ WHERE fk.referenced_column_name is not null
+ AND fk.table_schema = 'lbsc_development'
+ AND fk.table_name = 'place_attrs'
+ [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW CREATE TABLE `place_attrs`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m
+ SELECT fk.referenced_table_name as 'to_table'
+ ,fk.referenced_column_name as 'primary_key'
+ ,fk.column_name as 'column'
+ ,fk.constraint_name as 'name'
+ FROM information_schema.key_column_usage fk
+ WHERE fk.referenced_column_name is not null
+ AND fk.table_schema = 'lbsc_development'
+ AND fk.table_name = 'place_scores'
+ [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW CREATE TABLE `place_scores`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m
+ SELECT fk.referenced_table_name as 'to_table'
+ ,fk.referenced_column_name as 'primary_key'
+ ,fk.column_name as 'column'
+ ,fk.constraint_name as 'name'
+ FROM information_schema.key_column_usage fk
+ WHERE fk.referenced_column_name is not null
+ AND fk.table_schema = 'lbsc_development'
+ AND fk.table_name = 'place_tags'
+ [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW CREATE TABLE `place_tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m
+ SELECT fk.referenced_table_name as 'to_table'
+ ,fk.referenced_column_name as 'primary_key'
+ ,fk.column_name as 'column'
+ ,fk.constraint_name as 'name'
+ FROM information_schema.key_column_usage fk
+ WHERE fk.referenced_column_name is not null
+ AND fk.table_schema = 'lbsc_development'
+ AND fk.table_name = 'places'
+ [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW CREATE TABLE `places`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m
+ SELECT fk.referenced_table_name as 'to_table'
+ ,fk.referenced_column_name as 'primary_key'
+ ,fk.column_name as 'column'
+ ,fk.constraint_name as 'name'
+ FROM information_schema.key_column_usage fk
+ WHERE fk.referenced_column_name is not null
+ AND fk.table_schema = 'lbsc_development'
+ AND fk.table_name = 'schema_migrations'
+ [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW CREATE TABLE `schema_migrations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m
+ SELECT fk.referenced_table_name as 'to_table'
+ ,fk.referenced_column_name as 'primary_key'
+ ,fk.column_name as 'column'
+ ,fk.constraint_name as 'name'
+ FROM information_schema.key_column_usage fk
+ WHERE fk.referenced_column_name is not null
+ AND fk.table_schema = 'lbsc_development'
+ AND fk.table_name = 'sessions'
+ [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW CREATE TABLE `sessions`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m
+ SELECT fk.referenced_table_name as 'to_table'
+ ,fk.referenced_column_name as 'primary_key'
+ ,fk.column_name as 'column'
+ ,fk.constraint_name as 'name'
+ FROM information_schema.key_column_usage fk
+ WHERE fk.referenced_column_name is not null
+ AND fk.table_schema = 'lbsc_development'
+ AND fk.table_name = 'user_activities'
+ [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW CREATE TABLE `user_activities`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m
+ SELECT fk.referenced_table_name as 'to_table'
+ ,fk.referenced_column_name as 'primary_key'
+ ,fk.column_name as 'column'
+ ,fk.constraint_name as 'name'
+ FROM information_schema.key_column_usage fk
+ WHERE fk.referenced_column_name is not null
+ AND fk.table_schema = 'lbsc_development'
+ AND fk.table_name = 'user_scores'
+ [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW CREATE TABLE `user_scores`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m
+ SELECT fk.referenced_table_name as 'to_table'
+ ,fk.referenced_column_name as 'primary_key'
+ ,fk.column_name as 'column'
+ ,fk.constraint_name as 'name'
+ FROM information_schema.key_column_usage fk
+ WHERE fk.referenced_column_name is not null
+ AND fk.table_schema = 'lbsc_development'
+ AND fk.table_name = 'users'
+ [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW CREATE TABLE `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Duplicate key name 'user_id_index': ALTER TABLE user_activities ADD INDEX user_id_index (user_id)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+  [4;36;1mSQL (96.6ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `salt` varchar(255), `hashed_password` varchar(255), `profile_image_url` varchar(255), `isloading` varchar(255), `challengcount` int(11), `placevisitedcount` int(11), `sinaauthenticated` varchar(255), `e_mail` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100910102508')[0m
+Migrating to CreateSessions (20100916070806)
+  [4;36;1mSQL (193.8ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (146.2ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (132.7ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100916070806')[0m
+Migrating to CreateChallenges (20100917042556)
+  [4;36;1mSQL (117.4ms)[0m   [0;1mCREATE TABLE `challenges` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `placeID` int(11), `points` int(11), `description` varchar(255), `question` varchar(255), `answer` varchar(255), `message` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100917042556')[0m
+Migrating to AddChallengUserId (20100917044230)
+  [4;36;1mSQL (189.0ms)[0m   [0;1mALTER TABLE `challenges` ADD `user_id` int(11)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100917044230')[0m
+Migrating to CreatePlaces (20100918043758)
+  [4;36;1mSQL (139.3ms)[0m   [0;1mCREATE TABLE `places` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `latitue` decimal(9,6), `longtitude` decimal(9,6), `postalcode` varchar(255), `state` varchar(255), `city` varchar(255), `address` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100918043758')[0m
+Migrating to AddChallengePlaceName (20100919120637)
+  [4;36;1mSQL (132.5ms)[0m   [0;1mALTER TABLE `challenges` ADD `place_name` varchar(255)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100919120637')[0m
+Migrating to AddForeignkeyToChallenge (20100927061835)
+  [4;36;1mSQL (133.2ms)[0m   [0;1mALTER TABLE `challenges` ADD `place_id` int(11)[0m
+  [4;35;1mSQL (108.6ms)[0m   [0mALTER TABLE `challenges` DROP `placeID`[0m
+  [4;36;1mSQL (127.3ms)[0m   [0;1mALTER TABLE `challenges` ADD CONSTRAINT `challenges_place_id_fk` FOREIGN KEY (`place_id`) REFERENCES `places`(id)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100927061835')[0m
+Migrating to AddUserAttributeToPlaces (20100928055230)
+  [4;36;1mSQL (115.2ms)[0m   [0;1mALTER TABLE `places` ADD `user_id` int(11)[0m
+  [4;35;1mSQL (122.5ms)[0m   [0mALTER TABLE `places` ADD `attr_id` int(11)[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100928055230')[0m
+Migrating to CreatePlaceAttrs (20100928060613)
+  [4;35;1mSQL (116.7ms)[0m   [0mCREATE TABLE `place_attrs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `attr_name` varchar(255), `points` int(11), `key_words` varchar(255), `time_span` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100928060613')[0m
+Migrating to CreateCheckinTypes (20100928063022)
+  [4;35;1mSQL (130.0ms)[0m   [0mCREATE TABLE `checkin_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `checkin_type` varchar(255), `points` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100928063022')[0m
+Migrating to CreateUserScores (20100928063450)
+  [4;35;1mSQL (141.3ms)[0m   [0mCREATE TABLE `user_scores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `scores` int(11), `places_visited_count` int(11), `challenges_done_count` int(11), `challenges_create_count` int(11), `knowledge_score` int(11), `tech_score` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100928063450')[0m
+Migrating to CreateUserActivities (20100928063820)
+  [4;35;1mSQL (106.6ms)[0m   [0mCREATE TABLE `user_activities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `place_id` int(11), `challenge_id` int(11), `challenge_tweet` varchar(255), `challenge_answer` varchar(255), `challenge_points` int(11), `checkin_type_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100928063820')[0m
+Migrating to AddPointsToactivity (20100928133119)
+  [4;35;1mSQL (124.0ms)[0m   [0mALTER TABLE `user_activities` ADD `points` int(11)[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100928133119')[0m
+Migrating to CreatePlaceTags (20100928145209)
+  [4;35;1mSQL (105.1ms)[0m   [0mCREATE TABLE `place_tags` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `place_id` int(11), `user_id` int(11), `tag_name` varchar(255), `place_attr_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100928145209')[0m
+Migrating to RemoveAttrScore (20100929025051)
+  [4;35;1mSQL (116.0ms)[0m   [0mALTER TABLE `user_scores` DROP `knowledge_score`[0m
+  [4;36;1mSQL (124.6ms)[0m   [0;1mALTER TABLE `user_scores` DROP `tech_score`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100929025051')[0m
+Migrating to CreatePlaceScores (20100929030115)
+  [4;36;1mSQL (135.0ms)[0m   [0;1mCREATE TABLE `place_scores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `place_scores` int(11), `place_attr_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100929030115')[0m
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (133.2ms)[0m   [0;1mALTER TABLE user_activities ADD INDEX user_id_index (user_id)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mMysql::Error: Can't create table 'lbsc_development.#sql-b3_3d' (errno: 150): ALTER TABLE user_activities ADD CONSTRAINT user_scores_fk FOREIGN KEY (user_id) REFERENCES user_scores(user_id)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+Migrating to CreateSessions (20100916070806)
+Migrating to CreateChallenges (20100917042556)
+Migrating to AddChallengUserId (20100917044230)
+Migrating to CreatePlaces (20100918043758)
+Migrating to AddChallengePlaceName (20100919120637)
+Migrating to AddForeignkeyToChallenge (20100927061835)
+Migrating to AddUserAttributeToPlaces (20100928055230)
+Migrating to CreatePlaceAttrs (20100928060613)
+Migrating to CreateCheckinTypes (20100928063022)
+Migrating to CreateUserScores (20100928063450)
+Migrating to CreateUserActivities (20100928063820)
+Migrating to AddPointsToactivity (20100928133119)
+Migrating to CreatePlaceTags (20100928145209)
+Migrating to RemoveAttrScore (20100929025051)
+Migrating to CreatePlaceScores (20100929030115)
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Table 'lbsc_development.user_activities' doesn't exist: ALTER TABLE user_activities ADD INDEX user_id_index (user_id)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100910102508)
+  [4;36;1mSQL (89.3ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `salt` varchar(255), `hashed_password` varchar(255), `profile_image_url` varchar(255), `isloading` varchar(255), `challengcount` int(11), `placevisitedcount` int(11), `sinaauthenticated` varchar(255), `e_mail` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100910102508')[0m
+Migrating to CreateSessions (20100916070806)
+  [4;36;1mSQL (193.8ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (136.1ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (122.7ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100916070806')[0m
+Migrating to CreateChallenges (20100917042556)
+  [4;36;1mSQL (115.5ms)[0m   [0;1mCREATE TABLE `challenges` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `placeID` int(11), `points` int(11), `description` varchar(255), `question` varchar(255), `answer` varchar(255), `message` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100917042556')[0m
+Migrating to AddChallengUserId (20100917044230)
+  [4;36;1mSQL (133.5ms)[0m   [0;1mALTER TABLE `challenges` ADD `user_id` int(11)[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100917044230')[0m
+Migrating to CreatePlaces (20100918043758)
+  [4;36;1mSQL (115.5ms)[0m   [0;1mCREATE TABLE `places` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `latitue` decimal(9,6), `longtitude` decimal(9,6), `postalcode` varchar(255), `state` varchar(255), `city` varchar(255), `address` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100918043758')[0m
+Migrating to AddChallengePlaceName (20100919120637)
+  [4;36;1mSQL (122.3ms)[0m   [0;1mALTER TABLE `challenges` ADD `place_name` varchar(255)[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100919120637')[0m
+Migrating to AddForeignkeyToChallenge (20100927061835)
+  [4;36;1mSQL (118.5ms)[0m   [0;1mALTER TABLE `challenges` ADD `place_id` int(11)[0m
+  [4;35;1mSQL (149.2ms)[0m   [0mALTER TABLE `challenges` DROP `placeID`[0m
+  [4;36;1mSQL (187.3ms)[0m   [0;1mALTER TABLE `challenges` ADD CONSTRAINT `challenges_place_id_fk` FOREIGN KEY (`place_id`) REFERENCES `places`(id)[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100927061835')[0m
+Migrating to AddUserAttributeToPlaces (20100928055230)
+  [4;36;1mSQL (129.9ms)[0m   [0;1mALTER TABLE `places` ADD `user_id` int(11)[0m
+  [4;35;1mSQL (122.6ms)[0m   [0mALTER TABLE `places` ADD `attr_id` int(11)[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100928055230')[0m
+Migrating to CreatePlaceAttrs (20100928060613)
+  [4;35;1mSQL (116.4ms)[0m   [0mCREATE TABLE `place_attrs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `attr_name` varchar(255), `points` int(11), `key_words` varchar(255), `time_span` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100928060613')[0m
+Migrating to CreateCheckinTypes (20100928063022)
+  [4;35;1mSQL (119.6ms)[0m   [0mCREATE TABLE `checkin_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `checkin_type` varchar(255), `points` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100928063022')[0m
+Migrating to CreateUserScores (20100928063450)
+  [4;35;1mSQL (118.6ms)[0m   [0mCREATE TABLE `user_scores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `scores` int(11), `places_visited_count` int(11), `challenges_done_count` int(11), `challenges_create_count` int(11), `knowledge_score` int(11), `tech_score` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100928063450')[0m
+Migrating to CreateUserActivities (20100928063820)
+  [4;35;1mSQL (118.3ms)[0m   [0mCREATE TABLE `user_activities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `place_id` int(11), `challenge_id` int(11), `challenge_tweet` varchar(255), `challenge_answer` varchar(255), `challenge_points` int(11), `checkin_type_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100928063820')[0m
+Migrating to AddPointsToactivity (20100928133119)
+  [4;35;1mSQL (122.3ms)[0m   [0mALTER TABLE `user_activities` ADD `points` int(11)[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100928133119')[0m
+Migrating to CreatePlaceTags (20100928145209)
+  [4;35;1mSQL (126.3ms)[0m   [0mCREATE TABLE `place_tags` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `place_id` int(11), `user_id` int(11), `tag_name` varchar(255), `place_attr_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100928145209')[0m
+Migrating to RemoveAttrScore (20100929025051)
+  [4;35;1mSQL (122.4ms)[0m   [0mALTER TABLE `user_scores` DROP `knowledge_score`[0m
+  [4;36;1mSQL (133.4ms)[0m   [0;1mALTER TABLE `user_scores` DROP `tech_score`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100929025051')[0m
+Migrating to CreatePlaceScores (20100929030115)
+  [4;36;1mSQL (116.2ms)[0m   [0;1mCREATE TABLE `place_scores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `place_scores` int(11), `place_attr_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100929030115')[0m
+Migrating to AddForeignKeyToActivity (20100929032330)
+  [4;36;1mSQL (147.3ms)[0m   [0;1mALTER TABLE user_activities ADD INDEX user_id_index (user_id)[0m
+  [4;35;1mSQL (121.7ms)[0m   [0mALTER TABLE user_scores ADD INDEX user_id_index (user_id)[0m
+  [4;36;1mSQL (123.0ms)[0m   [0;1m ALTER TABLE user_activities ADD CONSTRAINT user_scores_fk FOREIGN KEY (user_id) REFERENCES user_scores(user_id)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100929032330')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `challenges`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `challenges`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `checkin_types`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `checkin_types`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `checkin_types`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `place_attrs`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `place_attrs`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `place_attrs`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `place_scores`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `place_scores`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `place_scores`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `place_tags`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `place_tags`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `place_tags`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `places`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `places`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `sessions`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `sessions`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `user_activities`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mdescribe `user_activities`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `user_activities`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `user_scores`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `user_scores`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `user_scores`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m
+ SELECT fk.referenced_table_name as 'to_table'
+ ,fk.referenced_column_name as 'primary_key'
+ ,fk.column_name as 'column'
+ ,fk.constraint_name as 'name'
+ FROM information_schema.key_column_usage fk
+ WHERE fk.referenced_column_name is not null
+ AND fk.table_schema = 'lbsc_development'
+ AND fk.table_name = 'challenges'
+ [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW CREATE TABLE `challenges`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m
+ SELECT fk.referenced_table_name as 'to_table'
+ ,fk.referenced_column_name as 'primary_key'
+ ,fk.column_name as 'column'
+ ,fk.constraint_name as 'name'
+ FROM information_schema.key_column_usage fk
+ WHERE fk.referenced_column_name is not null
+ AND fk.table_schema = 'lbsc_development'
+ AND fk.table_name = 'checkin_types'
+ [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW CREATE TABLE `checkin_types`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m
+ SELECT fk.referenced_table_name as 'to_table'
+ ,fk.referenced_column_name as 'primary_key'
+ ,fk.column_name as 'column'
+ ,fk.constraint_name as 'name'
+ FROM information_schema.key_column_usage fk
+ WHERE fk.referenced_column_name is not null
+ AND fk.table_schema = 'lbsc_development'
+ AND fk.table_name = 'place_attrs'
+ [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW CREATE TABLE `place_attrs`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m
+ SELECT fk.referenced_table_name as 'to_table'
+ ,fk.referenced_column_name as 'primary_key'
+ ,fk.column_name as 'column'
+ ,fk.constraint_name as 'name'
+ FROM information_schema.key_column_usage fk
+ WHERE fk.referenced_column_name is not null
+ AND fk.table_schema = 'lbsc_development'
+ AND fk.table_name = 'place_scores'
+ [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW CREATE TABLE `place_scores`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m
+ SELECT fk.referenced_table_name as 'to_table'
+ ,fk.referenced_column_name as 'primary_key'
+ ,fk.column_name as 'column'
+ ,fk.constraint_name as 'name'
+ FROM information_schema.key_column_usage fk
+ WHERE fk.referenced_column_name is not null
+ AND fk.table_schema = 'lbsc_development'
+ AND fk.table_name = 'place_tags'
+ [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW CREATE TABLE `place_tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m
+ SELECT fk.referenced_table_name as 'to_table'
+ ,fk.referenced_column_name as 'primary_key'
+ ,fk.column_name as 'column'
+ ,fk.constraint_name as 'name'
+ FROM information_schema.key_column_usage fk
+ WHERE fk.referenced_column_name is not null
+ AND fk.table_schema = 'lbsc_development'
+ AND fk.table_name = 'places'
+ [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW CREATE TABLE `places`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m
+ SELECT fk.referenced_table_name as 'to_table'
+ ,fk.referenced_column_name as 'primary_key'
+ ,fk.column_name as 'column'
+ ,fk.constraint_name as 'name'
+ FROM information_schema.key_column_usage fk
+ WHERE fk.referenced_column_name is not null
+ AND fk.table_schema = 'lbsc_development'
+ AND fk.table_name = 'schema_migrations'
+ [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW CREATE TABLE `schema_migrations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m
+ SELECT fk.referenced_table_name as 'to_table'
+ ,fk.referenced_column_name as 'primary_key'
+ ,fk.column_name as 'column'
+ ,fk.constraint_name as 'name'
+ FROM information_schema.key_column_usage fk
+ WHERE fk.referenced_column_name is not null
+ AND fk.table_schema = 'lbsc_development'
+ AND fk.table_name = 'sessions'
+ [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW CREATE TABLE `sessions`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m
+ SELECT fk.referenced_table_name as 'to_table'
+ ,fk.referenced_column_name as 'primary_key'
+ ,fk.column_name as 'column'
+ ,fk.constraint_name as 'name'
+ FROM information_schema.key_column_usage fk
+ WHERE fk.referenced_column_name is not null
+ AND fk.table_schema = 'lbsc_development'
+ AND fk.table_name = 'user_activities'
+ [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW CREATE TABLE `user_activities`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m
+ SELECT fk.referenced_table_name as 'to_table'
+ ,fk.referenced_column_name as 'primary_key'
+ ,fk.column_name as 'column'
+ ,fk.constraint_name as 'name'
+ FROM information_schema.key_column_usage fk
+ WHERE fk.referenced_column_name is not null
+ AND fk.table_schema = 'lbsc_development'
+ AND fk.table_name = 'user_scores'
+ [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW CREATE TABLE `user_scores`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m
+ SELECT fk.referenced_table_name as 'to_table'
+ ,fk.referenced_column_name as 'primary_key'
+ ,fk.column_name as 'column'
+ ,fk.constraint_name as 'name'
+ FROM information_schema.key_column_usage fk
+ WHERE fk.referenced_column_name is not null
+ AND fk.table_schema = 'lbsc_development'
+ AND fk.table_name = 'users'
+ [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW CREATE TABLE `users`[0m
