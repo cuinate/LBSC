@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100928145209) do
+ActiveRecord::Schema.define(:version => 20100929030115) do
 
   create_table "challenges", :force => true do |t|
     t.string   "name"
@@ -39,6 +39,14 @@ ActiveRecord::Schema.define(:version => 20100928145209) do
     t.integer  "points"
     t.string   "key_words"
     t.integer  "time_span"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "place_scores", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "place_scores"
+    t.integer  "place_attr_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -96,8 +104,6 @@ ActiveRecord::Schema.define(:version => 20100928145209) do
     t.integer  "places_visited_count"
     t.integer  "challenges_done_count"
     t.integer  "challenges_create_count"
-    t.integer  "knowledge_score"
-    t.integer  "tech_score"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
