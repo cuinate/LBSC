@@ -35,9 +35,12 @@
 
 <div id="verticali-nav">
   <div id="verticali-tabs" class="spy-plain">
-		<a href="#"><div class="verticali-secondary-selected2 tab-left left"><b>Challenges</b></div></a>
-     	<a href="#"><div class="verticali-secondary-tab2 centertab2 left">Activities</div></a>
-        <a href="#"><div class="verticali-secondary-tab2 tab-right right">Info</div></a>
+	
+<% @link_to_place_id = url_for(:controller =>'places' ,:action =>'show_challenges', :id=>@place.id) %>
+
+		<a id ="challenge_header" href="<%=@link_to_place_id%>"><div  id= "challenge_header_div" class="verticali-secondary-selected2 tab-left left"><b>Challenges</b></div></a>
+     	<a id ="activity_header" href="javascript:void(0)"><div id= "activity_header_div" class="verticali-secondary-tab2 centertab2 left">Activities</div></a>
+        <a id = "info_header" href="#"><div class="verticali-secondary-tab2 tab-right right">Info</div></a>
     <br class="clear">
 </div>	
 

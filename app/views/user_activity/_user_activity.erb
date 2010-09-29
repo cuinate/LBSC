@@ -1,0 +1,38 @@
+	<ul id="unsortable">
+	<% for user_activity in @user_activity%>
+	
+	  <a id="home" class ="open_challenge" class="spy_light" chan_id = "" href = "javascript:void(0)">
+		<li>
+	  	<div class="person-smirk">
+	  	<img  src="/img/icon/main_badges.png" style="width: 40px; height: 40px;">
+
+	  	</div>
+	  	<div class="person-status-watched">
+
+	    	 	<b><span style ="font-size:15px">
+			      <%=user_activity.user.name %></span>
+			     </b>
+		
+	  		 <div class="person-name">
+
+	  			<span class="person-timestamp">
+	  			play Challenges: &nbsp    &nbsp<span class ="button-ch"> 
+		       <b>
+		
+		       <%if user_activity.checkin_type_id%>
+		       check_ins
+		       <%end%>
+		       </b></span></span>
+		      
+	  		</div>
+
+	  		<div class="rehash-list action-count"></div>
+
+	 <span ><%=user_activity.created_at.strftime("%Y-%m-%d")%></span>
+	  	</div>
+	  <br class="clear">
+	  <hr>  
+	  </li>	
+	</a>		
+	<% end %>
+	  </ul>

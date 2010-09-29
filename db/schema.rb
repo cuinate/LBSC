@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100929032330) do
+ActiveRecord::Schema.define(:version => 20100929084527) do
 
   create_table "challenges", :force => true do |t|
     t.string   "name"
@@ -98,6 +98,8 @@ ActiveRecord::Schema.define(:version => 20100929032330) do
     t.integer  "points"
   end
 
+  add_index "user_activities", ["challenge_id"], :name => "user_activities_challenge_id_fk"
+  add_index "user_activities", ["place_id"], :name => "user_activities_place_id_fk"
   add_index "user_activities", ["user_id"], :name => "user_id_index"
 
   create_table "user_scores", :force => true do |t|
@@ -128,6 +130,9 @@ ActiveRecord::Schema.define(:version => 20100929032330) do
 
   add_foreign_key "challenges", "places", :name => "challenges_place_id_fk"
 
+  add_foreign_key "user_activities", "challenges", :name => "user_activities_challenge_id_fk"
+  add_foreign_key "user_activities", "places", :name => "user_activities_place_id_fk"
   add_foreign_key "user_activities", "user_scores", :name => "user_scores_fk", :column => "user_id", :primary_key => "user_id"
+  add_foreign_key "user_activities", "users", :name => "user_activities_user_id_fk"
 
 end

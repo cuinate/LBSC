@@ -115,9 +115,9 @@ pre { float: inherit; white-space: pre; white-space: -moz-pre-wrap; white-space:
 .header-rows { padding: 14px 16px 0px 16px; width: 328px; height: 25px; color: #fff; font-size: 14px; margin: 0px auto 2px auto; background: #686767; overflow:hidden; display: block;  }  
 
 #verticali-tabs { width: 360px; position: relative; margin: 0px auto 0px auto; background: #fff; }  
-.verticali-secondary-tab2 { width: 120px; text-align: center; font-size: 12px; height: 25px; padding-top: 13px; background: #E9F3F3; border-bottom: 1px solid #c7d8d8; cursor: pointer; }  
+.verticali-secondary-tab2 { width: 120px; text-align: center; font-size: 12px; height: 25px; padding-top: 13px; background: #E9F3F3; border-bottom: 1px solid #c7d8d8;  }  
 	.verticali-secondary-tab2:hover { background: #eff8f8; }  
-.verticali-secondary-selected2 { width: 118px; background: #005481; color: #fff;  text-align: center; font-size: 15px; height: 25px; padding-top: 13px; }  
+.verticali-secondary-selected2 { width: 118px; background: #005481; color: #fff;  text-align: center; font-size: 12px; height: 25px; padding-top: 13px; }  
 .centertab2 { border-left: 1px solid #c7d8d8; border-right: 1px solid #c7d8d8; }
 
 #verticali-utility { padding: 0px 0px 0px 0px; background: #E9F3F3; margin: 0px auto 0px auto; width: 360px; }  

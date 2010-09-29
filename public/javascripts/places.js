@@ -211,7 +211,31 @@ var places = function(){
 	      getLocation();
 	
 	    });
+	 /* ----- place -challenge - activity page ---click ----*/
+	  $("#activity_header").click(function(){
+		        var place_id = $("#hidden_place_id").val();
+				// get the json data from chalenge based on challeng_id
+				$.get(
+		          '/user_activity/show', 
+		          {
+		            place_id: place_id
+		          },
+		          function(data) {
+				 		alert("get the activities!");
+				      $("#challenge_header_div").removeClass("verticali-secondary-selected2");
+			          $("#challenge_header_div").addClass("verticali-secondary-tab2");
+     				  $("#activity_header_div").removeClass("verticali-secondary-tab2");
+			          $("#activity_header_div").addClass("verticali-secondary-selected2");
+				    
+					
+		          }
+		        );
+			}
+
+	     );
+  	   
 	  /* --- chalenge dialog open ----*/
+	
 	    $(".open_challenge").click(function(){
 		        var chan_id = $(this).attr("chan_id");
 				// get the json data from chalenge based on challeng_id
@@ -221,8 +245,6 @@ var places = function(){
 		            ch_id: chan_id
 		          },
 		          function(json) {
-			
-			
 					$("#challenge_points").text("+" + json.challenge.points);	
 					$("#challenge_name").text(json.challenge.name);	
 					$("#challenge_content").text(json.challenge.question);	

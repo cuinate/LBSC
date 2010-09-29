@@ -37,6 +37,30 @@ class UserActivityController < ApplicationController
   end
 
   def show
+     place_id = params[:place_id]
+     user_id  = params[:user_id]
+     if place_id
+         @user_activity = UserActivity.find(:all, 
+                              :conditions => ["place_id = ?",place_id])
+     end
+     
+      if user_id
+        @user_activity = UserActivity.find(:all, 
+                             :conditions => ["user_id = ?",user_id])
+      end        
+      
+             
+     respond_to do |format|
+          if @user_activity
+            format.html # show.html.erb
+            format.xml  { render :xml => @place }
+            format.iphone { render :layout => false}
+            format.js { render :layout => false}
+          else
+            flash[:notice] = 'something wrong'
+          end
+        end
+    
   end
 
   def new

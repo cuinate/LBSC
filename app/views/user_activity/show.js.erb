@@ -1,0 +1,2 @@
+$("#challenge_list").text(" ");
+$("#challenge_list").html("<%= escape_javascript(render :partial=>"user_activity/user_activity",:object=>@user_activity) %>");
