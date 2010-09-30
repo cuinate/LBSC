@@ -56,7 +56,7 @@
 		 	<ul id="unsortable">
 			<% for challenge in @place.challenges%>
 			
-			  <a id="home" class ="open_challenge" class="spy_light" chan_id = "<%=challenge.id %>" href = "javascript:void(0)">
+			  <a id="home" class ="open_challenge" class="spy_light" chan_id ="<%=challenge.id %>" href = "javascript:void(0)">
 				<li>
 			  	<div class="person-smirk">
 			  	<img  src="/img/icon/main_badges.png" style="width: 40px; height: 40px;">
@@ -131,10 +131,13 @@
 <!--- places index content  -->
 <div id = "challenge_dialog" title="play the challenge">
 	<p><div id="challenge_points" class="button-ch-checkin tab-right right "> </div>
-	   <div id="challenge_name" style="font-size: 20px !important;float:left;" class ="tab-left left" ></div></p>
+		<div id="challenge_content" style="color: #005481; border: 0px; font-size: 15px !important;"></div>
+		<input id="challenge_id_input" style="display:none;"></input>
+		<input id="challenge_points_tag" style="display:none;"></input>
+		
+   </p>
     <br class="clear">
-    <br class="clear">
-	<div id="challenge_content" style="color: #005481; border: 0px; font-size: 15px !important;"></div>
+ 	<input  class="lb_field_tag " id ="challenge_answer"  > </input>
 	
 </div>
 <!-- check in dialog 1-->

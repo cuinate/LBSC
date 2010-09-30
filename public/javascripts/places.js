@@ -109,7 +109,31 @@ var places = function(){
  					$(this).dialog("close");
 	        	      },
      	  "Answer": function() {
+	        
+				var chan_id = $('#challenge_id_input').val();
+				var points = $("#challenge_points_tag").val();
+				var answer  = $("#challenge_answer").val();
+			
+				var place_id = $("#hidden_place_id").val();
+				var user_id = $("#hidden_user_id").val();
+				$.post(
+				'/UserActivity/create', 
+		          {
+					challenge_id : chan_id,
+					user_id : user_id,
+					place_id :place_id,
+					challenge_answer : answer,
+					points :points
+				  },
+				  function(data){
+
+				   $(this).dialog("close");
+				  $('#sucess_dialog').dialog("open");
+				 }
+
+		        );
 				$(this).dialog("close");
+				return false;
        	      }
 		  },
 	      width: 300,
@@ -308,6 +332,8 @@ var places = function(){
 	    $(".open_challenge").click(function(){
 		        var chan_id = $(this).attr("chan_id");
 				// get the json data from chalenge based on challeng_id
+				//save the challenge id into the challenge dialog form to call again
+				$('#challenge_id_input').attr("value",chan_id);
 				$.getJSON(
 		          '/challenges/show', 
 		          {
@@ -315,8 +341,10 @@ var places = function(){
 		          },
 		          function(json) {
 					$("#challenge_points").text("+" + json.challenge.points);	
-					$("#challenge_name").text(json.challenge.name);	
 					$("#challenge_content").text(json.challenge.question);	
+					$("#challenge_points_tag").attr("value",json.challenge.points);
+					//$("#challenge_dialog").attr("title").val(json.challenge.name);
+					//$('＃challenge_dialog').dialog('option', 'title', json.challenge.name);
 					$("#challenge_dialog").dialog("open");
 		          }
 		        );

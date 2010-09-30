@@ -81,6 +81,10 @@ class ChallengesController < ApplicationController
     end
   end
 
+
+ 
+ 
+  
   # DELETE /challenges/1
   # DELETE /challenges/1.xml
   def destroy

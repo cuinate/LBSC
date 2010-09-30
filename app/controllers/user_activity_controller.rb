@@ -5,8 +5,10 @@ class UserActivityController < ApplicationController
     @user_activity.checkin_type_id = params[:checkin_type_id]
 		@user_activity.user_id = params[:user_id]
 		@user_activity.place_id = params[:place_id]
-		@user_activity.points = params[:points]
+		@user_activity.points = params[:points].to_i
 		@user_activity.challenge_tweet = params[:challenge_tweet]
+		@user_activity.challenge_id = params[:challenge_id]
+		@user_activity.challenge_answer= params[:challenge_answer]
    
    # add current activity's points into user_scores table.
    if @user_activity.user_score
