@@ -6,6 +6,7 @@ class UserActivityController < ApplicationController
 		@user_activity.user_id = params[:user_id]
 		@user_activity.place_id = params[:place_id]
 		@user_activity.points = params[:points]
+		@user_activity.challenge_tweet = params[:challenge_tweet]
    
    # add current activity's points into user_scores table.
    if @user_activity.user_score
@@ -41,7 +42,7 @@ class UserActivityController < ApplicationController
      user_id  = params[:user_id]
      if place_id
          @user_activity = UserActivity.find(:all, 
-                              :conditions => ["place_id = ?",place_id])
+                              :conditions => ["place_id = ?",place_id], :order => "created_at DESC")
      end
      
       if user_id

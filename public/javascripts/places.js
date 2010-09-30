@@ -155,8 +155,29 @@ var places = function(){
 	      modal: true,
 		  buttons:{
 	      "Say it": function() {
- 					$(this).dialog("close");
-	        	      },
+					var place_id		= $("#hidden_place_id").val();
+					var user_id 		= $("#hidden_user_id").val();
+					var challenge_tweet = $("#challenge_tweet").val();
+ 						$.post(
+						'/UserActivity/create', 
+				          {
+							checkin_type_id : "2",
+							user_id : user_id,
+							place_id :place_id,
+							points : "3",
+							challenge_tweet : challenge_tweet
+						  },
+						  function(data){
+
+						   $(this).dialog("close");
+						  $('#sucess_dialog').dialog("open");
+						 }
+
+				        );
+				     $(this).dialog("close");
+					return false;
+		       	      },
+	        	     
      	  "Cancel": function() {
 				$(this).dialog("close");
        	      }
@@ -181,9 +202,23 @@ var places = function(){
 							tag_name : tag_name
 						  },
 						  function(data){
+							//save the activity 
+								$.post(
+									'/UserActivity/create', 
+							          {
+										checkin_type_id : "3",
+										user_id : user_id,
+										place_id :place_id,
+										points : "3",
+										challenge_tweet :tag_name
+									  },
+									  function(data){
 
-						   $(this).dialog("close");
-						  $('#sucess_dialog').dialog("open");
+									   $(this).dialog("close");
+									  $('#sucess_dialog').dialog("open");
+									 }
+
+						        );
 						 }
 
 				        );
