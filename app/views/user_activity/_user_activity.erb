@@ -15,13 +15,18 @@
 		
 	  		 <div class="person-name">
 
+				<%if user_activity.challenge  %>
+				play <span class="tag_name"><%=user_activity.challenge.name%></span>
+				<%end%>
 	  	      
-		       <%if user_activity.checkin_type_id == 1%>
+		       <%if user_activity.checkin_type_id %>
+		       <% if  user_activity.checkin_type_id == 1%>
 		       到此一游
-		       <%elsif user_activity.checkin_type_id == 3%>
+		       <% elsif user_activity.checkin_type_id == 3%>
 		       到此一游 加标签：	 <span class="tag_name"><%=user_activity.challenge_tweet%></span>
-		       <%else%>
+		       <% else %>
 		       说到：  <span class="tag_name"><%=user_activity.challenge_tweet%></span>
+		       <%end%>
 		       <%end%>
 		       </b></span>
 		      

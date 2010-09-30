@@ -59380,3 +59380,669 @@ Processing UserActivityController#create (for 127.0.0.1 at 2010-09-30 22:45:01) 
   [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
 Rendering user_activity/create
 Completed in 23ms (View: 1, DB: 7) | 200 OK [http://localhost/UserActivity/create]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-30 22:50:39) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPlace Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 2) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.1ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 2) [0m
+  [4;36;1mChallenge Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 23ms (View: 13, DB: 5) | 200 OK [http://localhost/places/show_challenges/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserActivityController#show (for 127.0.0.1 at 2010-09-30 22:50:46) [GET]
+  Parameters: {"place_id"=>"2", "id"=>"show"}
+  [4;35;1mUserActivity Load (0.6ms)[0m   [0mSELECT * FROM `user_activities` WHERE (place_id = '2') ORDER BY created_at DESC[0m
+Rendering user_activity/show
+  [4;36;1mUserActivity Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `user_activities`[0m
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+
+ActionView::TemplateError (undefined local variable or method `place' for #<Class:0x1042dcff8>) on line #18 of app/views/user_activity/_user_activity.erb:
+15: 		
+16: 	  		 <div class="person-name">
+17: 
+18: 				<%if user_activity.challenge%>
+19: 				play <span class="tag_name"><%=user_activity.challenge.name%></span>
+20: 				<%end%>
+21: 	  	      
+
+    app/views/user_activity/_user_activity.erb:18
+    app/views/user_activity/_user_activity.erb:2:in `each'
+    app/views/user_activity/_user_activity.erb:2
+    app/views/user_activity/show.js.erb:2
+    app/controllers/user_activity_controller.rb:61:in `show'
+    app/controllers/user_activity_controller.rb:56:in `show'
+
+Rendered rescues/_trace (73.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-30 22:55:17) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPlace Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Load (0.1ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 2) [0m
+Rendering places/show_challenges
+  [4;36;1mChallenge Load (0.2ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 2) [0m
+  [4;35;1mChallenge Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+Completed in 90ms (View: 78, DB: 6) | 200 OK [http://localhost/places/show_challenges/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserActivityController#show (for 127.0.0.1 at 2010-09-30 22:55:22) [GET]
+  Parameters: {"place_id"=>"2", "id"=>"show"}
+  [4;36;1mUserActivity Load (0.4ms)[0m   [0;1mSELECT * FROM `user_activities` WHERE (place_id = '2') ORDER BY created_at DESC[0m
+Rendering user_activity/show
+  [4;35;1mUserActivity Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `user_activities`[0m
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+
+ActionView::TemplateError (undefined local variable or method `place' for #<Class:0x104434e50>) on line #18 of app/views/user_activity/_user_activity.erb:
+15: 		
+16: 	  		 <div class="person-name">
+17: 
+18: 				<%if user_activity.challenge%>
+19: 				play <span class="tag_name"><%=user_activity.challenge.name%></span>
+20: 				<%end%>
+21: 	  	      
+
+    app/views/user_activity/_user_activity.erb:18
+    app/views/user_activity/_user_activity.erb:2:in `each'
+    app/views/user_activity/_user_activity.erb:2
+    app/views/user_activity/show.js.erb:2
+    app/controllers/user_activity_controller.rb:61:in `show'
+    app/controllers/user_activity_controller.rb:56:in `show'
+
+Rendered rescues/_trace (134.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-30 22:56:00) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPlace Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 2) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.1ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 2) [0m
+  [4;36;1mChallenge Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 19ms (View: 10, DB: 4) | 200 OK [http://localhost/places/show_challenges/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserActivityController#show (for 127.0.0.1 at 2010-09-30 22:56:05) [GET]
+  Parameters: {"place_id"=>"2", "id"=>"show"}
+  [4;35;1mUserActivity Load (0.2ms)[0m   [0mSELECT * FROM `user_activities` WHERE (place_id = '2') ORDER BY created_at DESC[0m
+Rendering user_activity/show
+  [4;36;1mUserActivity Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `user_activities`[0m
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+
+ActionView::TemplateError (undefined local variable or method `challenge' for #<Class:0x104228a80>) on line #18 of app/views/user_activity/_user_activity.erb:
+15: 		
+16: 	  		 <div class="person-name">
+17: 
+18: 				<%if user_activity.challenge%>
+19: 				play <span class="tag_name"><%=user_activity.challenge.name%></span>
+20: 				<%end%>
+21: 	  	      
+
+    app/views/user_activity/_user_activity.erb:18
+    app/views/user_activity/_user_activity.erb:2:in `each'
+    app/views/user_activity/_user_activity.erb:2
+    app/views/user_activity/show.js.erb:2
+    app/controllers/user_activity_controller.rb:61:in `show'
+    app/controllers/user_activity_controller.rb:56:in `show'
+
+Rendered rescues/_trace (74.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-30 22:58:09) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPlace Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Load (0.1ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 2) [0m
+Rendering places/show_challenges
+  [4;36;1mChallenge Load (0.2ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 2) [0m
+  [4;35;1mChallenge Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+Completed in 90ms (View: 12, DB: 4) | 200 OK [http://localhost/places/show_challenges/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserActivityController#show (for 127.0.0.1 at 2010-09-30 22:58:13) [GET]
+  Parameters: {"place_id"=>"2", "id"=>"show"}
+  [4;36;1mUserActivity Load (0.5ms)[0m   [0;1mSELECT * FROM `user_activities` WHERE (place_id = '2') ORDER BY created_at DESC[0m
+Rendering user_activity/show
+  [4;35;1mUserActivity Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `user_activities`[0m
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+
+ActionView::TemplateError (undefined local variable or method `challenge' for #<Class:0x104403d28>) on line #18 of app/views/user_activity/_user_activity.erb:
+15: 		
+16: 	  		 <div class="person-name">
+17: 
+18: 				<%if user_activity.challenge %>
+19: 				play <span class="tag_name"><%=user_activity.challenge.name%></span>
+20: 				<%end%>
+21: 	  	      
+
+    app/views/user_activity/_user_activity.erb:18
+    app/views/user_activity/_user_activity.erb:2:in `each'
+    app/views/user_activity/_user_activity.erb:2
+    app/views/user_activity/show.js.erb:2
+    app/controllers/user_activity_controller.rb:61:in `show'
+    app/controllers/user_activity_controller.rb:56:in `show'
+
+Rendered rescues/_trace (132.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-30 22:59:58) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPlace Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.9ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 2) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.1ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 2) [0m
+  [4;36;1mChallenge Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 22ms (View: 10, DB: 5) | 200 OK [http://localhost/places/show_challenges/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserActivityController#show (for 127.0.0.1 at 2010-09-30 23:00:02) [GET]
+  Parameters: {"place_id"=>"2", "id"=>"show"}
+  [4;35;1mUserActivity Load (0.2ms)[0m   [0mSELECT * FROM `user_activities` WHERE (place_id = '2') ORDER BY created_at DESC[0m
+Rendering user_activity/show
+  [4;36;1mUserActivity Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `user_activities`[0m
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mChallenge Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 2) [0m
+Rendered user_activity/_user_activity (23.3ms)
+Completed in 94ms (View: 24, DB: 5) | 200 OK [http://localhost/user_activity/show?place_id=2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-30 23:03:08) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPlace Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 2) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 2) [0m
+  [4;36;1mChallenge Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 21ms (View: 11, DB: 5) | 200 OK [http://localhost/places/show_challenges/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserActivityController#show (for 127.0.0.1 at 2010-09-30 23:03:12) [GET]
+  Parameters: {"place_id"=>"2", "id"=>"show"}
+  [4;35;1mUserActivity Load (0.2ms)[0m   [0mSELECT * FROM `user_activities` WHERE (place_id = '2') ORDER BY created_at DESC[0m
+Rendering user_activity/show
+ERROR: compiling _run_erb_app47views47user_activity47_user_activity46erb_locals_object_user_activity RAISED compile error
+/nate/lbsc/app/views/user_activity/_user_activity.erb:22: syntax error, unexpected tIVAR, expecting kWHEN
+...eckin_type_id ; @output_buffer.concat "\n\t\t       "
+                              ^
+/nate/lbsc/app/views/user_activity/_user_activity.erb:23: syntax error, unexpected kWHEN, expecting kEND
+;  when 1; @output_buffer.concat "\n\...
+       ^
+/nate/lbsc/app/views/user_activity/_user_activity.erb:25: syntax error, unexpected kWHEN, expecting kEND
+;  when 3; @output_buffer.concat "\n\...
+       ^
+/nate/lbsc/app/views/user_activity/_user_activity.erb:27: syntax error, unexpected kWHEN, expecting kEND
+;  when 2; @output_buffer.concat "\n\...
+       ^
+/nate/lbsc/app/views/user_activity/_user_activity.erb:44: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47user_activity47_user_activity46erb_locals_object_user_activity(local_assigns)
+            old_output_buffer = output_buffer;user_activity = local_assigns[:user_activity];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\t<ul id=\"unsortable\">\n\t"
+;  for user_activity in @user_activity; @output_buffer.concat "\n\t\n\t  <a id=\"home\" class =\"open_challenge\" class=\"spy_light\" chan_id = \"\" href = \"javascript:void(0)\">\n\t\t<li>\n\t  \t<div class=\"person-smirk\">\n\t  \t<img  src=\"/img/icon/main_badges.png\" style=\"width: 40px; height: 40px;\">\n\n\t  \t</div>\n\t  \t<div class=\"person-status-watched\">\n\n\t    \t \t<b><span style =\"font-size:15px\">\n\t\t\t      "
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat((user_activity.user.name ).to_s); @output_buffer.concat "</span>\n\t\t\t     </b>\n\t\t\n\t  \t\t <div class=\"person-name\">\n\n\t\t\t\t"
+
+
+
+
+; if user_activity.challenge ; @output_buffer.concat "\n\t\t\t\tplay <span class=\"tag_name\">"
+; @output_buffer.concat((user_activity.challenge.name).to_s); @output_buffer.concat "</span>\n\t\t\t\t"
+; end; @output_buffer.concat "\n\t  \t      \n\t\t       "
+
+;  case user_activity.checkin_type_id ; @output_buffer.concat "\n\t\t       "
+;  when 1; @output_buffer.concat "\n\t\t       \345\210\260\346\255\244\344\270\200\346\270\270\n\t\t       "
+
+;  when 3; @output_buffer.concat "\n\t\t       \345\210\260\346\255\244\344\270\200\346\270\270 \345\212\240\346\240\207\347\255\276\357\274\232\t <span class=\"tag_name\">"
+; @output_buffer.concat((user_activity.challenge_tweet).to_s); @output_buffer.concat "</span>\n\t\t       "
+;  when 2; @output_buffer.concat "\n\t\t       \350\257\264\345\210\260\357\274\232  <span class=\"tag_name\">"
+; @output_buffer.concat((user_activity.challenge_tweet).to_s); @output_buffer.concat "</span>\n\t\t       "
+; end; @output_buffer.concat "\n\t\t       </b></span>\n\t\t      \n\t  \t\t</div>\n\n\t  \t\t<div class=\"rehash-list action-count\"></div>\n\n\t <span >"
+
+
+
+
+
+
+; @output_buffer.concat((user_activity.created_at.strftime("%Y-%m-%d")).to_s); @output_buffer.concat "</span>\n\t  \t</div>\n\t  <br class=\"clear\">\n\t  <hr>  \n\t  </li>\t\n\t</a>\t\t\n\t"
+
+
+
+
+
+;  end ; @output_buffer.concat "\n\t  </ul>"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /nate/lbsc/app/views/user_activity/_user_activity.erb:44:in `compile!'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/nate/lbsc/app/views/user_activity/show.js.erb:2:in `_run_erb_app47views47user_activity47show46js46erb'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:987:in `render_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/nate/lbsc/app/controllers/user_activity_controller.rb:61:in `show'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/nate/lbsc/app/controllers/user_activity_controller.rb:56:in `show'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/abstract_store.rb:122:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/nate/lbsc/app/views/user_activity/_user_activity.erb:22: syntax error, unexpected tIVAR, expecting kWHEN
+...eckin_type_id ; @output_buffer.concat "\n\t\t       "
+                              ^
+/nate/lbsc/app/views/user_activity/_user_activity.erb:23: syntax error, unexpected kWHEN, expecting kEND
+;  when 1; @output_buffer.concat "\n\...
+       ^
+/nate/lbsc/app/views/user_activity/_user_activity.erb:25: syntax error, unexpected kWHEN, expecting kEND
+;  when 3; @output_buffer.concat "\n\...
+       ^
+/nate/lbsc/app/views/user_activity/_user_activity.erb:27: syntax error, unexpected kWHEN, expecting kEND
+;  when 2; @output_buffer.concat "\n\...
+       ^
+/nate/lbsc/app/views/user_activity/_user_activity.erb:44: syntax error, unexpected kENSURE, expecting $end) on line #22 of app/views/user_activity/_user_activity.erb:
+19: 				play <span class="tag_name"><%=user_activity.challenge.name%></span>
+20: 				<%end%>
+21: 	  	      
+22: 		       <% case user_activity.checkin_type_id %>
+23: 		       <% when 1%>
+24: 		       到此一游
+25: 		       <% when 3%>
+
+    app/views/user_activity/_user_activity.erb:44:in `compile!'
+    app/views/user_activity/show.js.erb:2
+    app/controllers/user_activity_controller.rb:61:in `show'
+    app/controllers/user_activity_controller.rb:56:in `show'
+
+Rendered rescues/_trace (63.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-30 23:10:45) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPlace Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `places`[0m
+  [4;35;1mPlace Load (0.1ms)[0m   [0mSELECT * FROM `places` WHERE (`places`.`id` = 2) [0m
+Rendering places/show_challenges
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 2) [0m
+  [4;35;1mChallenge Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+Completed in 21ms (View: 10, DB: 6) | 200 OK [http://localhost/places/show_challenges/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserActivityController#show (for 127.0.0.1 at 2010-09-30 23:10:50) [GET]
+  Parameters: {"place_id"=>"2", "id"=>"show"}
+  [4;36;1mUserActivity Load (0.2ms)[0m   [0;1mSELECT * FROM `user_activities` WHERE (place_id = '2') ORDER BY created_at DESC[0m
+Rendering user_activity/show
+ERROR: compiling _run_erb_app47views47user_activity47_user_activity46erb_locals_object_user_activity RAISED compile error
+/nate/lbsc/app/views/user_activity/_user_activity.erb:22: syntax error, unexpected ')', expecting kWHEN
+...ser_activity.checkin_type_id ).to_s); @output_buffer.concat ...
+                              ^
+/nate/lbsc/app/views/user_activity/_user_activity.erb:23: syntax error, unexpected kWHEN, expecting kEND
+;  when 1; @output_buffer.concat "\n\...
+       ^
+/nate/lbsc/app/views/user_activity/_user_activity.erb:25: syntax error, unexpected kWHEN, expecting kEND
+;  when 3; @output_buffer.concat "\n\...
+       ^
+/nate/lbsc/app/views/user_activity/_user_activity.erb:27: syntax error, unexpected kWHEN, expecting kEND
+;  when 2; @output_buffer.concat "\n\...
+       ^
+/nate/lbsc/app/views/user_activity/_user_activity.erb:44: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47user_activity47_user_activity46erb_locals_object_user_activity(local_assigns)
+            old_output_buffer = output_buffer;user_activity = local_assigns[:user_activity];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\t<ul id=\"unsortable\">\n\t"
+;  for user_activity in @user_activity; @output_buffer.concat "\n\t\n\t  <a id=\"home\" class =\"open_challenge\" class=\"spy_light\" chan_id = \"\" href = \"javascript:void(0)\">\n\t\t<li>\n\t  \t<div class=\"person-smirk\">\n\t  \t<img  src=\"/img/icon/main_badges.png\" style=\"width: 40px; height: 40px;\">\n\n\t  \t</div>\n\t  \t<div class=\"person-status-watched\">\n\n\t    \t \t<b><span style =\"font-size:15px\">\n\t\t\t      "
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat((user_activity.user.name ).to_s); @output_buffer.concat "</span>\n\t\t\t     </b>\n\t\t\n\t  \t\t <div class=\"person-name\">\n\n\t\t\t\t"
+
+
+
+
+; if user_activity.challenge  ; @output_buffer.concat "\n\t\t\t\tplay <span class=\"tag_name\">"
+; @output_buffer.concat((user_activity.challenge.name).to_s); @output_buffer.concat "</span>\n\t\t\t\t"
+; end; @output_buffer.concat "\n\t  \t      \n\t\t       "
+
+; @output_buffer.concat(( case user_activity.checkin_type_id ).to_s); @output_buffer.concat "\n\t\t       "
+;  when 1; @output_buffer.concat "\n\t\t       \345\210\260\346\255\244\344\270\200\346\270\270\n\t\t       "
+
+;  when 3; @output_buffer.concat "\n\t\t       \345\210\260\346\255\244\344\270\200\346\270\270 \345\212\240\346\240\207\347\255\276\357\274\232\t <span class=\"tag_name\">"
+; @output_buffer.concat((user_activity.challenge_tweet).to_s); @output_buffer.concat "</span>\n\t\t       "
+;  when 2; @output_buffer.concat "\n\t\t       \350\257\264\345\210\260\357\274\232  <span class=\"tag_name\">"
+; @output_buffer.concat((user_activity.challenge_tweet).to_s); @output_buffer.concat "</span>\n\t\t       "
+; end; @output_buffer.concat "\n\t\t       </b></span>\n\t\t      \n\t  \t\t</div>\n\n\t  \t\t<div class=\"rehash-list action-count\"></div>\n\n\t <span >"
+
+
+
+
+
+
+; @output_buffer.concat((user_activity.created_at.strftime("%Y-%m-%d")).to_s); @output_buffer.concat "</span>\n\t  \t</div>\n\t  <br class=\"clear\">\n\t  <hr>  \n\t  </li>\t\n\t</a>\t\t\n\t"
+
+
+
+
+
+;  end ; @output_buffer.concat "\n\t  </ul>"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /nate/lbsc/app/views/user_activity/_user_activity.erb:44:in `compile!'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/nate/lbsc/app/views/user_activity/show.js.erb:2:in `_run_erb_app47views47user_activity47show46js46erb'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:987:in `render_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/nate/lbsc/app/controllers/user_activity_controller.rb:61:in `show'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/nate/lbsc/app/controllers/user_activity_controller.rb:56:in `show'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/abstract_store.rb:122:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/nate/lbsc/app/views/user_activity/_user_activity.erb:22: syntax error, unexpected ')', expecting kWHEN
+...ser_activity.checkin_type_id ).to_s); @output_buffer.concat ...
+                              ^
+/nate/lbsc/app/views/user_activity/_user_activity.erb:23: syntax error, unexpected kWHEN, expecting kEND
+;  when 1; @output_buffer.concat "\n\...
+       ^
+/nate/lbsc/app/views/user_activity/_user_activity.erb:25: syntax error, unexpected kWHEN, expecting kEND
+;  when 3; @output_buffer.concat "\n\...
+       ^
+/nate/lbsc/app/views/user_activity/_user_activity.erb:27: syntax error, unexpected kWHEN, expecting kEND
+;  when 2; @output_buffer.concat "\n\...
+       ^
+/nate/lbsc/app/views/user_activity/_user_activity.erb:44: syntax error, unexpected kENSURE, expecting $end) on line #22 of app/views/user_activity/_user_activity.erb:
+19: 				play <span class="tag_name"><%=user_activity.challenge.name%></span>
+20: 				<%end%>
+21: 	  	      
+22: 		       <%= case user_activity.checkin_type_id %>
+23: 		       <% when 1%>
+24: 		       到此一游
+25: 		       <% when 3%>
+
+    app/views/user_activity/_user_activity.erb:44:in `compile!'
+    app/views/user_activity/show.js.erb:2
+    app/controllers/user_activity_controller.rb:61:in `show'
+    app/controllers/user_activity_controller.rb:56:in `show'
+
+Rendered rescues/_trace (64.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlacesController#show_challenges (for 127.0.0.1 at 2010-09-30 23:12:06) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPlace Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `places`[0m
+  [4;36;1mPlace Load (0.1ms)[0m   [0;1mSELECT * FROM `places` WHERE (`places`.`id` = 2) [0m
+Rendering places/show_challenges
+  [4;35;1mChallenge Load (0.2ms)[0m   [0mSELECT * FROM `challenges` WHERE (`challenges`.place_id = 2) [0m
+  [4;36;1mChallenge Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `challenges`[0m
+Completed in 22ms (View: 12, DB: 4) | 200 OK [http://localhost/places/show_challenges/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserActivityController#show (for 127.0.0.1 at 2010-09-30 23:12:10) [GET]
+  Parameters: {"place_id"=>"2", "id"=>"show"}
+  [4;35;1mUserActivity Load (0.2ms)[0m   [0mSELECT * FROM `user_activities` WHERE (place_id = '2') ORDER BY created_at DESC[0m
+Rendering user_activity/show
+  [4;36;1mUserActivity Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `user_activities`[0m
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mChallenge Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `challenges`[0m
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mChallenge Load (0.1ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `challenges` WHERE (`challenges`.`id` = 2) [0m
+Rendered user_activity/_user_activity (25.0ms)
+Completed in 35ms (View: 24, DB: 6) | 200 OK [http://localhost/user_activity/show?place_id=2]

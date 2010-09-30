@@ -4,7 +4,7 @@ class UserActivity < ActiveRecord::Base
            :foreign_key => "user_id"
   belongs_to :user
   belongs_to :challenge,
-             :class_name => "place",
-             :foreign_key => "user_id"
+             :class_name => "Challenge",
+             :foreign_key => "challenge_id"
   belongs_to :place
 end
