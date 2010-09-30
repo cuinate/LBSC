@@ -137,6 +137,7 @@ var places = function(){
 					  function(data){
 					  
 					   $(this).dialog("close");
+					  $('#sucess_dialog').dialog("open");
 					 }
 
 			        );
@@ -169,8 +170,26 @@ var places = function(){
 	      modal: true,
 		  buttons:{
 	      "Tag it": function() {
- 					$(this).dialog("close");
-	        	      },
+						var place_id = $("#hidden_place_id").val();
+						var user_id = $("#hidden_user_id").val();
+						var tag_name = $("#place_tag").val();
+						$.post(
+						'/PlaceTag/create', 
+				          {
+							user_id : user_id,
+							place_id :place_id,
+							tag_name : tag_name
+						  },
+						  function(data){
+
+						   $(this).dialog("close");
+						  $('#sucess_dialog').dialog("open");
+						 }
+
+				        );
+				    $(this).dialog("close");
+					return false;
+		       	  },
      	  "Cancel": function() {
 				$(this).dialog("close");
        	      }
@@ -180,6 +199,21 @@ var places = function(){
 	      resizable: false
 	    });
     // check_in dialog init end -------------------------------- // 
+   // success sing dialog ======================================//
+		$('#sucess_dialog').dialog({
+	      autoOpen: false,
+	      modal: true,
+		  buttons:{
+	      "OK": function() {
+ 					$(this).dialog("close");
+	        	      }
+		  },
+	      width: 300,
+		  height: 200,
+	      resizable: false
+	    });
+
+
      	$("#find_place_form").submit(function()
 			{
 				$.post(this.action , $(this).serialize(), null, "script");

@@ -67,6 +67,11 @@ map.connect  "UserActivity/create",
              :conditions => { :method => :post},
              :controller => "UserActivity",
              :action     => "create"
+
+map.connect  "PlaceTag/create",
+            :conditions => { :method => :post},
+            :controller => "PlaceTag",
+            :action     => "create"
               
  
 end
