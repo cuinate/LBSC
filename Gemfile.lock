@@ -1,0 +1,10 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    foreigner (0.9.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  foreigner (= 0.9.0)
